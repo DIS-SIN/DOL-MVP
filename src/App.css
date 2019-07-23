@@ -1,0 +1,51 @@
+@font-face {
+    font-family: "Heebo";
+    font-style: normal;
+    font-weight: 400;
+    src: url("./fonts/Heebo/Heebo-Regular.ttf") format("ttf");
+}
+
+@font-face {
+    font-family: "Heebo";
+    font-style: normal;
+    font-weight: 300;
+    src: url("./fonts/Heebo/Heebo-Light.ttf") format("ttf");
+}
+
+@font-face {
+    font-family: "Heebo";
+    font-style: normal;
+    font-weight: 500;
+    src: url("./fonts/Heebo/Heebo-Medium.ttf") format("ttf");
+}
+
+@font-face {
+    font-family: "Heebo";
+    font-style: normal;
+    font-weight: 700;
+    src: url("./fonts/Heebo/Heebo-Bold.ttf") format("ttf");
+}
+
+@font-face {
+    font-family: 'Material Icons';
+    font-style: normal;
+    font-weight: 400;
+    src: url("./fonts/Material_Icons/MaterialIcons-Regular.eot"); /* For IE6-8 */
+    src: local('Material Icons'),
+      local('MaterialIcons-Regular'),
+      url("./fonts/Material_Icons/MaterialIcons-Regular.woff2") format('woff2'),
+      url("./fonts/Material_Icons/MaterialIcons-Regular.woff") format('woff'),
+      url("./fonts/Material_Icons/MaterialIcons-Regular.ttf") format('truetype');
+}
+
+* {
+    font-family: 'Heebo', 'Roboto', 'BlinkMacSystemFont', sans-serif;
+}
+
+body {
+    background-color: #EFEFF4;
+}
+
+.material-icons {
+    font-family: "Material Icons";
+}

@@ -1,0 +1,32 @@
+.mobileNavBar {
+    width: 1112px;
+    height: 124.33px;
+    background: transparent;
+    border: 0.5px solid #bcc6cf;
+    /* Note: currently only Safari supports backdrop-filter */
+    backdrop-filter: blur(50px);
+    --webkit-backdrop-filter: blur(50px);
+    background-color: rgba(255, 255, 255, 0.5);
+    /* (plus shape's fill blended on top as a separate layer with 67.62% opacity) */
+}
+
+.profile {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    margin: 25px 0 0 25px;
+}
+
+.searchBar {
+    width: 645px;
+    height: 36px;
+    border-radius: 17px;
+    border: none;
+    background: #e7ecf0;
+    text-align: center;
+    font-weight: normal;
+    font-size: 20px;
+    color: #647586;
+}
+
+
