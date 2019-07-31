@@ -1,3 +1,18 @@
 {
-    "searchBarPlaceholder": "Recherche Apprentissage Ouvert Numérique"
+    "language": "Français",
+    "profile": "Profil",
+    "profileIconAltText": "L'icône de profil par défaut",
+    "searchBarPlaceholder": "Recherche Apprentissage Ouvert Numérique",
+    "all": "Tous",
+    "forYou": "Pour vous",
+    "design": "Dessein",
+    "digitalGovernment": "Gouvernement Numérique",
+    "data": "Données",
+    "others": "autrui",
+    "beginner": "Novice",
+    "intermediate": "Intermédiaire",
+    "advanced": "Avancé",
+    "endorse": "Approuver",
+    "comment": "Commentaire",
+    "more": "Plus"
 }

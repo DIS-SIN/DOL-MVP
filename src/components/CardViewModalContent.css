@@ -1,0 +1,70 @@
+.cardViewModal {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.modalHeader {
+    position: relative;
+    width: 100%;
+    height: 51px;
+    border-radius: 13px 13px 0px 0px;
+    background-color: #F6F6F6;
+    border-bottom: solid rgba(0, 0, 0, 0.3) 0.5px;
+}
+
+.modalHeader h2 {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    font-weight: 600;
+    font-size: 17px;
+    letter-spacing: -0.03em;
+}
+
+.closeModalButton {
+    position: absolute;
+    right: 20px;
+    height: 100%;
+    font-weight: 600;
+    font-size: 17px;
+    letter-spacing: -0.02em;
+    text-align: left;
+    color: #2dbfbf;
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+}
+
+.cardViewModalContent {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    padding: 10px 5px;
+}
+
+.cardViewModalContent .icon {
+    font-size: 36px;
+    padding-right: 20px;
+    color: #BBBBBA;
+}
+
+.cardViewModalContent button {
+    display: flex;
+    align-items: center;
+    font-weight: 500;
+    font-size: 17px;
+    color: #74746e;
+    text-align: left;
+    width: fit-content;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0 20px;
+    flex-grow: 1;
+}
+
+.cardViewModalContent .active, .cardViewModalContent .active > .icon{
+    color: #2dbfbf;
+}

@@ -1,3 +1,18 @@
 {
-    "searchBarPlaceholder": "Search Digital Open Learning"
+    "language": "English",
+    "profile": "Profile",
+    "profileIconAltText": "The default profile icon",
+    "searchBarPlaceholder": "Search Digital Open Learning",
+    "all": "All",
+    "forYou": "For you",
+    "design": "Design",
+    "digitalGovernment": "Digital Government",
+    "data": "Data",
+    "others": "others",
+    "beginner": "Beginner",
+    "intermediate": "Intermediate",
+    "advanced": "Advanced",
+    "endorse": "Endorse",
+    "comment": "Comment",
+    "more": "More"
 }

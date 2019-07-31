@@ -1,0 +1,66 @@
+.card {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 30%;
+    min-width: 300px;
+    height: 462px;
+    border-radius: 8px;
+    margin: 10px;
+    background: #fff;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+}
+
+.cardPreview {
+    position: relative;
+    height: 175px;
+}
+
+.cardPreview img {
+    width: 100%;
+    border-radius: 8px 8px 0 0;
+    height: 175px;
+    object-fit: cover;
+}
+
+.cardPreview .icon {
+    position: absolute;
+    font-size: 30px;
+    bottom: 10px;
+    right: 10px;
+    color: rgba(255, 255, 255, 0.7);
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    -webkit-backdrop-filter: blur(10.22760009765625px);
+    backdrop-filter: blur(10.22760009765625px);
+    --webkit-backdrop-filter: blur(10.22760009765625px);
+    background-color: rgba(56, 56, 56, 0.75);
+    text-shadow: 0px 0px 11px #8888888c;
+    user-select: none;
+}
+
+.cardPreview .icon.watch {
+    width: 45px;
+    padding-left: 5px;
+}
+
+.cardPreview .icon.read {
+    font-size: 26px;
+}
+
+.cardPreview .icon.course {
+    font-size: 28px;
+}
+
+
+/* COMPACT CARD STYLING */
+.compactCard {
+    width: 674px;
+    height: 235.02px;
+    border-radius: 8px;
+    background: #fff;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+}

@@ -1,0 +1,30 @@
+.tags {
+    padding-top: 5px;
+    padding-bottom: 10px;
+}
+
+.tag{
+    font-weight: normal;
+    font-size: 14px;
+    text-align: center;
+    line-height: 24px;
+    border-radius: 12px;
+    display: inline-block;
+    padding: 0 5px;
+    margin-right: 3px;
+}
+
+.beginner {
+    color: #16390a;
+    background-color: #D0F7C5;
+}
+
+.intermediate {
+    color: #422c06;
+    background-color: #ffeab6;
+}
+
+.advanced {
+    color: #6B2613;
+    background-color: #FDE2D5;
+}
