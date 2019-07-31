@@ -72,6 +72,7 @@ body {
     top: -25px;
     color: #BBBBBA;
     cursor: pointer;
+    user-select: none;
 }
 
 .cardGrid {

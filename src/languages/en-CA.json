@@ -14,5 +14,9 @@
     "advanced": "Advanced",
     "endorse": "Endorse",
     "comment": "Comment",
-    "more": "More"
+    "more": "More",
+    "view": "View",
+    "done": "Done",
+    "cardView": "Card View",
+    "compactView": "Compact View"
 }

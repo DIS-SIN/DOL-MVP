@@ -36,11 +36,15 @@ function Card(props) {
     else {
         return (
             <div className="compactCard">
-                <div className="cardPreview">
-                    <span className={getTypeClass()}>{props.contentType}</span>
-                    <img src={props.thumbnail} alt="" title=""/>
+                <div className="compactCardContent">
+                    <CardContent language={props.language} title={props.title} description={props.description} endorsements={props.endorsements} comments={props.comments} difficulty={props.difficulty} timeEstimate={props.timeEstimate}></CardContent>
+                    <div className="cardPreview">
+                        <div className="compactCardPreview">
+                            <span className={getTypeClass()}>{props.contentType}</span>
+                            <img src={props.thumbnail} alt="" title=""/>
+                        </div>
+                    </div>
                 </div>
-                <CardContent language={props.language} title={props.title} description={props.description} endorsements={props.endorsements} comments={props.comments} difficulty={props.difficulty} timeEstimate={props.timeEstimate}></CardContent>
                 <InteractionBar language={props.language}></InteractionBar>
             </div>
         );

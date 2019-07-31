@@ -12,6 +12,7 @@
 .activityBar .icon {
     font-size: 18px;
     color: #2dbfbf;
+    user-select: none;
 }
 
 .featuredEndorsers .icon{
@@ -27,6 +28,7 @@
     left: 28px;
     top: 0;
     z-index: 2;
+    user-select: none;
 }
 
 .featuredEndorser:nth-of-type(1) {

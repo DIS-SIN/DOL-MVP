@@ -17,4 +17,5 @@
     border: none;
     padding: 0;
     cursor: pointer;
+    user-select: none;
 }

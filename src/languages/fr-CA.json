@@ -14,5 +14,9 @@
     "advanced": "Avancé",
     "endorse": "Approuver",
     "comment": "Commentaire",
-    "more": "Plus"
+    "more": "Plus",
+    "view": "Vue",
+    "done": "Fait",
+    "cardView": "Vue Carte",
+    "compactView": "Vue Compacte"
 }
