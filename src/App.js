@@ -30,7 +30,12 @@ function App() {
     }
 
     function handleOpenModal(ev) {
-        setModalXPosition(ev.target.getBoundingClientRect().x - 375 + 35);
+        let modalWidth = 375;
+        let modalOffset = 31;
+        if (window.innerWidth > 1200){
+            modalOffset += (window.innerWidth - 1200) / 2
+        }
+        setModalXPosition(modalOffset);
         showModal(true);
     }
 
@@ -43,7 +48,7 @@ function App() {
             <MobileNavBar language={language}></MobileNavBar>
             <div className="cardGrid">
                 <button className="icon cardViewIcon" onClick={handleOpenModal}>cardView</button>
-                <Modal style={{ content: {left: modalXPosition}}} isOpen={modalVisible} contentLabel="onRequestClose Example" onRequestClose={handleCloseModal} className="Modal" overlayClassName="Overlay">
+                <Modal style={{ content: {right: modalXPosition}}} isOpen={modalVisible} contentLabel="onRequestClose Example" onRequestClose={handleCloseModal} className="Modal" overlayClassName="Overlay">
                     <div className="modalArrow"></div>
                     <CardViewModalContent closeModal={handleCloseModal} cardViewEnabled={cardViewEnabled} showCardView={showCardView} language={language}></CardViewModalContent>
                 </Modal>

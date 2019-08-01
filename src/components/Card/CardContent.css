@@ -19,7 +19,8 @@
     margin: 0;
     flex: 1;
     font-weight: 300;
-    font-size: 14px;
+    line-height: 18px;
+    font-size: 0.8em;
     text-align: left;
     color: #000;
 }

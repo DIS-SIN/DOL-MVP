@@ -24,6 +24,13 @@
     align-items: flex-end;
 }
 
+.mobileNavBar .row:last-of-type{
+    overflow-x: scroll;
+    max-width: 100%;
+    justify-content: start;
+    margin: 0 auto;
+}
+
 .rowAccessory {
     display: flex;
     flex-direction: row;
@@ -42,10 +49,11 @@
     margin: 0 15px;
     padding: 5px 10px;
     font-weight: 600;
-    font-size: 20px;
+    font-size: 1.25em;
     text-align: center;
     color: #2dbfbf;
     border-bottom: solid #ffffff00;
+    white-space: nowrap;
     cursor: pointer;
     -webkit-user-select: none;
     -moz-user-select: none;
@@ -72,8 +80,8 @@
     background: #e7ecf0;
     text-align: center;
     font-weight: normal;
-    /* font-size: 1.0625em; */
-    font-size: 20px;
+    font-size: 1.0625em;
+    /* font-size: 20px; */
     color: #647586;
     outline: none;
     box-sizing: border-box;
