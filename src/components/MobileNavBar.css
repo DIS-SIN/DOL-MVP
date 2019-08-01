@@ -72,8 +72,8 @@
     background: #e7ecf0;
     text-align: center;
     font-weight: normal;
-    font-size: 1.0625em;
-    /* font-size: 20px; */
+    /* font-size: 1.0625em; */
+    font-size: 20px;
     color: #647586;
     outline: none;
     box-sizing: border-box;

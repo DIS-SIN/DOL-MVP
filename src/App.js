@@ -12,6 +12,7 @@ function App() {
 
     // Creating state variables
     const [modalVisible, showModal] = useState(false);
+    const [modalXPosition, setModalXPosition] = useState(500);
     const [cardViewEnabled, showCardView] = useState(true); 
     const [language, setLanguage] = useState(updateLanguage());
 
@@ -28,6 +29,11 @@ function App() {
         language.language === "English" ? setLanguage(require("./languages/fr-CA.json")) : setLanguage(require("./languages/en-CA.json"));
     }
 
+    function handleOpenModal(ev) {
+        setModalXPosition(ev.target.getBoundingClientRect().x - 375 + 35);
+        showModal(true);
+    }
+
     function handleCloseModal(){
         showModal(false);
     }
@@ -36,8 +42,8 @@ function App() {
         <div>
             <MobileNavBar language={language}></MobileNavBar>
             <div className="cardGrid">
-                <button className="icon cardViewIcon" onClick={() => {showModal(true)}}>cardView</button>
-                <Modal isOpen={modalVisible} contentLabel="onRequestClose Example" onRequestClose={handleCloseModal} className="Modal" overlayClassName="Overlay">
+                <button className="icon cardViewIcon" onClick={handleOpenModal}>cardView</button>
+                <Modal style={{ content: {left: modalXPosition}}} isOpen={modalVisible} contentLabel="onRequestClose Example" onRequestClose={handleCloseModal} className="Modal" overlayClassName="Overlay">
                     <div className="modalArrow"></div>
                     <CardViewModalContent closeModal={handleCloseModal} cardViewEnabled={cardViewEnabled} showCardView={showCardView} language={language}></CardViewModalContent>
                 </Modal>

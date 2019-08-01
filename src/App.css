@@ -87,7 +87,7 @@ body {
 .Modal {
     position: absolute;
     top: 180px;
-    right: 30px;
+    /* right: 30px; */
     bottom: 40px;
     outline: 0;
 
