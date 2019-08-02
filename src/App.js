@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import MobileNavBar from './components/MobileNavBar';
 import Card from './components/Card/Card';
 import CardViewModalContent from './components/CardViewModalContent';
@@ -27,18 +27,17 @@ function App() {
     }
 
     function manualSwitchLanguage(){
-        callAPI();
-        // language.language === "English" ? setLanguage(require("./languages/fr-CA.json")) : setLanguage(require("./languages/en-CA.json"));
+        language.language === "English" ? setLanguage(require("./languages/fr-CA.json")) : setLanguage(require("./languages/en-CA.json"));
     }
 
-    function callAPI() {
-        fetch('../public/TEMP_JSON_SERVER/dolDB.json')
+    useEffect(() => {
+        fetch('https://raw.githubusercontent.com/DIS-SIN/DOL-MVP/master/src/TEMP_JSON_SERVER/dolDB.json')
         .then(response => response.json())
         .then(data => {
             console.log(data);
             setResources(data);
         });
-    }
+    },[])
 
     function handleOpenModal(ev) {
         let modalWidth = 375;
