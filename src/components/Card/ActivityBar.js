@@ -3,6 +3,11 @@ import './ActivityBar.css';
 
 function ActivityBar(props) {
 
+    function abbreviateName(name) {
+        let nameArray = name.split(" ");
+        return `${nameArray[0]} ${nameArray[1][0]}.`;
+    }
+
     function abbreviateEndorsements(num) {
         if (num >= 1000){
             num = num/1000;
@@ -33,7 +38,7 @@ function ActivityBar(props) {
                 <div className="endorserCover"></div>
                 <img className="featuredEndorser" src={props.endorsements.featuredEndorsers[1].profilePic} alt="" title=""/>
             </div>
-            <h5>{props.endorsements.featuredEndorsers[0].name} <span className="ampersand">&amp;</span> {abbreviateEndorsements(props.endorsements.endorsements)} {props.language.others}</h5>
+            <h5>{abbreviateName(props.endorsements.featuredEndorsers[0].name)} <span className="ampersand">&amp;</span> {abbreviateEndorsements(props.endorsements.endorsements)} {props.language.others}</h5>
             <h5><span className="icon">commentFilled</span> { abbreviateComments(props.comments)}</h5>
         </div>
     );

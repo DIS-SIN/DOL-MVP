@@ -17,6 +17,15 @@ function App() {
     const [language, setLanguage] = useState(updateLanguage());
     const [resources, setResources] = useState([]);
 
+    useEffect(() => {
+        fetch('https://raw.githubusercontent.com/DIS-SIN/DOL-MVP/master/src/TEMP_JSON_SERVER/dolDB.json')
+        .then(response => response.json())
+        .then(data => {
+            console.log(data);
+            setResources(data);
+        });
+    },[])
+
     function updateLanguage(){
         if (window.navigator.language){
             if (window.navigator.language.includes("fr-")){
@@ -29,15 +38,6 @@ function App() {
     function manualSwitchLanguage(){
         language.language === "English" ? setLanguage(require("./languages/fr-CA.json")) : setLanguage(require("./languages/en-CA.json"));
     }
-
-    useEffect(() => {
-        fetch('https://raw.githubusercontent.com/DIS-SIN/DOL-MVP/master/src/TEMP_JSON_SERVER/dolDB.json')
-        .then(response => response.json())
-        .then(data => {
-            console.log(data);
-            setResources(data);
-        });
-    },[])
 
     function handleOpenModal(ev) {
         let modalWidth = 375;
