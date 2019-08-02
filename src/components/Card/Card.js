@@ -1,21 +1,45 @@
-import React from 'react';
+import React, { useState } from 'react';
 import CardContent from './CardContent';
 import InteractionBar from './InteractionBar';
 import './Card.css';
 
 function Card(props) {
 
+    const [contentType] = useState(getContentType());
+    const [typeClass] = useState(getTypeClass());
+
     function getTypeClass() {
-        if (props.contentType === "watch"){
+        if (contentType === "watch"){
             return "icon watch";
         }
-        if (props.contentType === "read"){
+        if (contentType === "read"){
             return "icon read";
         }
-        if (props.contentType === "course"){
+        if (contentType === "course"){
             return "icon course";
         }
         return "icon";
+    }
+
+    function getContentType() {
+        let contentType = props.contentType.toLowerCase();
+        switch (contentType) {
+            case "read":
+                return "read"
+                break;
+            case "use":
+                return "read"
+                break;
+            case "attend":
+                return "course"
+                break;
+            case "watch":
+                return "watch"
+                break;
+            default:
+                return "read"
+                break;
+        }
     }
 
     // Card View
@@ -23,7 +47,7 @@ function Card(props) {
         return (
             <div className="card">
                 <div className="cardPreview">
-                    <span className={getTypeClass()}>{props.contentType}</span>
+                    <span className={typeClass}>{contentType}</span>
                     <img src={props.thumbnail} alt="" title=""/>
                 </div>
                 <CardContent language={props.language} title={props.title} description={props.description} endorsements={props.endorsements} comments={props.comments} difficulty={props.difficulty} timeEstimate={props.timeEstimate}></CardContent>
@@ -40,7 +64,7 @@ function Card(props) {
                     <CardContent language={props.language} title={props.title} description={props.description} endorsements={props.endorsements} comments={props.comments} difficulty={props.difficulty} timeEstimate={props.timeEstimate}></CardContent>
                     <div className="cardPreview">
                         <div className="compactCardPreview">
-                            <span className={getTypeClass()}>{props.contentType}</span>
+                            <span className={typeClass}>{contentType}</span>
                             <img src={props.thumbnail} alt="" title=""/>
                         </div>
                     </div>

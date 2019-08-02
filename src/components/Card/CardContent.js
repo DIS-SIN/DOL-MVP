@@ -13,7 +13,7 @@ function CardContent(props) {
             <ActivityBar language={props.language} endorsements={props.endorsements} comments={props.comments}/>
 
             </div>
-            <p className="cardDescription">{props.description.substr(0,150)}</p>
+            <p className="cardDescription">{props.description}</p>
             <Tags language={props.language} difficulty={props.difficulty} timeEstimate={props.timeEstimate}></Tags>
         </div>
     );

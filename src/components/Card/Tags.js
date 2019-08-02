@@ -30,14 +30,19 @@ function Tags(props) {
 
     function getTimeTag() {
         let timeEst = props.timeEstimate;
-        if (timeEst <= 60){
+        if (!timeEst){
+            return;
+        }
+        if (timeEst < 60){
             return (<div className="tag beginner">{timeEst} min</div>);
+        }
+        if (timeEst == 60){
+            return (<div className="tag beginner">1 hr</div>);
         }
         if (timeEst <= 4.5 * 60){
             return (<div className="tag intermediate">{abbreviateTime(timeEst)} hrs</div>);
         }
         else {
-            
             return (<div className="tag advanced">{abbreviateTime(timeEst)} hrs</div>);
         }
     }
