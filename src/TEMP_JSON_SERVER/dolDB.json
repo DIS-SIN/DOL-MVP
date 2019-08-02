@@ -1,0 +1,1808 @@
+[
+    {
+        "title": "Governance in the digital age",
+        "endorsements": {
+            "featuredEndorsers": [
+                {
+                    "name": "Sabrina Ahmad",
+                    "profilePic": "https://i.pravatar.cc/150?u=2384"
+                },
+                {
+                    "name": "Firstname Lastname",
+                    "profilePic": "https://i.pravatar.cc/150?u=9427"
+                }
+            ],
+            "endorsements": 6978
+        },
+        "description": "Written by Kent Aitken, Policy Lead at the Digital Academy. It is a comprehensive report written from 300+ interviews as to the state and challenges of digital transformation in government.",
+        "url": "https://ppforum.ca/publications/governance-in-the-digital-age/",
+        "types": [
+            "Research",
+            "Case study"
+        ],
+        "format": "Read",
+        "languages": {
+            "english": true,
+            "french": true
+        },
+        "difficulty": 1,
+        "timeEstimate": 420,
+        "creationYear": "2018",
+        "topics": null,
+        "practices": null,
+        "skills": null,
+        "digitalStandards": [
+            "Not directly applicable to any standard"
+        ],
+        "author": "Aitken , Kent",
+        "organizationalAffiliation": "Canada's Public Policy Forum",
+        "comments": 244
+    },
+    {
+        "title": "Value sensitive design",
+        "endorsements": {
+            "featuredEndorsers": [
+                {
+                    "name": "Ksenia Cheinman",
+                    "profilePic": "https://i.pravatar.cc/150?u=2682"
+                },
+                {
+                    "name": "Firstname Lastname",
+                    "profilePic": "https://i.pravatar.cc/150?u=3171"
+                }
+            ],
+            "endorsements": 7584
+        },
+        "description": "A number of resources and considerations to help ensure that design projects we undertake are ethical, inclusive, reflect on the entire system, including direct and indirect stakeholders.",
+        "url": "https://vsdesign.org",
+        "types": [
+            "How to",
+            "Tool"
+        ],
+        "format": "Use",
+        "languages": {
+            "english": true,
+            "french": false
+        },
+        "difficulty": 1,
+        "timeEstimate": 60,
+        "creationYear": "N/A",
+        "topics": null,
+        "practices": [
+            "Inclusive design"
+        ],
+        "skills": [
+            "Ethics",
+            "Being inclusive"
+        ],
+        "digitalStandards": [
+            "Design with users",
+            "Address security and privacy risks",
+            "Empower employees to deliver better services"
+        ],
+        "author": "",
+        "organizationalAffiliation": "University of Washington Information School",
+        "comments": 268
+    },
+    {
+        "title": "Old habits die hard (when feelings get in the way)",
+        "endorsements": {
+            "featuredEndorsers": [
+                {
+                    "name": "Ksenia Cheinman",
+                    "profilePic": "https://i.pravatar.cc/150?u=2123"
+                },
+                {
+                    "name": "Firstname Lastname",
+                    "profilePic": "https://i.pravatar.cc/150?u=5668"
+                }
+            ],
+            "endorsements": 8119
+        },
+        "description": "Highlights the difficulty and importance of moving away from personal opinions and to focusing on top user tasks.",
+        "url": "https://blog.canada.ca/2018/03/14/old-habits-die-hard.html",
+        "types": [
+            "Opinion"
+        ],
+        "format": "Read",
+        "languages": {
+            "english": true,
+            "french": true
+        },
+        "difficulty": 1,
+        "timeEstimate": 10,
+        "creationYear": "2018",
+        "topics": null,
+        "practices": null,
+        "skills": null,
+        "digitalStandards": [
+            "Design with users"
+        ],
+        "author": "Côté , Celeste",
+        "organizationalAffiliation": "\"Treasury Board of Canada Secretariat, TBS\"",
+        "comments": 221
+    },
+    {
+        "title": "Fundamentals of data analysis for government",
+        "endorsements": {
+            "featuredEndorsers": [
+                {
+                    "name": "Mandy Hoyt",
+                    "profilePic": "https://i.pravatar.cc/150?u=430"
+                },
+                {
+                    "name": "Firstname Lastname",
+                    "profilePic": "https://i.pravatar.cc/150?u=4724"
+                }
+            ],
+            "endorsements": 5886
+        },
+        "description": "A course targeting government employees that have a qualitative understanding of their work but have yet to master the quantitative skills required to leverage data in their day- to-day responsibilities.",
+        "url": "https://data-academy.skilljar.com/",
+        "types": [
+            "How to",
+            "Awareness"
+        ],
+        "format": "Attend",
+        "languages": {
+            "english": true,
+            "french": false
+        },
+        "difficulty": 1,
+        "timeEstimate": 420,
+        "creationYear": "N/A",
+        "topics": null,
+        "practices": [
+            "Data analysis",
+            "Using data for decision-making"
+        ],
+        "skills": [
+            "Making sense of data",
+            "Integrating quantitative and qualitative data anaysis",
+            "Understanding data tools",
+            "Applying data tools"
+        ],
+        "digitalStandards": [
+            "Not directly applicable to any standard"
+        ],
+        "author": "",
+        "organizationalAffiliation": "Socrata Data Academy",
+        "image": "https://cc.sj-cdn.net/instructor/1a0u4ces427d1-socrata-data-academy/themes/2a9h8ernsshan/header-logo.1509481495.png",
+        "comments": 75
+    },
+    {
+        "title": "Finding stories in data",
+        "endorsements": {
+            "featuredEndorsers": [
+                {
+                    "name": "Mandy Hoyt",
+                    "profilePic": "https://i.pravatar.cc/150?u=268"
+                },
+                {
+                    "name": "Firstname Lastname",
+                    "profilePic": "https://i.pravatar.cc/150?u=3299"
+                }
+            ],
+            "endorsements": 7128
+        },
+        "description": "At the heart of driving change is the skill of finding and telling stories, using where relevant, compelling visualizations.",
+        "url": "https://findingstories.learndata.info/#/",
+        "types": [
+            "Practice/Simulation",
+            "Tool",
+            "Awareness",
+            "How to"
+        ],
+        "format": "Attend",
+        "languages": {
+            "english": true,
+            "french": false
+        },
+        "difficulty": 1,
+        "timeEstimate": 420,
+        "creationYear": "N/A",
+        "topics": null,
+        "practices": [
+            "Data use and presentation"
+        ],
+        "skills": [
+            "Storytelling with data",
+            "Data visualization"
+        ],
+        "digitalStandards": [
+            "Empower employees to deliver better services",
+            "Address security and privacy risks"
+        ],
+        "author": "",
+        "organizationalAffiliation": "Open Data Institute (UK)",
+        "comments": 50
+    },
+    {
+        "title": "Introduction to data modelling",
+        "endorsements": {
+            "featuredEndorsers": [
+                {
+                    "name": "Mandy Hoyt",
+                    "profilePic": "https://i.pravatar.cc/150?u=4359"
+                },
+                {
+                    "name": "Firstname Lastname",
+                    "profilePic": "https://i.pravatar.cc/150?u=2639"
+                }
+            ],
+            "endorsements": 4348
+        },
+        "description": "Go from conceptual to practical as you build your data modelling foundation. Explore data and data design concepts, before you begin sourcing, preparingdesigning and manipulating data.",
+        "url": "https://www.edx.org/course/introduction-data-modeling-4",
+        "types": [
+            "How to",
+            "Practice/Simulation",
+            "Awareness"
+        ],
+        "format": "Attend",
+        "languages": {
+            "english": true,
+            "french": false
+        },
+        "difficulty": 1,
+        "timeEstimate": 600,
+        "creationYear": "N/A",
+        "topics": null,
+        "practices": [
+            "Data awareness",
+            "Data analysis",
+            "Data storage and retrieval"
+        ],
+        "skills": [
+            "Database design"
+        ],
+        "digitalStandards": [
+            "Address security and privacy risks"
+        ],
+        "author": "",
+        "organizationalAffiliation": "edX,Microsoft",
+        "image": "https://prod-discovery.edx-cdn.org/media/course/image/0b54564e-51e5-4d84-a640-b73815c56b1a-032c7453c6d6.small.png",
+        "comments": 137
+    },
+    {
+        "title": "Diseases and immunization optimization project on Canada.ca",
+        "endorsements": {
+            "featuredEndorsers": [
+                {
+                    "name": "Ksenia Cheinman",
+                    "profilePic": "https://i.pravatar.cc/150?u=3529"
+                },
+                {
+                    "name": "Firstname Lastname",
+                    "profilePic": "https://i.pravatar.cc/150?u=8495"
+                }
+            ],
+            "endorsements": 7820
+        },
+        "description": "Great example of a web content improvement project based on user needs in the health sector. Includes approach, success metrics, discoveries, visuals.",
+        "url": "https://blog.canada.ca/research-summaries/diseases-research-summary.html",
+        "types": [
+            "Case study",
+            "Research",
+            "How to"
+        ],
+        "format": "Read",
+        "languages": {
+            "english": true,
+            "french": true
+        },
+        "difficulty": 1,
+        "timeEstimate": 10,
+        "creationYear": "2018",
+        "topics": null,
+        "practices": null,
+        "skills": null,
+        "digitalStandards": [
+            "Design with users"
+        ],
+        "author": "",
+        "organizationalAffiliation": "\"Treasury Board of Canada Secretariat, TBS\"",
+        "comments": 123
+    },
+    {
+        "title": "Weaponization of Education Data",
+        "endorsements": {
+            "featuredEndorsers": [
+                {
+                    "name": "Ksenia Cheinman",
+                    "profilePic": "https://i.pravatar.cc/150?u=5455"
+                },
+                {
+                    "name": "Firstname Lastname",
+                    "profilePic": "https://i.pravatar.cc/150?u=7206"
+                }
+            ],
+            "endorsements": 9178
+        },
+        "description": "Thoroughly researched and documented, the author takes you on a journey of the dark side of data. Showing how prolific and devastating data misuse can be.",
+        "url": "http://hackeducation.com/2017/12/11/top-ed-tech-trends-weaponized-data",
+        "types": [
+            "Opinion",
+            "Research"
+        ],
+        "format": "Read",
+        "languages": {
+            "english": true,
+            "french": false
+        },
+        "difficulty": 1,
+        "timeEstimate": 30,
+        "creationYear": "2017",
+        "topics": null,
+        "practices": [
+            "Data awareness",
+            "Human analytics",
+            "Data use and presentation"
+        ],
+        "skills": [
+            "Ethics",
+            "Thinking about data",
+            "Security and privacy"
+        ],
+        "digitalStandards": [
+            "Be good data stewards",
+            "Design ethical services",
+            "Address security and privacy risks"
+        ],
+        "author": "Watters , Audrey",
+        "organizationalAffiliation": "",
+        "image": "https://s3.amazonaws.com/hackedu/2017-ed-tech-trends-5.jpg",
+        "comments": 172
+    },
+    {
+        "title": "GC UX Community Meetup",
+        "endorsements": {
+            "featuredEndorsers": [
+                {
+                    "name": "Ksenia Cheinman",
+                    "profilePic": "https://i.pravatar.cc/150?u=1607"
+                },
+                {
+                    "name": "Firstname Lastname",
+                    "profilePic": "https://i.pravatar.cc/150?u=2131"
+                }
+            ],
+            "endorsements": 5899
+        },
+        "description": "Meet like-minded people trying to improve user experience in the Government of Canada context.",
+        "url": "https://www.eventbrite.ca/e/gc-ux-community-meetup-rendez-vous-de-la-communaute-ux-du-gc-tickets-59967615753#",
+        "types": [
+            "Awareness"
+        ],
+        "format": "Attend",
+        "languages": {
+            "english": true,
+            "french": true
+        },
+        "difficulty": 1,
+        "timeEstimate": 60,
+        "creationYear": "N/A",
+        "topics": null,
+        "practices": null,
+        "skills": null,
+        "digitalStandards": [
+            "Design with users"
+        ],
+        "author": "",
+        "organizationalAffiliation": "",
+        "image": "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F59835521%2F2733832803%2F1%2Foriginal.jpg?w=1000&auto=compress&rect=0%2C18%2C960%2C480&s=103c73258eaa37dc45a196fee2608a86",
+        "comments": 14
+    },
+    {
+        "title": "Content design using data and evidence",
+        "endorsements": {
+            "featuredEndorsers": [
+                {
+                    "name": "Ksenia Cheinman",
+                    "profilePic": "https://i.pravatar.cc/150?u=4238"
+                },
+                {
+                    "name": "Firstname Lastname",
+                    "profilePic": "https://i.pravatar.cc/150?u=9853"
+                }
+            ],
+            "endorsements": 3023
+        },
+        "description": "Explains the difference between writing, editing, copyrighting and digital content design, tells the story of Gov.UK process of converting 75,000 pieces of content into 3,000, explains how to obtain data and evidence to support content design.",
+        "url": "https://www.contentstrategy.com/podcast/ep-4-sarah-richards-and-content-design",
+        "types": [
+            "Case study",
+            "Awareness",
+            "Opinion"
+        ],
+        "format": "Listen",
+        "languages": {
+            "english": true,
+            "french": false
+        },
+        "difficulty": 1,
+        "timeEstimate": 30,
+        "creationYear": "2018",
+        "topics": null,
+        "practices": [
+            "Design research",
+            "Content design",
+            "Content strategy"
+        ],
+        "skills": [
+            "Understanding content design",
+            "Writing for users",
+            "Using data and user research",
+            "Data collection"
+        ],
+        "digitalStandards": [
+            "Design with users"
+        ],
+        "author": "Richards , Sarah",
+        "organizationalAffiliation": "UK Digital Service",
+        "image": "https://assets.website-files.com/5acbe3b595ba2b13138c302b/5acd23a3fb4f189190e2def6_podcast-meta.png",
+        "comments": 12
+    },
+    {
+        "title": "Ethics of algorithms: Mapping the debate",
+        "endorsements": {
+            "featuredEndorsers": [
+                {
+                    "name": "Ksenia Cheinman",
+                    "profilePic": "https://i.pravatar.cc/150?u=7744"
+                },
+                {
+                    "name": "Firstname Lastname",
+                    "profilePic": "https://i.pravatar.cc/150?u=5379"
+                }
+            ],
+            "endorsements": 2119
+        },
+        "description": "Overview of the ethical problems introduced by algorithmic decision-making and an attempt to categorize them to better make sense of the types of ethical implications.",
+        "url": "https://doi.org/10.1177/2053951716679679",
+        "types": [
+            "Research",
+            "Awareness"
+        ],
+        "format": "Read",
+        "languages": {
+            "english": true,
+            "french": false
+        },
+        "difficulty": 1,
+        "timeEstimate": 30,
+        "creationYear": "2016",
+        "topics": null,
+        "practices": null,
+        "skills": null,
+        "digitalStandards": [
+            "Design ethical services"
+        ],
+        "author": "Mittelstadt , Brent Daniel",
+        "organizationalAffiliation": "University of Oxford",
+        "image": "https://journals.sagepub.com/pb-assets/Images/SJ_Twitter_Card.jpg",
+        "comments": 293
+    },
+    {
+        "title": "Doing Research with Social Media Data - Data stewardship and ethical considerations",
+        "endorsements": {
+            "featuredEndorsers": [
+                {
+                    "name": "Ksenia Cheinman",
+                    "profilePic": "https://i.pravatar.cc/150?u=5818"
+                },
+                {
+                    "name": "Firstname Lastname",
+                    "profilePic": "https://i.pravatar.cc/150?u=5387"
+                }
+            ],
+            "endorsements": 9939
+        },
+        "description": "Overview of how and why to use social media data to better understand our social context, as well as the ethical implications surrounding this practice.",
+        "url": "https://youtu.be/vF9Mgd-4tXQ",
+        "types": [
+            "How to",
+            "Awareness",
+            "Research"
+        ],
+        "format": "Watch",
+        "languages": {
+            "english": true,
+            "french": false
+        },
+        "difficulty": 1,
+        "timeEstimate": 60,
+        "creationYear": "2015",
+        "topics": null,
+        "practices": null,
+        "skills": null,
+        "digitalStandards": [
+            "Be good data stewards"
+        ],
+        "author": "Gruzd , Anatoliy",
+        "organizationalAffiliation": "Ryerson University",
+        "image": "https://i.ytimg.com/vi/vF9Mgd-4tXQ/maxresdefault.jpg",
+        "comments": 219
+    },
+    {
+        "title": "Designing for accessibility is not that hard",
+        "endorsements": {
+            "featuredEndorsers": [
+                {
+                    "name": "Ksenia Cheinman",
+                    "profilePic": "https://i.pravatar.cc/150?u=5993"
+                },
+                {
+                    "name": "Firstname Lastname",
+                    "profilePic": "https://i.pravatar.cc/150?u=7506"
+                }
+            ],
+            "endorsements": 7830
+        },
+        "description": "Easy to implement, clear examples with captivating illustrations and a list of helpful tools to support web accessibility.",
+        "url": "https://uxdesign.cc/designing-for-accessibility-is-not-that-hard-c04cc4779d94",
+        "types": [
+            "Tool",
+            "How to"
+        ],
+        "format": "Read",
+        "languages": {
+            "english": true,
+            "french": false
+        },
+        "difficulty": 1,
+        "timeEstimate": 30,
+        "creationYear": "2018",
+        "topics": null,
+        "practices": [
+            "Inclusive design",
+            "Interaction design"
+        ],
+        "skills": [
+            "Accessibility"
+        ],
+        "digitalStandards": [
+            "Build in accessibility from the start"
+        ],
+        "author": "Stanley , Pablo",
+        "organizationalAffiliation": "UX Collective",
+        "image": "https://miro.medium.com/freeze/max/1200/1*cHY0x1fZ1bI98CDD_Ox9OA.gif",
+        "comments": 249
+    },
+    {
+        "title": "How to Use Airtable for Content Audits, Part 1",
+        "endorsements": {
+            "featuredEndorsers": [
+                {
+                    "name": "Ksenia Cheinman",
+                    "profilePic": "https://i.pravatar.cc/150?u=2268"
+                },
+                {
+                    "name": "Firstname Lastname",
+                    "profilePic": "https://i.pravatar.cc/150?u=176"
+                }
+            ],
+            "endorsements": 6544
+        },
+        "description": "Excellent break down of how to do a web content audit using an online database tool that helps to visualize and sort through data effectively.",
+        "url": "https://medium.com/@Think_Company/how-to-use-airtable-for-content-audits-part-1-d9007d67bbb7",
+        "types": [
+            "How to",
+            "Opinion",
+            "Tool"
+        ],
+        "format": "Use",
+        "languages": {
+            "english": true,
+            "french": false
+        },
+        "difficulty": 1,
+        "timeEstimate": 10,
+        "creationYear": "2018",
+        "topics": null,
+        "practices": [
+            "Content strategy",
+            "Content design"
+        ],
+        "skills": [
+            "Content inventory and audit"
+        ],
+        "digitalStandards": [
+            "Design with users"
+        ],
+        "author": "Munson , Holly",
+        "organizationalAffiliation": "Think Company",
+        "image": "https://miro.medium.com/max/1200/0*hEV8I7Zeh2otlnjJ.png",
+        "comments": 248
+    },
+    {
+        "title": "Information architecture course",
+        "endorsements": {
+            "featuredEndorsers": [
+                {
+                    "name": "Ksenia Cheinman",
+                    "profilePic": "https://i.pravatar.cc/150?u=6355"
+                },
+                {
+                    "name": "Firstname Lastname",
+                    "profilePic": "https://i.pravatar.cc/150?u=663"
+                }
+            ],
+            "endorsements": 8920
+        },
+        "description": "Co-designed by government employees with insight into UX and IA contexts of the Government of Canada with many examples to illustrate concepts.",
+        "url": "https://dis-sin.github.io/ia-learning/index-e.html",
+        "types": [
+            "Awareness",
+            "How to"
+        ],
+        "format": "Read",
+        "languages": {
+            "english": true,
+            "french": true
+        },
+        "difficulty": 1,
+        "timeEstimate": 60,
+        "creationYear": "2019",
+        "topics": null,
+        "practices": [
+            "Information architecture",
+            "Content design"
+        ],
+        "skills": [
+            "Information architecture principles",
+            "Organizing information",
+            "Making information findable through search",
+            "Structuring information",
+            "Labelling of information",
+            "Understanding information architecture",
+            "Designing navigation"
+        ],
+        "digitalStandards": [
+            "Design with users"
+        ],
+        "author": "\"Cheinman , Ksenia \",\"Farquharson , Chad\"",
+        "organizationalAffiliation": "\"Canada School of Public Service, CSPS\",\"Canada Revenue Agency, CRA\"",
+        "comments": 68
+    },
+    {
+        "title": "Open Data 101",
+        "endorsements": {
+            "featuredEndorsers": [
+                {
+                    "name": "Ashley Evans",
+                    "profilePic": "https://i.pravatar.cc/150?u=380"
+                },
+                {
+                    "name": "Firstname Lastname",
+                    "profilePic": "https://i.pravatar.cc/150?u=5709"
+                }
+            ],
+            "endorsements": 1764
+        },
+        "description": "Describes Canada's open data principles and the importance of open data. Includes a glossary of well-used terms (data, machine readable, open government, open information, etc.).",
+        "url": "https://open.canada.ca/en/open-data-principles",
+        "types": [
+            "Awareness"
+        ],
+        "format": "Read",
+        "languages": {
+            "english": true,
+            "french": true
+        },
+        "difficulty": 1,
+        "timeEstimate": 10,
+        "creationYear": "2017",
+        "topics": null,
+        "practices": null,
+        "skills": null,
+        "digitalStandards": [
+            "Collaborate widely",
+            "Work in the open by default"
+        ],
+        "author": "",
+        "organizationalAffiliation": "\"Treasury Board of Canada Secretariat, TBS\"",
+        "comments": 23
+    },
+    {
+        "title": "Data Science 101",
+        "endorsements": {
+            "featuredEndorsers": [
+                {
+                    "name": "Ashley Evans",
+                    "profilePic": "https://i.pravatar.cc/150?u=5907"
+                },
+                {
+                    "name": "Firstname Lastname",
+                    "profilePic": "https://i.pravatar.cc/150?u=319"
+                }
+            ],
+            "endorsements": 7332
+        },
+        "description": "Open, free course for anyone interested in data science.",
+        "url": "https://cognitiveclass.ai/courses/data-science-101/",
+        "types": [
+            "Awareness",
+            "How to",
+            "Case study"
+        ],
+        "format": "Attend",
+        "languages": {
+            "english": true,
+            "french": false
+        },
+        "difficulty": 1,
+        "timeEstimate": 60,
+        "creationYear": "N/A",
+        "topics": null,
+        "practices": null,
+        "skills": null,
+        "digitalStandards": [
+            "Be good data stewards"
+        ],
+        "author": "Manjengwa , Shingai",
+        "organizationalAffiliation": "\"Treasury Board of Canada Secretariat, TBS\"",
+        "image": "https://cognitiveclass.ai/wp-content/uploads/2016/08/Data-Science-101_smaller-image-e1471973150511.png",
+        "comments": 274
+    },
+    {
+        "title": "Fundamental Principles of Analytical Design",
+        "endorsements": {
+            "featuredEndorsers": [
+                {
+                    "name": "Ashley Evans",
+                    "profilePic": "https://i.pravatar.cc/150?u=3005"
+                },
+                {
+                    "name": "Firstname Lastname",
+                    "profilePic": "https://i.pravatar.cc/150?u=9739"
+                }
+            ],
+            "endorsements": 4659
+        },
+        "description": "Patrick Boily, AI/ML professor of the Digital Academy, summarizes Edward Tufte's 2006 article, Fundamental Principles of Analytical Design, and illustrates the principles through health and wealth data visualizations.",
+        "url": "https://www.data-action-lab.com/wp-content/uploads/2018/10/DSRS_FPAD.pdfP",
+        "types": [
+            "Case study",
+            "Research"
+        ],
+        "format": "Read",
+        "languages": {
+            "english": true,
+            "french": false
+        },
+        "difficulty": 1,
+        "timeEstimate": 60,
+        "creationYear": "2018",
+        "topics": null,
+        "practices": null,
+        "skills": null,
+        "digitalStandards": [
+            "Be good data stewards"
+        ],
+        "author": "Boily , Patrick",
+        "organizationalAffiliation": "University of Ottawa",
+        "comments": 132
+    },
+    {
+        "title": "Artificial Practitioners in the Government of Canadahttps://github.com/CSPS-EFPC-DAAN/Data-AI-ML/blob/master/Slides/3%20-%20AI%20practitioners%20in%20the%20GoC.pdf",
+        "endorsements": {
+            "featuredEndorsers": [
+                {
+                    "name": "Ashley Evans",
+                    "profilePic": "https://i.pravatar.cc/150?u=2925"
+                },
+                {
+                    "name": "Firstname Lastname",
+                    "profilePic": "https://i.pravatar.cc/150?u=3868"
+                }
+            ],
+            "endorsements": 4378
+        },
+        "description": "Research and analysis by GCentrepreneurs on the AI practitioners landscape in the Government of Canada.",
+        "url": "https://github.com/CSPS-EFPC-DAAN/Data-AI-ML/blob/master/Slides/3%20-%20AI%20practitioners%20in%20the%20GoC.pdf",
+        "types": [
+            "Case study",
+            "Awareness",
+            "Research"
+        ],
+        "format": "Read",
+        "languages": {
+            "english": true,
+            "french": true
+        },
+        "difficulty": 1,
+        "timeEstimate": 30,
+        "creationYear": "2018",
+        "topics": null,
+        "practices": null,
+        "skills": null,
+        "digitalStandards": [
+            "Work in the open by default"
+        ],
+        "author": "",
+        "organizationalAffiliation": "GCentrepreneur",
+        "image": "https://avatars2.githubusercontent.com/u/45179177?s=400&v=4",
+        "comments": 145
+    },
+    {
+        "title": "Why design should include everyone",
+        "endorsements": {
+            "featuredEndorsers": [
+                {
+                    "name": "Ashley Evans",
+                    "profilePic": "https://i.pravatar.cc/150?u=1510"
+                },
+                {
+                    "name": "Firstname Lastname",
+                    "profilePic": "https://i.pravatar.cc/150?u=6438"
+                }
+            ],
+            "endorsements": 7546
+        },
+        "description": "Sinéad Burke is acutely aware of details that are practically invisible to many of us. At 105 centimeters (or 3' 5\") tall, the designed world -- from the height of a lock to the range of available shoe sizes -- often inhibits her ability to do things for herself. Here she tells us what it's like to navigate the world as a little person and asks: \"Who are we not designing for?\"",
+        "url": "https://www.youtube.com/watch?v=RD_SLJG7oi82017",
+        "types": [
+            "Awareness"
+        ],
+        "format": "Watch",
+        "languages": {
+            "english": true,
+            "french": false
+        },
+        "difficulty": 1,
+        "timeEstimate": 10,
+        "creationYear": "2017",
+        "topics": null,
+        "practices": [
+            "Inclusive design"
+        ],
+        "skills": [
+            "Accessibility"
+        ],
+        "digitalStandards": [
+            "Design with users",
+            "Build in accessibility from the start",
+            "Empower employees to deliver better services",
+            "Design ethical services"
+        ],
+        "author": "",
+        "organizationalAffiliation": "TED",
+        "image": "https://i.ytimg.com/vi/RD_SLJG7oi8/maxresdefault.jpg",
+        "comments": 211
+    },
+    {
+        "title": "Designing for public services",
+        "endorsements": {
+            "featuredEndorsers": [
+                {
+                    "name": "Ashley Evans",
+                    "profilePic": "https://i.pravatar.cc/150?u=9756"
+                },
+                {
+                    "name": "Firstname Lastname",
+                    "profilePic": "https://i.pravatar.cc/150?u=2632"
+                }
+            ],
+            "endorsements": 7219
+        },
+        "description": "IDEO and Nesta team up to provide advice and create guides on how to design public services.",
+        "url": "http://5a5f89b8e10a225a44ac-ccbed124c38c4f7a3066210c073e7d55.r9.cf1.rackcdn.com/files/pdfs/Nesta_Ideo_Guide_DesigningForPublicServices_100117.pdf",
+        "types": [
+            "How to",
+            "Tool",
+            "Practice/Simulation"
+        ],
+        "format": "Use",
+        "languages": {
+            "english": true,
+            "french": false
+        },
+        "difficulty": 1,
+        "timeEstimate": 60,
+        "creationYear": "N/A",
+        "topics": null,
+        "practices": [
+            "Human-centred design",
+            "Service design"
+        ],
+        "skills": [
+            "Understanding service design"
+        ],
+        "digitalStandards": [
+            "Design with users",
+            "Iterate and improve frequently",
+            "Design ethical services",
+            "Collaborate widely"
+        ],
+        "author": "",
+        "organizationalAffiliation": "IDEO,Nesta",
+        "comments": 272
+    },
+    {
+        "title": "Canada.ca Content Style Guide",
+        "endorsements": {
+            "featuredEndorsers": [
+                {
+                    "name": "Ashley Evans",
+                    "profilePic": "https://i.pravatar.cc/150?u=421"
+                },
+                {
+                    "name": "Firstname Lastname",
+                    "profilePic": "https://i.pravatar.cc/150?u=6367"
+                }
+            ],
+            "endorsements": 5259
+        },
+        "description": "Here are rules to create web content on Canada.ca content. They are based on writing principles and techniques that help make web content clear and adapted to the needs of all people.",
+        "url": "https://www.canada.ca/en/treasury-board-secretariat/services/government-communications/canada-content-style-guide.html#annotations:bTlN5DxaEemrHCvmqE9Exw",
+        "types": [
+            "How to",
+            "Tool",
+            "Awareness"
+        ],
+        "format": "Read",
+        "languages": {
+            "english": true,
+            "french": true
+        },
+        "difficulty": 1,
+        "timeEstimate": 60,
+        "creationYear": "2019",
+        "topics": null,
+        "practices": null,
+        "skills": null,
+        "digitalStandards": [
+            "Design with users"
+        ],
+        "author": "",
+        "organizationalAffiliation": "\"Treasury Board of Canada Secretariat, TBS\"",
+        "comments": 94
+    },
+    {
+        "title": "Primer to Web Accessibility for Designers",
+        "endorsements": {
+            "featuredEndorsers": [
+                {
+                    "name": "Ashley Evans",
+                    "profilePic": "https://i.pravatar.cc/150?u=9176"
+                },
+                {
+                    "name": "Firstname Lastname",
+                    "profilePic": "https://i.pravatar.cc/150?u=6269"
+                }
+            ],
+            "endorsements": 9179
+        },
+        "description": "Why designers should care about web accessibility and how-to get started.",
+        "url": "https://uxplanet.org/a-primer-to-web-accessibility-for-designers-2c548448c612",
+        "types": [
+            "How to",
+            "Awareness"
+        ],
+        "format": "Read",
+        "languages": {
+            "english": true,
+            "french": false
+        },
+        "difficulty": 1,
+        "timeEstimate": 30,
+        "creationYear": "2018",
+        "topics": null,
+        "practices": null,
+        "skills": null,
+        "digitalStandards": [
+            "Design with users"
+        ],
+        "author": "Kramer , Nicholas",
+        "organizationalAffiliation": "Barrel",
+        "image": "https://miro.medium.com/max/1200/1*iIf_E6-fjR5uihGK6MNDxA.jpeg",
+        "comments": 164
+    },
+    {
+        "title": "Interviewing humans",
+        "endorsements": {
+            "featuredEndorsers": [
+                {
+                    "name": "Ashley Evans",
+                    "profilePic": "https://i.pravatar.cc/150?u=5647"
+                },
+                {
+                    "name": "Firstname Lastname",
+                    "profilePic": "https://i.pravatar.cc/150?u=6908"
+                }
+            ],
+            "endorsements": 3448
+        },
+        "description": "Excerpt of Erika Hall's book, Just Enough Research, on interviewing people.",
+        "url": "https://alistapart.com/article/interviewing-humans/",
+        "types": [
+            "How to",
+            "Awareness"
+        ],
+        "format": "Read",
+        "languages": {
+            "english": true,
+            "french": false
+        },
+        "difficulty": 1,
+        "timeEstimate": 60,
+        "creationYear": "2013",
+        "topics": null,
+        "practices": null,
+        "skills": null,
+        "digitalStandards": [
+            "Design with users"
+        ],
+        "author": "Hall , Erika",
+        "organizationalAffiliation": "Mule Design",
+        "image": "https://alistapart.com/wp-content/uploads/2013/02/excerptillustration_300.png",
+        "comments": 182
+    },
+    {
+        "title": "The Ultimate Information Architecture Reading List",
+        "endorsements": {
+            "featuredEndorsers": [
+                {
+                    "name": "Ashley Evans",
+                    "profilePic": "https://i.pravatar.cc/150?u=9882"
+                },
+                {
+                    "name": "Firstname Lastname",
+                    "profilePic": "https://i.pravatar.cc/150?u=90"
+                }
+            ],
+            "endorsements": 705
+        },
+        "description": "A reading list to all things related to information architecture.",
+        "url": "https://blog.optimalworkshop.com/the-ultimate-ia-reading-list/",
+        "types": [
+            "Awareness",
+            "Tool"
+        ],
+        "format": "Read",
+        "languages": {
+            "english": true,
+            "french": false
+        },
+        "difficulty": 1,
+        "timeEstimate": 60,
+        "creationYear": "2019",
+        "topics": null,
+        "practices": null,
+        "skills": null,
+        "digitalStandards": [
+            "Not directly applicable to any standard"
+        ],
+        "author": "Spencer , Donna",
+        "organizationalAffiliation": "Optimal Workshop",
+        "image": "https://i0.wp.com/blog.optimalworkshop.com/wp-content/uploads/2019/06/The-ultimate-IA-reading-list_thumb.png?fit=1050%2C1050&ssl=1",
+        "comments": 264
+    },
+    {
+        "title": "A Beginner's Guide to Rapid Prototyping",
+        "endorsements": {
+            "featuredEndorsers": [
+                {
+                    "name": "Ashley Evans",
+                    "profilePic": "https://i.pravatar.cc/150?u=9614"
+                },
+                {
+                    "name": "Firstname Lastname",
+                    "profilePic": "https://i.pravatar.cc/150?u=8293"
+                }
+            ],
+            "endorsements": 3273
+        },
+        "description": "A beginner's guide to rapid prototyping.",
+        "url": "https://www.freecodecamp.org/news/a-beginners-guide-to-rapid-prototyping-71e8722c17df/",
+        "types": [
+            "How to",
+            "Awareness"
+        ],
+        "format": "Read",
+        "languages": {
+            "english": true,
+            "french": false
+        },
+        "difficulty": 1,
+        "timeEstimate": 30,
+        "creationYear": "2018",
+        "topics": null,
+        "practices": null,
+        "skills": null,
+        "digitalStandards": [
+            "Design with users",
+            "Work in the open by default",
+            "Collaborate widely"
+        ],
+        "author": "",
+        "organizationalAffiliation": "freeCodeCamp",
+        "image": "https://cdn-media-1.freecodecamp.org/images/1*HX9NJx68T86OwbXaqVkvFQ.jpeg",
+        "comments": 21
+    },
+    {
+        "title": "Color review",
+        "endorsements": {
+            "featuredEndorsers": [
+                {
+                    "name": "Ashley Evans",
+                    "profilePic": "https://i.pravatar.cc/150?u=9142"
+                },
+                {
+                    "name": "Firstname Lastname",
+                    "profilePic": "https://i.pravatar.cc/150?u=9566"
+                }
+            ],
+            "endorsements": 7284
+        },
+        "description": "A colour tool to ensure use of accessible colours and contrast.",
+        "url": "https://color.review",
+        "types": [
+            "Tool"
+        ],
+        "format": "Use",
+        "languages": {
+            "english": true,
+            "french": false
+        },
+        "difficulty": 1,
+        "timeEstimate": null,
+        "creationYear": "N/A",
+        "topics": null,
+        "practices": null,
+        "skills": null,
+        "digitalStandards": [
+            "Design with users",
+            "Design ethical services"
+        ],
+        "author": "",
+        "organizationalAffiliation": "",
+        "image": "https://color.review/twitter-image-2.png",
+        "comments": 219
+    },
+    {
+        "title": "Digital Service Standard",
+        "endorsements": {
+            "featuredEndorsers": [
+                {
+                    "name": "Ashley Evans",
+                    "profilePic": "https://i.pravatar.cc/150?u=4713"
+                },
+                {
+                    "name": "Firstname Lastname",
+                    "profilePic": "https://i.pravatar.cc/150?u=3015"
+                }
+            ],
+            "endorsements": 2165
+        },
+        "description": "The Government of Ontario has created a Digital Service Standard that includes 14 points to help anyone build and deliver excellent government services.",
+        "url": "https://www.ontario.ca/page/digital-service-standard",
+        "types": [
+            "Tool",
+            "Awareness",
+            "How to"
+        ],
+        "format": "Use",
+        "languages": {
+            "english": true,
+            "french": true
+        },
+        "difficulty": 1,
+        "timeEstimate": 60,
+        "creationYear": "2019",
+        "topics": null,
+        "practices": null,
+        "skills": null,
+        "digitalStandards": [
+            "Design with users",
+            "Address security and privacy risks",
+            "Design ethical services",
+            "Empower employees to deliver better services",
+            "Be good data stewards",
+            "Collaborate widely",
+            "Use open standards and solutions",
+            "Work in the open by default",
+            "Build in accessibility from the start",
+            "Iterate and improve frequently"
+        ],
+        "author": "",
+        "organizationalAffiliation": "Government of Ontario",
+        "comments": 180
+    },
+    {
+        "title": "How to select and develop individuals for successful agile teams: A practical guide",
+        "endorsements": {
+            "featuredEndorsers": [
+                {
+                    "name": "Ashley Evans",
+                    "profilePic": "https://i.pravatar.cc/150?u=8575"
+                },
+                {
+                    "name": "Firstname Lastname",
+                    "profilePic": "https://i.pravatar.cc/150?u=4592"
+                }
+            ],
+            "endorsements": 7776
+        },
+        "description": "A practical guide on how-to create an agile team.",
+        "url": "https://www.mckinsey.com/business-functions/organization/our-insights/how-to-select-and-develop-individuals-for-successful-agile-teams-a-practical-guide#annotations:Mf2lJD9uEemH8cNZmjmKRA",
+        "types": [
+            "How to"
+        ],
+        "format": "Read",
+        "languages": {
+            "english": true,
+            "french": false
+        },
+        "difficulty": 1,
+        "timeEstimate": 60,
+        "creationYear": "2018",
+        "topics": null,
+        "practices": [
+            "Agile culture"
+        ],
+        "skills": [
+            "Enabling team autonomy for results",
+            "Working in cross-functional teams",
+            "Influencing and nurturing self-organizing teams"
+        ],
+        "digitalStandards": [
+            "Collaborate widely",
+            "Empower employees to deliver better services"
+        ],
+        "author": "",
+        "organizationalAffiliation": "McKinsey & Company",
+        "image": "https://www.mckinsey.com/~/media/McKinsey/Business%20Functions/Organization/Our%20Insights/How%20to%20select%20and%20develop%20individuals%20for%20successful%20agile%20teams%20A%20practical%20guide/How-to-select-agile-teams_1536x1536_500.ashx",
+        "comments": 193
+    },
+    {
+        "title": "Agile: How We're Working Differently",
+        "endorsements": {
+            "featuredEndorsers": [
+                {
+                    "name": "Ashley Evans",
+                    "profilePic": "https://i.pravatar.cc/150?u=4637"
+                },
+                {
+                    "name": "Firstname Lastname",
+                    "profilePic": "https://i.pravatar.cc/150?u=1168"
+                }
+            ],
+            "endorsements": 753
+        },
+        "description": "Government of Canada example of agile.",
+        "url": "https://www.mckinsey.com/business-functions/organization/our-insights/how-to-select-and-develop-individuals-for-successful-agile-teams-a-practical-guide#annotations:Mf2lJD9uEemH8cNZmjmKRA",
+        "types": [
+            "Awareness"
+        ],
+        "format": "Read",
+        "languages": {
+            "english": true,
+            "french": true
+        },
+        "difficulty": 1,
+        "timeEstimate": 10,
+        "creationYear": "2018",
+        "topics": null,
+        "practices": null,
+        "skills": null,
+        "digitalStandards": [
+            "Work in the open by default",
+            "Design with users",
+            "Collaborate widely"
+        ],
+        "author": "Benay , Alex",
+        "organizationalAffiliation": "\"Treasury Board of Canada Secretariat, TBS\"",
+        "image": "https://www.mckinsey.com/~/media/McKinsey/Business%20Functions/Organization/Our%20Insights/How%20to%20select%20and%20develop%20individuals%20for%20successful%20agile%20teams%20A%20practical%20guide/How-to-select-agile-teams_1536x1536_500.ashx",
+        "comments": 217
+    },
+    {
+        "title": "Agile and government services: an introduction",
+        "endorsements": {
+            "featuredEndorsers": [
+                {
+                    "name": "Ashley Evans",
+                    "profilePic": "https://i.pravatar.cc/150?u=7772"
+                },
+                {
+                    "name": "Firstname Lastname",
+                    "profilePic": "https://i.pravatar.cc/150?u=5888"
+                }
+            ],
+            "endorsements": 8572
+        },
+        "description": "Government of UK's approach to agile with case studies and examples.",
+        "url": "https://www.gov.uk/service-manual/agile-delivery/agile-government-services-introduction",
+        "types": [
+            "Tool",
+            "How to",
+            "Case study"
+        ],
+        "format": "Read",
+        "languages": {
+            "english": true,
+            "french": false
+        },
+        "difficulty": 1,
+        "timeEstimate": 60,
+        "creationYear": "2016",
+        "topics": null,
+        "practices": [
+            "Agile culture"
+        ],
+        "skills": [
+            "Adaptability",
+            "Early and continuous delivery",
+            "Simplifying complexity and focusing on the essential",
+            "Integrating technical and human-centred design practices",
+            "Understanding agile"
+        ],
+        "digitalStandards": [
+            "Design with users",
+            "Empower employees to deliver better services",
+            "Collaborate widely",
+            "Iterate and improve frequently"
+        ],
+        "author": "",
+        "organizationalAffiliation": "UK Digital Service",
+        "image": "https://assets.publishing.service.gov.uk/static/opengraph-image-a1f7d89ffd0782738b1aeb0da37842d8bd0addbd724b8e58c3edbc7287cc11de.png",
+        "comments": 178
+    },
+    {
+        "title": "“What is agile government and how do I bring it to my team?”",
+        "endorsements": {
+            "featuredEndorsers": [
+                {
+                    "name": "Ashley Evans",
+                    "profilePic": "https://i.pravatar.cc/150?u=7964"
+                },
+                {
+                    "name": "Firstname Lastname",
+                    "profilePic": "https://i.pravatar.cc/150?u=8289"
+                }
+            ],
+            "endorsements": 3769
+        },
+        "description": "An answer to “What is agile government and how do I bring it to my team?” provided by the Apolitical community.",
+        "url": "https://apolitical.co/question/what-is-agile-government-and-how-do-i-bring-it-to-my-team/",
+        "types": [
+            "Awareness",
+            "Opinion"
+        ],
+        "format": "Read",
+        "languages": {
+            "english": true,
+            "french": false
+        },
+        "difficulty": 1,
+        "timeEstimate": 10,
+        "creationYear": "N/A",
+        "topics": null,
+        "practices": null,
+        "skills": null,
+        "digitalStandards": [
+            "Collaborate widely"
+        ],
+        "author": "",
+        "organizationalAffiliation": "Apolitical",
+        "image": "https://s3-eu-west-1.amazonaws.com/apolitical-wp/wp-content/uploads/2010/07/06083405/superbeing-tokyo-2696-filmsupply_mov.png",
+        "comments": 87
+    },
+    {
+        "title": "Practical workshop facilitation skills certificate",
+        "endorsements": {
+            "featuredEndorsers": [
+                {
+                    "name": "Kiran Khullar",
+                    "profilePic": "https://i.pravatar.cc/150?u=9107"
+                },
+                {
+                    "name": "Firstname Lastname",
+                    "profilePic": "https://i.pravatar.cc/150?u=7420"
+                }
+            ],
+            "endorsements": 9468
+        },
+        "description": "Gain practical hands-on experience with facilitation.",
+        "url": "http://www.winnipegtransitioncentre.com/professional-development/practical-workshop-facilitation-skills-certificate/",
+        "types": [
+            "Practice/Simulation",
+            "Case study",
+            "How to",
+            "Awareness",
+            "Tool"
+        ],
+        "format": "Attend",
+        "languages": {
+            "english": true,
+            "french": false
+        },
+        "difficulty": 1,
+        "timeEstimate": 600,
+        "creationYear": "n/a",
+        "topics": null,
+        "practices": null,
+        "skills": null,
+        "digitalStandards": [
+            "Collaborate widely"
+        ],
+        "author": "",
+        "organizationalAffiliation": "Winnipeg Transition Centre",
+        "comments": 132
+    },
+    {
+        "title": "Being Agile in the Ontario Public Service",
+        "endorsements": {
+            "featuredEndorsers": [
+                {
+                    "name": "Isa David",
+                    "profilePic": "https://i.pravatar.cc/150?u=1026"
+                },
+                {
+                    "name": "Firstname Lastname",
+                    "profilePic": "https://i.pravatar.cc/150?u=4667"
+                }
+            ],
+            "endorsements": 3513
+        },
+        "description": "A great introductory overview of Agile principles and methods.",
+        "url": "https://www.ontario.ca/page/being-agile-ontario-public-service",
+        "types": [
+            "Awareness"
+        ],
+        "format": "Read",
+        "languages": {
+            "english": true,
+            "french": true
+        },
+        "difficulty": 1,
+        "timeEstimate": 30,
+        "creationYear": "2019",
+        "topics": null,
+        "practices": [
+            "Agile culture"
+        ],
+        "skills": [
+            "Early and continuous delivery",
+            "Adaptability",
+            "Understanding agile"
+        ],
+        "digitalStandards": [
+            "Iterate and improve frequently"
+        ],
+        "author": "",
+        "organizationalAffiliation": "Government of Ontario",
+        "comments": 9
+    },
+    {
+        "title": "Busrides.ca: Agile step-by-step",
+        "endorsements": {
+            "featuredEndorsers": [
+                {
+                    "name": "Isa David",
+                    "profilePic": "https://i.pravatar.cc/150?u=7122"
+                },
+                {
+                    "name": "Firstname Lastname",
+                    "profilePic": "https://i.pravatar.cc/150?u=9721"
+                }
+            ],
+            "endorsements": 7954
+        },
+        "description": "Overview of what the agile methodology is and why it's relevant to us in the public service.",
+        "url": "https://en.busrides-trajetsenbus.ca/episode-9/",
+        "types": [
+            "Awareness",
+            "Case study"
+        ],
+        "format": "Watch",
+        "languages": {
+            "english": true,
+            "french": true
+        },
+        "difficulty": 1,
+        "timeEstimate": 30,
+        "creationYear": "2019",
+        "topics": null,
+        "practices": null,
+        "skills": null,
+        "digitalStandards": [
+            "Iterate and improve frequently"
+        ],
+        "author": "Scanlan , Todd",
+        "organizationalAffiliation": "",
+        "image": "https://en.busrides-trajetsenbus.ca/wp-content/uploads/sites/2/2019/04/2019-04-15_12-31-28-1.png",
+        "comments": 91
+    },
+    {
+        "title": "Canadian Digi Gov Slack Group",
+        "endorsements": {
+            "featuredEndorsers": [
+                {
+                    "name": "Ashley Evans",
+                    "profilePic": "https://i.pravatar.cc/150?u=6845"
+                },
+                {
+                    "name": "Firstname Lastname",
+                    "profilePic": "https://i.pravatar.cc/150?u=6459"
+                }
+            ],
+            "endorsements": 6230
+        },
+        "description": "A Slack group chat to connect those working in the Canadian digital government space.",
+        "url": "https://canadiandiggov.slack.com/",
+        "types": [
+            "Awareness",
+            "Opinion",
+            "Tool"
+        ],
+        "format": "Use",
+        "languages": {
+            "english": true,
+            "french": true
+        },
+        "difficulty": 1,
+        "timeEstimate": null,
+        "creationYear": "2019",
+        "topics": null,
+        "practices": null,
+        "skills": null,
+        "digitalStandards": [
+            "Not directly applicable to any standard"
+        ],
+        "author": "",
+        "organizationalAffiliation": "",
+        "comments": 88
+    },
+    {
+        "title": "Building a multidisciplinary team at ESDC to serve people better",
+        "endorsements": {
+            "featuredEndorsers": [
+                {
+                    "name": "Ashley Evans",
+                    "profilePic": "https://i.pravatar.cc/150?u=351"
+                },
+                {
+                    "name": "Firstname Lastname",
+                    "profilePic": "https://i.pravatar.cc/150?u=4566"
+                }
+            ],
+            "endorsements": 8550
+        },
+        "description": "A Canadian Digital Service Blog by one of their partners, ESDC, and their experience forming a multidisciplinary team.",
+        "url": "https://digital.canada.ca/2019/06/19/building-a-multidisciplinary-team-at-esdc-to-serve-people-better/",
+        "types": [
+            "Awareness",
+            "Opinion"
+        ],
+        "format": "Read",
+        "languages": {
+            "english": true,
+            "french": true
+        },
+        "difficulty": 1,
+        "timeEstimate": 10,
+        "creationYear": "2019",
+        "topics": null,
+        "practices": null,
+        "skills": null,
+        "digitalStandards": [
+            "Iterate and improve frequently",
+            "Work in the open by default",
+            "Empower employees to deliver better services",
+            "Collaborate widely"
+        ],
+        "author": "Byrne , Nancy",
+        "organizationalAffiliation": "\"Employment and Social Development Canada, ESDC\"",
+        "comments": 270
+    },
+    {
+        "title": "Demystifying data, data analytics, data science and more for policy analysts",
+        "endorsements": {
+            "featuredEndorsers": [
+                {
+                    "name": "Ashley Evans",
+                    "profilePic": "https://i.pravatar.cc/150?u=8148"
+                },
+                {
+                    "name": "Firstname Lastname",
+                    "profilePic": "https://i.pravatar.cc/150?u=8013"
+                }
+            ],
+            "endorsements": 7914
+        },
+        "description": "Blog by Anna Wong on her journey learning data and data analysis and its relevance in a policy environment.",
+        "url": "https://medium.com/@banannawong/demystifying-data-data-analytics-data-science-and-more-for-policy-analysts-84d38f64c1ef",
+        "types": [
+            "Awareness",
+            "Opinion"
+        ],
+        "format": "Read",
+        "languages": {
+            "english": true,
+            "french": false
+        },
+        "difficulty": 1,
+        "timeEstimate": 10,
+        "creationYear": "2019",
+        "topics": null,
+        "practices": null,
+        "skills": null,
+        "digitalStandards": [
+            "Work in the open by default",
+            "Be good data stewards"
+        ],
+        "author": "Wong , Anna",
+        "organizationalAffiliation": "\"Canada School of Public Service, CSPS\"",
+        "image": "https://miro.medium.com/max/1200/0*wg1Tpiz0eWmfzaOT",
+        "comments": 209
+    },
+    {
+        "title": "Finding Value in Everyday Learnings",
+        "endorsements": {
+            "featuredEndorsers": [
+                {
+                    "name": "Ashley Evans",
+                    "profilePic": "https://i.pravatar.cc/150?u=5267"
+                },
+                {
+                    "name": "Firstname Lastname",
+                    "profilePic": "https://i.pravatar.cc/150?u=246"
+                }
+            ],
+            "endorsements": 8870
+        },
+        "description": "Blog by Amanda Bernardo on continuous learning outside of formal training and learning means.",
+        "url": "https://medium.com/@Amanda_Bernardo/finding-the-value-in-every-day-learnings-681c5a7cbee4",
+        "types": [
+            "Awareness",
+            "Opinion"
+        ],
+        "format": "Read",
+        "languages": {
+            "english": true,
+            "french": false
+        },
+        "difficulty": 1,
+        "timeEstimate": 10,
+        "creationYear": "2019",
+        "topics": null,
+        "practices": null,
+        "skills": null,
+        "digitalStandards": [
+            "Empower employees to deliver better services"
+        ],
+        "author": "Bernardo , Amanda",
+        "organizationalAffiliation": "\"Canada School of Public Service, CSPS\"",
+        "image": "https://miro.medium.com/max/1200/1*kZvD-lzl_AgcEu092Wrjxw.jpeg",
+        "comments": 7
+    },
+    {
+        "title": "Inclusive Design Training Lesson 1: Empathizing",
+        "endorsements": {
+            "featuredEndorsers": [
+                {
+                    "name": "Ashley Evans",
+                    "profilePic": "https://i.pravatar.cc/150?u=5474"
+                },
+                {
+                    "name": "Firstname Lastname",
+                    "profilePic": "https://i.pravatar.cc/150?u=3333"
+                }
+            ],
+            "endorsements": 8529
+        },
+        "description": "Understand empathy, service design, and disability. Playlist 1 of 6 on accessibility.",
+        "url": "https://www.youtube.com/watch?v=LQ0wI5pJX3o&list=PLdcxts4DtHVFBKQJh6Bj85N-mUdqmku2Q",
+        "types": [
+            "Awareness"
+        ],
+        "format": "Watch",
+        "languages": {
+            "english": true,
+            "french": false
+        },
+        "difficulty": 1,
+        "timeEstimate": 10,
+        "creationYear": "2019",
+        "topics": null,
+        "practices": null,
+        "skills": null,
+        "digitalStandards": [
+            "Design with users",
+            "Empower employees to deliver better services",
+            "Design ethical services"
+        ],
+        "author": "",
+        "organizationalAffiliation": "Ontario Digital Service",
+        "image": "https://i.ytimg.com/vi/LQ0wI5pJX3o/maxresdefault.jpg",
+        "comments": 299
+    },
+    {
+        "title": "Digital Accessibility Matters: Creating a More Inclusive Public Service",
+        "endorsements": {
+            "featuredEndorsers": [
+                {
+                    "name": "Ashley Evans",
+                    "profilePic": "https://i.pravatar.cc/150?u=4240"
+                },
+                {
+                    "name": "Firstname Lastname",
+                    "profilePic": "https://i.pravatar.cc/150?u=2499"
+                }
+            ],
+            "endorsements": 7754
+        },
+        "description": "Learn how to use technology and enhance accessibility, and develop policies, legislation, processes and technological solutions to better meet the needs of all users.",
+        "url": "https://www.youtube.com/watch?v=FCbITK316aA&t=1680s",
+        "types": [
+            "Awareness"
+        ],
+        "format": "Watch",
+        "languages": {
+            "english": true,
+            "french": true
+        },
+        "difficulty": 1,
+        "timeEstimate": 60,
+        "creationYear": "2019",
+        "topics": null,
+        "practices": null,
+        "skills": null,
+        "digitalStandards": [
+            "Build in accessibility from the start"
+        ],
+        "author": "",
+        "organizationalAffiliation": "\"Canada School of Public Service, CSPS\"",
+        "image": "https://i.ytimg.com/vi/FCbITK316aA/maxresdefault.jpg",
+        "comments": 278
+    },
+    {
+        "title": "Lessons Learned After Three Years of Experimenting in the Canada Revenue Agency",
+        "endorsements": {
+            "featuredEndorsers": [
+                {
+                    "name": "Thom Kearney",
+                    "profilePic": "https://i.pravatar.cc/150?u=2843"
+                },
+                {
+                    "name": "Firstname Lastname",
+                    "profilePic": "https://i.pravatar.cc/150?u=3106"
+                }
+            ],
+            "endorsements": 7005
+        },
+        "description": "The CRA has made experimentation a priority in recent years, and has become a leader in the Government of Canada in advocating for the use of experiments in evidence-based policymaking. That being said, the path towards experimentation hasn’t always been easy, and we’ve learned some lessons over the past few years. We were happy to share these lessons.",
+        "url": "https://medium.com/@exp_works/lessons-learned-after-three-years-of-experimenting-in-the-canada-revenue-agency-423b9e9f12b9",
+        "types": [
+            "Case study"
+        ],
+        "format": "Read",
+        "languages": {
+            "english": true,
+            "french": false
+        },
+        "difficulty": 1,
+        "timeEstimate": 10,
+        "creationYear": "2018",
+        "topics": null,
+        "practices": [
+            "Innovation",
+            "Using data for decision-making"
+        ],
+        "skills": [
+            "Defining the problem",
+            "Refining a solution based on data",
+            "Working in the open",
+            "Evidence-based decision making"
+        ],
+        "digitalStandards": [
+            "Iterate and improve frequently"
+        ],
+        "author": "",
+        "organizationalAffiliation": "\"Canada Revenue Agency, CRA\"",
+        "image": "https://miro.medium.com/max/1200/1*70q_CWuS9UJdCBz3I6oN4g.jpeg",
+        "comments": 197
+    }
+]
