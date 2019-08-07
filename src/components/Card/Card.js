@@ -25,21 +25,33 @@ function Card(props) {
         let contentType = props.contentType.toLowerCase();
         switch (contentType) {
             case "read":
-                return "read"
+                return "read";
                 break;
             case "use":
-                return "read"
+                return "read";
                 break;
             case "attend":
-                return "course"
+                return "course";
                 break;
             case "watch":
-                return "watch"
+                return "watch";
                 break;
             default:
-                return "read"
+                return "read";
                 break;
         }
+    }
+
+    function compactDescription(description) {
+        if (description.length <= 100){
+            return description;
+        }
+        description = description.substr(0, 100).split(" ");
+        description.pop();
+
+        description[description.length - 1] = description[description.length - 1].replace(",", "").replace(".", "");
+
+        return `${description.join(" ")}...`;
     }
 
     // Card View
@@ -61,7 +73,7 @@ function Card(props) {
         return (
             <div className="compactCard">
                 <div className="compactCardContent">
-                    <CardContent language={props.language} title={props.title} description={props.description} endorsements={props.endorsements} comments={props.comments} difficulty={props.difficulty} timeEstimate={props.timeEstimate}></CardContent>
+                    <CardContent language={props.language} title={props.title} description={compactDescription(props.description)} endorsements={props.endorsements} comments={props.comments} difficulty={props.difficulty} timeEstimate={props.timeEstimate}></CardContent>
                     <div className="cardPreview">
                         <div className="compactCardPreview">
                             <span className={typeClass}>{contentType}</span>
