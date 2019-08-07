@@ -13,7 +13,6 @@
 
 .cardPreview {
     position: relative;
-    height: 175px;
 }
 
 .cardPreview img {
@@ -58,8 +57,9 @@
 
 /* COMPACT CARD STYLING */
 .compactCard {
+    max-width: 95%;
     width: 674px;
-    height: 235.02px;
+    height: 200px;
     border-radius: 8px;
     background: #fff;
     box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
@@ -75,24 +75,25 @@
 }
 
 .compactCardPreview {
-    padding: 20px 20px 0 5px;
+    padding: 20px 10px 0 5px;
 }
 
 .compactCardPreview img{
-    width: 60px;
-    height: 60px;
+    width: 16vw;
+    max-width: 120px;
+    height: 120px;
     border-radius: 9px;
     object-fit: cover;
 }
 
 .compactCardPreview .icon {
-    top: 65px;
+    top: 125px;
     width: 60px;
     height: 15px;
     line-height: 15px;
     font-size: 12px;
     border-radius: 0 0 9px 9px;
-    right: 20px;
+    right: 10px;
 }
 
 .compactCardPreview .icon.watch {

@@ -1,6 +1,7 @@
 .activityBar {
     display: flex;
     padding-bottom: 5px;
+    white-space: nowrap;
 }
 
 .featuredEndorsers {

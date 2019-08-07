@@ -43,15 +43,21 @@ function Card(props) {
     }
 
     function compactDescription(description) {
-        if (description.length <= 100){
+        const MaxDescriptionLength = 78;
+        if (description.length <= MaxDescriptionLength){
             return description;
         }
-        description = description.substr(0, 100).split(" ");
+        description = description.substr(0, MaxDescriptionLength).split(" ");
         description.pop();
 
         description[description.length - 1] = description[description.length - 1].replace(",", "").replace(".", "");
 
         return `${description.join(" ")}...`;
+    }
+
+    // THIS FUNCTION IS TEMPORARY AND SHOULD BE REMOVED WHEN TITLE LENGTH RESTRICTION GOES INTO PLACE
+    function compactTitle(title) {
+        return title.substr(0, 60);
     }
 
     // Card View
@@ -73,7 +79,7 @@ function Card(props) {
         return (
             <div className="compactCard">
                 <div className="compactCardContent">
-                    <CardContent language={props.language} title={props.title} description={compactDescription(props.description)} endorsements={props.endorsements} comments={props.comments} difficulty={props.difficulty} timeEstimate={props.timeEstimate}></CardContent>
+                    <CardContent language={props.language} title={compactTitle(props.title)} description={compactDescription(props.description)} endorsements={props.endorsements} comments={props.comments} difficulty={props.difficulty} timeEstimate={props.timeEstimate}></CardContent>
                     <div className="cardPreview">
                         <div className="compactCardPreview">
                             <span className={typeClass}>{contentType}</span>
