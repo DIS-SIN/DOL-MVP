@@ -88,7 +88,8 @@
 
 .compactCardPreview .icon {
     top: 125px;
-    width: 60px;
+    width: 16vw;
+    max-width: 120px;
     height: 15px;
     line-height: 15px;
     font-size: 12px;
@@ -97,7 +98,8 @@
 }
 
 .compactCardPreview .icon.watch {
-    width: 60px;
+    width: 16vw;
+    max-width: 120px;
     padding-left: 0;
 }
 
