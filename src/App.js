@@ -58,7 +58,7 @@ function App() {
             <MobileNavBar language={language}></MobileNavBar>
             <div className="cardGrid">
                 <button className="icon cardViewIcon" onClick={handleOpenModal}>cardView</button>
-                <Modal style={{ content: {right: modalXPosition}}} isOpen={modalVisible} contentLabel="onRequestClose Example" onRequestClose={handleCloseModal} className="Modal" overlayClassName="Overlay">
+                <Modal style={{ content: {right: modalXPosition}}} closeTimeoutMS={150} isOpen={modalVisible} contentLabel="onRequestClose Example" onRequestClose={handleCloseModal} className="Modal" overlayClassName="Overlay">
                     <div className="modalArrow"></div>
                     <CardViewModalContent closeModal={handleCloseModal} cardViewEnabled={cardViewEnabled} showCardView={showCardView} language={language}></CardViewModalContent>
                 </Modal>
