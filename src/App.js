@@ -13,7 +13,7 @@ function App() {
     // Creating state variables
     const [modalVisible, showModal] = useState(false);
     const [modalXPosition, setModalXPosition] = useState(500);
-    const [cardViewEnabled, showCardView] = useState(true); 
+    const [cardViewEnabled, showCardView] = useState(getCardViewPreference()); 
     const [language, setLanguage] = useState(updateLanguage());
     const [resources, setResources] = useState([]);
 
@@ -25,6 +25,14 @@ function App() {
             setResources(data);
         });
     },[])
+
+    function getCardViewPreference() {
+        if (localStorage && localStorage.showCardView){
+            return JSON.parse(localStorage.showCardView);
+        }
+        // Returning true sets the view to Card View
+        return true;
+    }
 
     function updateLanguage(){
         if (window.navigator.language){

@@ -5,6 +5,9 @@ function CardViewModalContent(props) {
 
     function changeToCardView(showCardView) {
         props.showCardView(showCardView);
+        if (localStorage){
+            localStorage.showCardView = JSON.stringify(showCardView);
+        }
         props.closeModal();
     }
 
