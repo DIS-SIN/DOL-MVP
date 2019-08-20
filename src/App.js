@@ -18,7 +18,7 @@ function App() {
     const [resources, setResources] = useState([]);
 
     useEffect(() => {
-        fetch('https://raw.githubusercontent.com/DIS-SIN/DOL-MVP/master/src/TEMP_JSON_SERVER/dolDB.json')
+        fetch('https://raw.githubusercontent.com/DIS-SIN/DOL-MVP/master/Airtable%20to%20JSON/output/dolDB.json')
         .then(response => response.json())
         .then(data => {
             console.log(data);
