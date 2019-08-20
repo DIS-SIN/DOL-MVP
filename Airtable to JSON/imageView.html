@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        let images = 0;
+
+        fetch('output/dolDB.json')
+        .then(response => response.json())
+        .then(data => {
+            
+            data.forEach(resource => {
+                if (resource.image){
+                    images++;
+                }
+                let html = `<h3>${resource.title}</h3><img src="${resource.image}"/>`;
+                document.body.innerHTML += html;
+            });
+
+            let results = `<h1>Total Resources: ${data.length}, Resources with images: ${images}</h1>`;
+            document.body.innerHTML = results + document.body.innerHTML;
+        });
+    </script>
+
+    <style>
+        img {
+            max-width: 90%;
+        }
+    </style>
+
+</body>
+</html>

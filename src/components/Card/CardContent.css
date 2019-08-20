@@ -13,6 +13,11 @@
     text-align: left;
     color: #000;
     line-height: 20px;
+    cursor: pointer;
+}
+
+.cardTitle:hover {
+    text-decoration: underline;
 }
 
 .cardDescription {
