@@ -22,7 +22,7 @@ function Card(props) {
     }
 
     function getContentType() {
-        let contentType = props.contentType.toLowerCase();
+        let contentType = props.resource.format.toLowerCase();
         switch (contentType) {
             case "read":
                 return "read";
@@ -42,20 +42,15 @@ function Card(props) {
         }
     }
 
-    // THIS FUNCTION IS TEMPORARY AND SHOULD BE REMOVED WHEN TITLE LENGTH RESTRICTION GOES INTO PLACE
-    function compactTitle(title) {
-        return title.substr(0, 60);
-    }
-
     // Card View
     if (props.viewType.cardViewEnabled){
         return (
             <div className="card">
                 <div className="cardPreview">
                     <span className={typeClass}>{contentType}</span>
-                    <img src={props.thumbnail} alt="" title=""/>
+                    <img src={props.resource.image} alt="" title=""/>
                 </div>
-                <CardContent language={props.language} title={props.title} showExpandedView={props.showExpandedView} setExpandedViewContent={props.setExpandedViewContent} description={props.description} cardViewEnabled={props.viewType.cardViewEnabled} endorsements={props.endorsements} comments={props.comments} difficulty={props.difficulty} timeEstimate={props.timeEstimate}></CardContent>
+                <CardContent language={props.language} showExpandedView={props.showExpandedView} setExpandedViewContent={props.setExpandedViewContent} cardViewEnabled={props.viewType.cardViewEnabled} resource={props.resource}></CardContent>
                 <InteractionBar language={props.language}></InteractionBar>
             </div>
         );
@@ -66,11 +61,11 @@ function Card(props) {
         return (
             <div className="compactCard">
                 <div className="compactCardContent">
-                    <CardContent language={props.language} title={compactTitle(props.title)} showExpandedView={props.showExpandedView} setExpandedViewContent={props.setExpandedViewContent} description={props.description} cardViewEnabled={props.viewType.cardViewEnabled} endorsements={props.endorsements} comments={props.comments} difficulty={props.difficulty} timeEstimate={props.timeEstimate}></CardContent>
+                <CardContent language={props.language} showExpandedView={props.showExpandedView} setExpandedViewContent={props.setExpandedViewContent} cardViewEnabled={props.viewType.cardViewEnabled} resource={props.resource}></CardContent>
                     <div className="cardPreview">
                         <div className="compactCardPreview">
                             <span className={typeClass}>{contentType}</span>
-                            <img src={props.thumbnail} alt="" title=""/>
+                            <img src={props.resource.image} alt="" title=""/>
                         </div>
                     </div>
                 </div>

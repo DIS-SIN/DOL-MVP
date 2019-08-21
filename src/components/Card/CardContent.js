@@ -9,10 +9,7 @@ const SpecialTitlePhrases = require("../../languages/SpecialTitlePhrases.json");
 function CardContent(props) {
 
     function showExpandedView(){
-        props.setExpandedViewContent({
-            title: props.title,
-            description: props.description
-        });
+        props.setExpandedViewContent(props.resource);
         props.showExpandedView(true);
     }
 
@@ -33,15 +30,24 @@ function CardContent(props) {
         return `${description.join(" ")}...`;
     }
 
+    // THIS FUNCTION IS TEMPORARY AND SHOULD BE REMOVED WHEN TITLE LENGTH RESTRICTION GOES INTO PLACE
+    function compactTitle(title) {
+        return title.substr(0, 60);
+    }
+
+    if (!props.cardViewEnabled){
+        props.resource.title = compactTitle(props.resource.title);
+    }
+
     return (
         <div className="cardContent">
-            <h4 onClick={showExpandedView} className="cardTitle">{Title(props.title, SpecialTitlePhrases)}</h4>
+            <h4 onClick={showExpandedView} className="cardTitle">{Title(props.resource.title, SpecialTitlePhrases)}</h4>
             <div>
-            <ActivityBar language={props.language} endorsements={props.endorsements} comments={props.comments}/>
+            <ActivityBar language={props.language} endorsements={props.resource.endorsements} comments={props.resource.comments}/>
 
             </div>
-            <p className="cardDescription">{compactDescription(props.description)}</p>
-            <Tags language={props.language} difficulty={props.difficulty} timeEstimate={props.timeEstimate}></Tags>
+            <p className="cardDescription">{compactDescription(props.resource.description)}</p>
+            <Tags language={props.language} difficulty={props.resource.difficulty} timeEstimate={props.resource.timeEstimate}></Tags>
         </div>
     );
 }
