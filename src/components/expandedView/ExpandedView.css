@@ -1,7 +1,17 @@
 .Modal.expandedView {
     position: relative;
+    top: 50px;
     width: 750px;
-    max-width: 80%;
+    max-width: 90%;
     height: auto;
     margin: 0 auto;
+}
+
+.expandedView img {
+    width: 100%;
+    object-fit: cover;
+    height: 300px;
+    border-radius: inherit;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
 }
