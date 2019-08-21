@@ -1,10 +1,10 @@
 import React from 'react';
-import Title from 'title'
+import Title from 'title';
 import ActivityBar from './ActivityBar';
 import Tags from './Tags';
 import './CardContent.css';
 
-const SpecialTitlePhrases = require("./SpecialTitlePhrases.json");
+const SpecialTitlePhrases = require("../../languages/SpecialTitlePhrases.json");
 
 function CardContent(props) {
 
