@@ -1,0 +1,7 @@
+.Modal.expandedView {
+    position: relative;
+    width: 750px;
+    max-width: 80%;
+    height: auto;
+    margin: 0 auto;
+}
