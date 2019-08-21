@@ -4,6 +4,8 @@ import ActivityBar from './ActivityBar';
 import Tags from './Tags';
 import './CardContent.css';
 
+const SpecialTitlePhrases = require("./SpecialTitlePhrases.json");
+
 function CardContent(props) {
 
     function showExpandedView(){
@@ -33,7 +35,7 @@ function CardContent(props) {
 
     return (
         <div className="cardContent">
-            <h4 onClick={showExpandedView} className="cardTitle">{Title(props.title, {special: ["GC","UX",".ca"]})}</h4>
+            <h4 onClick={showExpandedView} className="cardTitle">{Title(props.title, SpecialTitlePhrases)}</h4>
             <div>
             <ActivityBar language={props.language} endorsements={props.endorsements} comments={props.comments}/>
 
