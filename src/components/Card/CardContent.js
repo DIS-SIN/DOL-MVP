@@ -6,9 +6,13 @@ import './CardContent.css';
 
 function CardContent(props) {
 
+    function showExpandedView(){
+        props.showExpandedView(true);
+    }
+
     return (
         <div className="cardContent">
-            <h4 className="cardTitle">{Title(props.title, {special: ["GC","UX",".ca"]})}</h4>
+            <h4 onClick={showExpandedView} className="cardTitle">{Title(props.title, {special: ["GC","UX",".ca"]})}</h4>
             <div>
             <ActivityBar language={props.language} endorsements={props.endorsements} comments={props.comments}/>
 

@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import MobileNavBar from './components/MobileNavBar';
 import Card from './components/Card/Card';
 import CardViewModalContent from './components/CardViewModalContent';
+import ExpandedView from './components/expandedView/ExpandedView';
 import Modal from 'react-modal';
 import './App.css';
 
@@ -10,12 +11,26 @@ function App() {
     // This hides all content from screen readers while the modal is open
     Modal.setAppElement('#root')
 
-    // Creating state variables
+    /* #region State Variables */
+
+    // Modal to switch between card & compact views
     const [modalVisible, showModal] = useState(false);
     const [modalXPosition, setModalXPosition] = useState(500);
-    const [cardViewEnabled, showCardView] = useState(getCardViewPreference()); 
+
+    // Expanded View Modal
+    const [expandedViewContent, setExpandedViewContent] = useState(null);
+    const [expandedViewVisible, showExpandedView] = useState(false);
+
+    // State to store which type of view is being used (card/compact)
+    const [cardViewEnabled, showCardView] = useState(getCardViewPreference());
+
+    // Language state to hold the selected language's dictionary
     const [language, setLanguage] = useState(updateLanguage());
+
+    // State to store the resources fetched from the JSON API
     const [resources, setResources] = useState([]);
+
+    /* #endregion */
 
     useEffect(() => {
         fetch('https://raw.githubusercontent.com/DIS-SIN/DOL-MVP/master/Airtable%20to%20JSON/output/dolDB.json')
@@ -59,6 +74,7 @@ function App() {
 
     function handleCloseModal(){
         showModal(false);
+        showExpandedView(false);
     }
 
     return (
@@ -66,17 +82,15 @@ function App() {
             <MobileNavBar language={language}></MobileNavBar>
             <div className="cardGrid">
                 <button className="icon cardViewIcon" onClick={handleOpenModal}>cardView</button>
-                <Modal style={{ content: {right: modalXPosition}}} closeTimeoutMS={150} isOpen={modalVisible} contentLabel="onRequestClose Example" onRequestClose={handleCloseModal} className="Modal" overlayClassName="Overlay">
+                <Modal style={{ content: {right: modalXPosition}}} closeTimeoutMS={150} isOpen={modalVisible} contentLabel="Switch View Preferences Modal" onRequestClose={handleCloseModal} className="Modal" overlayClassName="Overlay">
                     <div className="modalArrow"></div>
                     <CardViewModalContent closeModal={handleCloseModal} cardViewEnabled={cardViewEnabled} showCardView={showCardView} language={language}></CardViewModalContent>
                 </Modal>
-                {/* {   if (resources )
-                    resources.foreach(resource => {
-                    return (<Card language={language} viewType={{cardViewEnabled, showCardView}} thumbnail={resource.image} contentType={resource.format} title={resource.title} endorsements={resource.endorsements} comments={resource.comments} difficulty={resource.difficulty} timeEstimate={resource.timeEstimate} description={resource.description}/>);
-                })} */}
+                
+                <ExpandedView expandedViewVisible={expandedViewVisible} handleCloseModal={handleCloseModal}/>
 
                 { resources.map( (resource, index)=>(
-                    <Card key={index} language={language} viewType={{cardViewEnabled, showCardView}} thumbnail={resource.image} contentType={resource.format} title={resource.title} endorsements={resource.endorsements} comments={resource.comments} difficulty={resource.difficulty} timeEstimate={resource.timeEstimate} description={resource.description}/>
+                    <Card key={index} language={language} viewType={{cardViewEnabled, showCardView}} showExpandedView={showExpandedView} thumbnail={resource.image} contentType={resource.format} title={resource.title} endorsements={resource.endorsements} comments={resource.comments} difficulty={resource.difficulty} timeEstimate={resource.timeEstimate} description={resource.description}/>
                 )) }
                 {/* <Card language={language} viewType={{cardViewEnabled, showCardView}} thumbnail={"http://i3.ytimg.com/vi/RD_SLJG7oi8/maxresdefault.jpg"} contentType={"watch"} title={"Why Design Should Include Everyone"} endorsements={{featuredEndorsers: [{name: "John D.", profilePic: "https://randomuser.me/api/portraits/men/9.jpg"},{name: "John D.", profilePic: "https://randomuser.me/api/portraits/men/5.jpg"}], endorsements: 1200}} comments={123} difficulty={1} timeEstimate={10} description={`Sinéad Burke is acutely aware of details that are practically invisible to many of us. At 105 centimeters (or 3’ 5”) tall, the designed world — from the height of a lock to the range of available shoe sizes — often inhibits her ability to do things for herself. Here she tells us what it’s like to navigate the world as a little person and asks: “Who are we not designing for?”`}></Card>
                 <Card language={language} viewType={{cardViewEnabled, showCardView}} thumbnail={require("./images/stock/read/pexels-photo-196649.jpeg")} contentType={"listen"} title={"Content Design Using Data and Evidence"} endorsements={{featuredEndorsers: [{name: "Jenessa M.", profilePic: "https://randomuser.me/api/portraits/women/43.jpg"},{name: "John D.", profilePic: "https://randomuser.me/api/portraits/men/17.jpg"}], endorsements: 1100}} comments={72} difficulty={1} timeEstimate={30} description={`Explains the difference between writing, editing, copyrighting and digital content design, tells the story of Gov.UK process of converting 75,000 pieces of content into 3,000, explains how to obtain data and evidence to support content design.`}></Card>

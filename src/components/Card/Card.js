@@ -68,7 +68,7 @@ function Card(props) {
                     <span className={typeClass}>{contentType}</span>
                     <img src={props.thumbnail} alt="" title=""/>
                 </div>
-                <CardContent language={props.language} title={props.title} description={compactDescription(props.description, 270)} endorsements={props.endorsements} comments={props.comments} difficulty={props.difficulty} timeEstimate={props.timeEstimate}></CardContent>
+                <CardContent language={props.language} title={props.title} showExpandedView={props.showExpandedView} description={compactDescription(props.description, 270)} endorsements={props.endorsements} comments={props.comments} difficulty={props.difficulty} timeEstimate={props.timeEstimate}></CardContent>
                 <InteractionBar language={props.language}></InteractionBar>
             </div>
         );
