@@ -85,8 +85,8 @@ function App() {
 
     return (
         <div>
-            <MobileNavBar language={language}></MobileNavBar>
             <ScrollLock isActive={bodyScrollLocked}>
+            <MobileNavBar language={language}></MobileNavBar>
             <div className="cardGrid">
                 <button className="icon cardViewIcon" onClick={handleOpenModal}>cardView</button>
                 <Modal style={{ content: {right: modalXPosition}}} closeTimeoutMS={150} isOpen={modalVisible} contentLabel="Switch View Preferences Modal" onRequestClose={handleCloseModal} className="Modal" overlayClassName="Overlay">
@@ -101,8 +101,8 @@ function App() {
                 )) }
                 
             </div>
-            </ScrollLock>
             <button style={{margin: "20px"}} onClick={manualSwitchLanguage}>Change Language</button>
+            </ScrollLock>
         </div>
     );
 }
