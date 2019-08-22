@@ -27,7 +27,7 @@ function createDB(){
             skills: getList(resource.Skills),
             digitalStandards: getList(resource["Digital Standards"]),
             author: getAuthor(resource),
-            organizationalAffiliation: resource["Organizational affiliation of this resource"],
+            organizationalAffiliation: getOrg(resource),
             image: getImage(resource),
             cost: getCost(resource),
             comments: randomNumber(0, 300)
@@ -207,6 +207,14 @@ function getAuthor(resource) {
     //     return `${author[1].trim()} ${author[0].trim()}`;
     // })
     // return authors;
+}
+
+function getOrg(resource) {
+    let org = resource["Organizational affiliation of this resource"];
+    if (org == ""){
+        return null;
+    }
+    return org;
 }
 
 function getImage(resource) {

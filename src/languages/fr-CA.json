@@ -18,5 +18,11 @@
     "view": "Vue",
     "done": "Fait",
     "cardView": "Vue Carte",
-    "compactView": "Vue Compacte"
+    "compactView": "Vue Compacte",
+    "start": "Début",
+    "description": "Description",
+    "format": "Format",
+    "practices": "Pratiques",
+    "skills": "Compétences",
+    "digitalStandards": "Normes Numériques"
 }

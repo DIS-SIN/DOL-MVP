@@ -18,5 +18,11 @@
     "view": "View",
     "done": "Done",
     "cardView": "Card View",
-    "compactView": "Compact View"
+    "compactView": "Compact View",
+    "start": "Start",
+    "description": "Description",
+    "format": "Format",
+    "practices": "Practices",
+    "skills": "Skills",
+    "digitalStandards": "Digital Standards"
 }

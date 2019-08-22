@@ -93,8 +93,7 @@ function App() {
                     <div className="modalArrow"></div>
                     <CardViewModalContent closeModal={handleCloseModal} cardViewEnabled={cardViewEnabled} showCardView={showCardView} language={language}></CardViewModalContent>
                 </Modal>
-                
-                <ExpandedView expandedViewVisible={expandedViewVisible} expandedViewContent={expandedViewContent} handleCloseModal={handleCloseModal}/>
+                <ExpandedView language={language} expandedViewVisible={expandedViewVisible} expandedViewContent={expandedViewContent} handleCloseModal={handleCloseModal}/>
 
                 { resources.map( (resource, index)=>(
                     <Card key={index} language={language} viewType={{cardViewEnabled, showCardView}} lockBodyScroll={lockBodyScroll} showExpandedView={showExpandedView} setExpandedViewContent={setExpandedViewContent} resource={resource}/>

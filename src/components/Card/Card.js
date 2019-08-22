@@ -61,7 +61,7 @@ function Card(props) {
         return (
             <div className="compactCard">
                 <div className="compactCardContent">
-                <CardContent language={props.language} showExpandedView={props.showExpandedView} setExpandedViewContent={props.setExpandedViewContent} cardViewEnabled={props.viewType.cardViewEnabled} resource={props.resource}></CardContent>
+                <CardContent language={props.language} showExpandedView={props.showExpandedView} setExpandedViewContent={props.setExpandedViewContent} lockBodyScroll={props.lockBodyScroll} cardViewEnabled={props.viewType.cardViewEnabled} resource={props.resource}></CardContent>
                     <div className="cardPreview">
                         <div className="compactCardPreview">
                             <span className={typeClass}>{contentType}</span>
