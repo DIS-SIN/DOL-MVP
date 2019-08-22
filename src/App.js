@@ -4,6 +4,7 @@ import Card from './components/Card/Card';
 import CardViewModalContent from './components/CardViewModalContent';
 import ExpandedView from './components/expandedView/ExpandedView';
 import Modal from 'react-modal';
+import ScrollLock, { TouchScrollable } from 'react-scrolllock';
 import './App.css';
 
 function App() {
@@ -20,6 +21,9 @@ function App() {
     // Expanded View Modal
     const [expandedViewContent, setExpandedViewContent] = useState(null);
     const [expandedViewVisible, showExpandedView] = useState(false);
+
+    // Lock scrolling on the body
+    const [bodyScrollLocked, lockBodyScroll] = useState(false);
 
     // State to store which type of view is being used (card/compact)
     const [cardViewEnabled, showCardView] = useState(getCardViewPreference());
@@ -68,20 +72,21 @@ function App() {
         if (window.innerWidth > 1200){
             modalOffset += (window.innerWidth - 1200) / 2
         }
+        lockBodyScroll(true);
         setModalXPosition(modalOffset);
-        document.body.classList.add("noScroll");
         showModal(true);
     }
 
     function handleCloseModal(){
+        lockBodyScroll(false);
         showModal(false);
         showExpandedView(false);
-        document.body.classList.remove("noScroll");
     }
 
     return (
         <div>
             <MobileNavBar language={language}></MobileNavBar>
+            <ScrollLock isActive={bodyScrollLocked}>
             <div className="cardGrid">
                 <button className="icon cardViewIcon" onClick={handleOpenModal}>cardView</button>
                 <Modal style={{ content: {right: modalXPosition}}} closeTimeoutMS={150} isOpen={modalVisible} contentLabel="Switch View Preferences Modal" onRequestClose={handleCloseModal} className="Modal" overlayClassName="Overlay">
@@ -92,10 +97,11 @@ function App() {
                 <ExpandedView expandedViewVisible={expandedViewVisible} expandedViewContent={expandedViewContent} handleCloseModal={handleCloseModal}/>
 
                 { resources.map( (resource, index)=>(
-                    <Card key={index} language={language} viewType={{cardViewEnabled, showCardView}} showExpandedView={showExpandedView} setExpandedViewContent={setExpandedViewContent} resource={resource}/>
+                    <Card key={index} language={language} viewType={{cardViewEnabled, showCardView}} lockBodyScroll={lockBodyScroll} showExpandedView={showExpandedView} setExpandedViewContent={setExpandedViewContent} resource={resource}/>
                 )) }
                 
             </div>
+            </ScrollLock>
             <button style={{margin: "20px"}} onClick={manualSwitchLanguage}>Change Language</button>
         </div>
     );

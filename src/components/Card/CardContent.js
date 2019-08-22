@@ -10,7 +10,7 @@ function CardContent(props) {
 
     function showExpandedView(){
         props.setExpandedViewContent(props.resource);
-        document.body.classList.add("noScroll");
+        props.lockBodyScroll(true);
         props.showExpandedView(true);
     }
 
