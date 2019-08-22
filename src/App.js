@@ -69,12 +69,14 @@ function App() {
             modalOffset += (window.innerWidth - 1200) / 2
         }
         setModalXPosition(modalOffset);
+        document.body.classList.add("noScroll");
         showModal(true);
     }
 
     function handleCloseModal(){
         showModal(false);
         showExpandedView(false);
+        document.body.classList.remove("noScroll");
     }
 
     return (
