@@ -16,22 +16,30 @@
     border-bottom-right-radius: 0;
 }
 
-.shell {
+.expandedViewScrollContainer {
     position: fixed;
-    /* background-color: aquamarine; */
+    width: 750px;
+    max-width: 90%;
+    margin: 0 auto;
     left: 0;
     top: 0;
     right: 0;
     bottom: 0;
     overflow: scroll;
     -webkit-overflow-scrolling: touch;
+    overscroll-behavior: contain;
+    scrollbar-width: none;
 }
 
-.scrollPlz {
-    width: 750px;
-    max-width: 90%;
-    margin: 0 auto;
+.expandedViewScrollContainer::-webkit-scrollbar {
+    display: none;
+}
+
+.expandedViewContentContainer {
+    position: absolute;
+    width: 100%;
     margin-top: 100px;
     margin-bottom: 100px;
+    border-radius: 13px;
     background-color: white;
 }
