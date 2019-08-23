@@ -4,6 +4,7 @@ import Card from './components/Card/Card';
 import CardViewModalContent from './components/CardViewModalContent';
 import ExpandedView from './components/expandedView/ExpandedView';
 import Modal from 'react-modal';
+import ScrollLock from 'react-scrolllock';
 import './App.css';
 
 function App() {
@@ -77,9 +78,14 @@ function App() {
     }
 
     function handleCloseModal(){
-        lockScrolling(false);
-        showModal(false);
         showExpandedView(false);
+        setTimeout(() => {
+            showModal(false);
+            setTimeout(() => {
+                lockScrolling(false);
+            }, 150);
+        }, 10);
+        
     }
 
     return (
@@ -87,10 +93,14 @@ function App() {
             <MobileNavBar language={language}></MobileNavBar>
             <div className="cardGrid">
                 <button className="icon cardViewIcon" onClick={handleOpenModal}>cardView</button>
+                <ScrollLock isActive={scrollLocked}>
+                <div style={{display:"none"}}>
                 <Modal style={{ content: {right: modalXPosition}}} closeTimeoutMS={150} isOpen={modalVisible} contentLabel="Switch View Preferences Modal" onRequestClose={handleCloseModal} className="Modal" overlayClassName="Overlay">
                     <div className="modalArrow"></div>
                     <CardViewModalContent closeModal={handleCloseModal} cardViewEnabled={cardViewEnabled} showCardView={showCardView} language={language}></CardViewModalContent>
                 </Modal>
+                </div>
+                </ScrollLock>
                 <ExpandedView language={language} handleCloseModal={handleCloseModal} expandedViewVisible={expandedViewVisible} expandedViewContent={expandedViewContent} handleCloseModal={handleCloseModal}/>
 
                 { resources.map( (resource, index)=>(

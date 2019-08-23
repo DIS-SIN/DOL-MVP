@@ -2,7 +2,7 @@ import React from 'react';
 import Title from 'title';
 import Tags from '../Card/Tags';
 import Modal from 'react-modal';
-import ScrollLock, { TouchScrollable } from 'react-scrolllock';
+import ScrollLock from 'react-scrolllock';
 import './ExpandedView.css';
 
 const SpecialTitlePhrases = require("../../languages/SpecialTitlePhrases.json");
