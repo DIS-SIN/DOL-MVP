@@ -84,7 +84,7 @@ function App() {
             setTimeout(() => {
                 lockScrolling(false);
             }, 150);
-        }, 10);
+        }, 1);
         
     }
 
