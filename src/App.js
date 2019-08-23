@@ -79,8 +79,10 @@ function App() {
 
     function handleCloseModal(){
         showExpandedView(false);
+        // This timeout is to prevent the view change modal jumping during the closing animation
         setTimeout(() => {
             showModal(false);
+            // This timeout is due to the 150ms animation on the class .ReactModal__Overlay in App.css
             setTimeout(() => {
                 lockScrolling(false);
             }, 150);

@@ -35,11 +35,12 @@ function ExpandedView(props) {
                 <img src={props.expandedViewContent.image}></img>
                 <h1>{Title(props.expandedViewContent.title, SpecialTitlePhrases)}</h1>
                 <h3>{getAuthors()}</h3>
-                <button onClick={() => {console.log("Clicked on Button")}}>Button</button>
+                <button onClick={() => {console.log("Clicked on Button")}}>Start <span className="icon">course</span></button>
                 <h2>{props.language.description}</h2>
                 <p>{props.expandedViewContent.description}</p>
                 <h2>{props.language.format}</h2>
                 <Tags language={props.language} difficulty={props.expandedViewContent.difficulty} timeEstimate={props.expandedViewContent.timeEstimate}></Tags>
+                <div className="tag">Hello World</div>
                 <h2>{props.language.practices}</h2>
                 <h2>{props.language.skills}</h2>
                 <h2>{props.language.digitalStandards}</h2>

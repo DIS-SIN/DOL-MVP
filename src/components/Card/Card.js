@@ -30,11 +30,14 @@ function Card(props) {
             case "use":
                 return "read";
                 break;
-            case "attend":
+            case "participate":
                 return "course";
                 break;
             case "watch":
                 return "watch";
+                break;
+            case "listen":
+                return "listen";
                 break;
             default:
                 return "read";
