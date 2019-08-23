@@ -85,7 +85,7 @@ function App() {
 
     return (
         <div>
-            <ScrollLock isActive={bodyScrollLocked}>
+            {/* <ScrollLock isActive={bodyScrollLocked}> */}
             <MobileNavBar language={language}></MobileNavBar>
             <div className="cardGrid">
                 <button className="icon cardViewIcon" onClick={handleOpenModal}>cardView</button>
@@ -93,7 +93,7 @@ function App() {
                     <div className="modalArrow"></div>
                     <CardViewModalContent closeModal={handleCloseModal} cardViewEnabled={cardViewEnabled} showCardView={showCardView} language={language}></CardViewModalContent>
                 </Modal>
-                <ExpandedView language={language} expandedViewVisible={expandedViewVisible} expandedViewContent={expandedViewContent} handleCloseModal={handleCloseModal}/>
+                <ExpandedView language={language} handleCloseModal={handleCloseModal} bodyScrollLocked={bodyScrollLocked} expandedViewVisible={expandedViewVisible} expandedViewContent={expandedViewContent} handleCloseModal={handleCloseModal}/>
 
                 { resources.map( (resource, index)=>(
                     <Card key={index} language={language} viewType={{cardViewEnabled, showCardView}} lockBodyScroll={lockBodyScroll} showExpandedView={showExpandedView} setExpandedViewContent={setExpandedViewContent} resource={resource}/>
@@ -101,7 +101,7 @@ function App() {
                 
             </div>
             <button style={{margin: "20px"}} onClick={manualSwitchLanguage}>Change Language</button>
-            </ScrollLock>
+            {/* </ScrollLock> */}
         </div>
     );
 }

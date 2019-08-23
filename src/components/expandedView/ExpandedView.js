@@ -2,6 +2,7 @@ import React from 'react';
 import Title from 'title';
 import Tags from '../Card/Tags';
 import Modal from 'react-modal';
+import ScrollLock, { TouchScrollable } from 'react-scrolllock';
 import './ExpandedView.css';
 
 const SpecialTitlePhrases = require("../../languages/SpecialTitlePhrases.json");
@@ -28,9 +29,13 @@ function ExpandedView(props) {
     if (props.expandedViewContent != null){
         return (
             <Modal closeTimeoutMS={150} isOpen={props.expandedViewVisible} contentLabel="Expanded View" onRequestClose={props.handleCloseModal} className="Modal expandedView" overlayClassName="Overlay">
+                <ScrollLock isActive={props.bodyScrollLocked}>
+                <div className="shell" onClick={props.handleCloseModal}>
+                    <div className="scrollPlz" onClick={console.log("Clicked on modal")}>
                 <img src={props.expandedViewContent.image}></img>
                 <h1>{Title(props.expandedViewContent.title, SpecialTitlePhrases)}</h1>
                 <h3>{getAuthors()}</h3>
+                <button onClick={console.log("Clicked on Button")}>Button</button>
                 <h2>{props.language.description}</h2>
                 <p>{props.expandedViewContent.description}</p>
                 <h2>{props.language.format}</h2>
@@ -38,6 +43,9 @@ function ExpandedView(props) {
                 <h2>{props.language.practices}</h2>
                 <h2>{props.language.skills}</h2>
                 <h2>{props.language.digitalStandards}</h2>
+                </div>
+                </div>
+                </ScrollLock>
             </Modal>
         );
     }
