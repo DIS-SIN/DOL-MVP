@@ -9,6 +9,10 @@ const SpecialTitlePhrases = require("../../languages/SpecialTitlePhrases.json");
 
 function ExpandedView(props) {
 
+    function startResource() {
+        window.open(props.expandedViewContent.url, "_blank");
+    }
+
     function getAuthors() {
         let author = props.expandedViewContent.author;
         let org = props.expandedViewContent.organizationalAffiliation;
@@ -46,7 +50,7 @@ function ExpandedView(props) {
                                     <h1>{Title(props.expandedViewContent.title, SpecialTitlePhrases)}</h1>
                                     <h3>{getAuthors()}</h3>
                                 </div>
-                                <button className="startResourceButton" onClick={() => {console.log("Clicked on Button")}}>{props.language.start} <span className="icon">course</span></button>
+                                <button className="startResourceButton" onClick={startResource}>{props.language.start} <span className="icon">course</span></button>
                             </div>
                             
                             <h2>{props.language.description}</h2>

@@ -103,16 +103,14 @@
     flex-grow: 2;
 }
 
-.expandedViewTitleArea h1, .expandedViewTitleArea h3, .expandedViewContentContainer h2, .expandedViewContentContainer p {
-    margin: 0;
-}
-
 .expandedViewTitleArea h1 {
+    margin: 0;
     padding: 10px 0 0 10px;
     line-height: 36px;
 }
 
 .expandedViewTitleArea h3 {
+    margin: 0;
     padding: 0 0 10px 10px;
     font-weight: 500;
     color: rgba(0, 0, 0, 0.9);
@@ -131,6 +129,14 @@
     text-align: center;
     border: none;
     cursor: pointer;
+}
+
+.expandedViewContentContainer h2 {
+    margin: 10px 0 0 10px;
+}
+
+.expandedViewContentContainer p {
+    margin: 0 0 0 10px;
 }
 
 /* #region Media Queries */

@@ -41,7 +41,7 @@ function CardContent(props) {
 
     return (
         <div className="cardContent">
-            <h4 onClick={showExpandedView} className="cardTitle">{Title(props.resource.title, SpecialTitlePhrases)}</h4>
+            <h4 onClick={showExpandedView} tabIndex={0} className="cardTitle">{Title(props.resource.title, SpecialTitlePhrases)}</h4>
             <div>
             <ActivityBar language={props.language} endorsements={props.resource.endorsements} comments={props.resource.comments}/>
 
