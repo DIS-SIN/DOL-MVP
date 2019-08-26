@@ -7,7 +7,7 @@ import Modal from 'react-modal';
 import ScrollLock from 'react-scrolllock';
 import './App.css';
 
-function App() {
+function App(props) {
 
     // This hides all content from screen readers while the modal is open
     Modal.setAppElement('#root')
@@ -42,8 +42,26 @@ function App() {
         .then(data => {
             console.log(data);
             setResources(data);
+            
+            directResourceLink(data);
         });
     },[])
+
+    // Checks to see if the user is coming in from a shared link leading directly to a resource
+    function directResourceLink(data) {
+        if (props.match.params.resourceID){
+            let foundResource = data.find(resource => {
+                return resource.id === props.match.params.resourceID;
+            });
+            if (foundResource){
+                setExpandedViewContent(foundResource);
+                showExpandedView(true);
+            }
+            else{
+                props.history.push("/error");
+            }
+        }
+    }
 
     function getCardViewPreference() {
         if (localStorage && localStorage.showCardView){
@@ -103,7 +121,7 @@ function App() {
                 </Modal>
                 </div>
                 </ScrollLock>
-                <ExpandedView language={language} handleCloseModal={handleCloseModal} expandedViewVisible={expandedViewVisible} expandedViewContent={expandedViewContent} handleCloseModal={handleCloseModal}/>
+                <ExpandedView language={language} history={props.history} handleCloseModal={handleCloseModal} expandedViewVisible={expandedViewVisible} expandedViewContent={expandedViewContent} handleCloseModal={handleCloseModal}/>
 
                 { resources.map( (resource, index)=>(
                     <Card key={index} language={language} viewType={{cardViewEnabled, showCardView}} showExpandedView={showExpandedView} setExpandedViewContent={setExpandedViewContent} resource={resource}/>
