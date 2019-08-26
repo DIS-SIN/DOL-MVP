@@ -97,6 +97,7 @@ function App(props) {
 
     function handleCloseModal(){
         showExpandedView(false);
+        props.history.push("");
         // This timeout is to prevent the view change modal jumping during the closing animation
         setTimeout(() => {
             showModal(false);
@@ -121,10 +122,10 @@ function App(props) {
                 </Modal>
                 </div>
                 </ScrollLock>
-                <ExpandedView language={language} history={props.history} handleCloseModal={handleCloseModal} expandedViewVisible={expandedViewVisible} expandedViewContent={expandedViewContent} handleCloseModal={handleCloseModal}/>
+                <ExpandedView language={language} handleCloseModal={handleCloseModal} expandedViewVisible={expandedViewVisible} expandedViewContent={expandedViewContent} handleCloseModal={handleCloseModal}/>
 
                 { resources.map( (resource, index)=>(
-                    <Card key={index} language={language} viewType={{cardViewEnabled, showCardView}} showExpandedView={showExpandedView} setExpandedViewContent={setExpandedViewContent} resource={resource}/>
+                    <Card key={index} language={language} viewType={{cardViewEnabled, showCardView}} history={props.history} showExpandedView={showExpandedView} setExpandedViewContent={setExpandedViewContent} resource={resource}/>
                 )) }
                 
             </div>

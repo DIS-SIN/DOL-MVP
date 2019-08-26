@@ -11,6 +11,7 @@ function CardContent(props) {
     function showExpandedView(){
         props.setExpandedViewContent(props.resource);
         props.showExpandedView(true);
+        props.history.push(`/resource/${props.resource.id}`);
     }
 
     function compactDescription(description) {

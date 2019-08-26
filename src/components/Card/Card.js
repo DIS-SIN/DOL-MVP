@@ -53,7 +53,7 @@ function Card(props) {
                     <span className={typeClass}>{contentType}</span>
                     <img src={props.resource.image} alt="" title=""/>
                 </div>
-                <CardContent language={props.language} showExpandedView={props.showExpandedView} setExpandedViewContent={props.setExpandedViewContent} lockBodyScroll={props.lockBodyScroll} cardViewEnabled={props.viewType.cardViewEnabled} resource={props.resource}></CardContent>
+                <CardContent language={props.language} history={props.history} showExpandedView={props.showExpandedView} setExpandedViewContent={props.setExpandedViewContent} lockBodyScroll={props.lockBodyScroll} cardViewEnabled={props.viewType.cardViewEnabled} resource={props.resource}></CardContent>
                 <InteractionBar language={props.language}></InteractionBar>
             </div>
         );
