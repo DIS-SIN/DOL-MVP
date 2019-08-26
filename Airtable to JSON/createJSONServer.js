@@ -1,5 +1,6 @@
 const fs = require('fs');
 const Currency = require('currency.js');
+const uuidv4 = require('uuid/v4');
 let data = require('./output/data.json');
 
 function createDB(){
@@ -7,6 +8,7 @@ function createDB(){
 
     data.forEach(resource => {
         dolDB.push({
+            id: uuidv4(),
             title: resource["Resource name"],
             endorsements: getEndorsements(resource),
             description: resource["Why is this a good resource?"],

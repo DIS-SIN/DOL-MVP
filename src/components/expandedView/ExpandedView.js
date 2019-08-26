@@ -31,6 +31,9 @@ function ExpandedView(props) {
     }
 
     if (props.expandedViewContent != null){
+
+        window.location.hash = props.expandedViewContent.id;
+
         return (
             <Modal closeTimeoutMS={150} isOpen={props.expandedViewVisible} contentLabel="Expanded View" onRequestClose={props.handleCloseModal} className="Modal expandedView" overlayClassName="Overlay">
                 <ScrollLock>

@@ -1,18 +1,19 @@
 [
     {
+        "id": "3ef5098e-7877-469d-b6e7-dc12f8ade789",
         "title": "Governance in the digital age",
         "endorsements": {
             "featuredEndorsers": [
                 {
                     "name": "Sabrina Ahmad",
-                    "profilePic": "https://i.pravatar.cc/150?u=7961"
+                    "profilePic": "https://i.pravatar.cc/150?u=7072"
                 },
                 {
                     "name": "Firstname Lastname",
-                    "profilePic": "https://i.pravatar.cc/150?u=513"
+                    "profilePic": "https://i.pravatar.cc/150?u=2255"
                 }
             ],
-            "endorsements": 4404
+            "endorsements": 1695
         },
         "description": "Written by Kent Aitken, Policy Lead at the Digital Academy. It is a comprehensive report written from 300+ interviews as to the state and challenges of digital transformation in government.",
         "url": "https://ppforum.ca/publications/governance-in-the-digital-age/",
@@ -49,22 +50,23 @@
         "author": "Kent Aitken",
         "organizationalAffiliation": "Canada's Public Policy Forum",
         "cost": 0,
-        "comments": 207
+        "comments": 48
     },
     {
+        "id": "748f6fd8-0725-48c2-a654-08b087892d10",
         "title": "Value sensitive design",
         "endorsements": {
             "featuredEndorsers": [
                 {
                     "name": "Ksenia Cheinman",
-                    "profilePic": "https://i.pravatar.cc/150?u=6056"
+                    "profilePic": "https://i.pravatar.cc/150?u=4834"
                 },
                 {
                     "name": "Firstname Lastname",
-                    "profilePic": "https://i.pravatar.cc/150?u=6876"
+                    "profilePic": "https://i.pravatar.cc/150?u=9319"
                 }
             ],
-            "endorsements": 3621
+            "endorsements": 3188
         },
         "description": "A number of resources and considerations to help ensure that design projects we undertake are ethical, inclusive, reflect on the entire system, including direct and indirect stakeholders.",
         "url": "https://vsdesign.org",
@@ -112,22 +114,23 @@
         "author": null,
         "organizationalAffiliation": "University of Washington Information School",
         "cost": 0,
-        "comments": 0
+        "comments": 289
     },
     {
+        "id": "42de3f01-7599-47b2-a44b-d58cf3addef3",
         "title": "Old habits die hard (when feelings get in the way)",
         "endorsements": {
             "featuredEndorsers": [
                 {
                     "name": "Ksenia Cheinman",
-                    "profilePic": "https://i.pravatar.cc/150?u=154"
+                    "profilePic": "https://i.pravatar.cc/150?u=8963"
                 },
                 {
                     "name": "Firstname Lastname",
-                    "profilePic": "https://i.pravatar.cc/150?u=8993"
+                    "profilePic": "https://i.pravatar.cc/150?u=7289"
                 }
             ],
-            "endorsements": 451
+            "endorsements": 2931
         },
         "description": "Highlights the difficulty and importance of moving away from personal opinions and to focusing on top user tasks.",
         "url": "https://blog.canada.ca/2018/03/14/old-habits-die-hard.html",
@@ -163,22 +166,23 @@
         "author": "Celeste Côté",
         "organizationalAffiliation": "\"Treasury Board of Canada Secretariat, TBS\"",
         "cost": 0,
-        "comments": 114
+        "comments": 204
     },
     {
+        "id": "2a322d6b-087c-4b4e-8ce3-f5da54742ef9",
         "title": "Fundamentals of data analysis for government",
         "endorsements": {
             "featuredEndorsers": [
                 {
                     "name": "Mandy Hoyt",
-                    "profilePic": "https://i.pravatar.cc/150?u=1925"
+                    "profilePic": "https://i.pravatar.cc/150?u=5371"
                 },
                 {
                     "name": "Firstname Lastname",
-                    "profilePic": "https://i.pravatar.cc/150?u=7490"
+                    "profilePic": "https://i.pravatar.cc/150?u=6055"
                 }
             ],
-            "endorsements": 1224
+            "endorsements": 5186
         },
         "description": "A course targeting government employees that have a qualitative understanding of their work but have yet to master the quantitative skills required to leverage data in their day- to-day responsibilities.",
         "url": "https://data-academy.skilljar.com/",
@@ -226,22 +230,23 @@
         "organizationalAffiliation": "Socrata Data Academy",
         "image": "https://cc.sj-cdn.net/instructor/1a0u4ces427d1-socrata-data-academy/themes/2a9h8ernsshan/header-logo.1509481495.png",
         "cost": 0,
-        "comments": 237
+        "comments": 267
     },
     {
+        "id": "426f27cd-d38e-427d-b325-7339a7ebe6ca",
         "title": "Finding stories in data",
         "endorsements": {
             "featuredEndorsers": [
                 {
                     "name": "Mandy Hoyt",
-                    "profilePic": "https://i.pravatar.cc/150?u=994"
+                    "profilePic": "https://i.pravatar.cc/150?u=6557"
                 },
                 {
                     "name": "Firstname Lastname",
-                    "profilePic": "https://i.pravatar.cc/150?u=5794"
+                    "profilePic": "https://i.pravatar.cc/150?u=589"
                 }
             ],
-            "endorsements": 1059
+            "endorsements": 8362
         },
         "description": "At the heart of driving change is the skill of finding and telling stories, using where relevant, compelling visualizations.",
         "url": "https://findingstories.learndata.info/#/",
@@ -289,22 +294,23 @@
         "author": null,
         "organizationalAffiliation": "Open Data Institute (UK)",
         "cost": 0,
-        "comments": 176
+        "comments": 118
     },
     {
+        "id": "0609ddfe-dd70-44a2-b9c0-0e5a2c1e84e4",
         "title": "Introduction to data modelling",
         "endorsements": {
             "featuredEndorsers": [
                 {
                     "name": "Mandy Hoyt",
-                    "profilePic": "https://i.pravatar.cc/150?u=8736"
+                    "profilePic": "https://i.pravatar.cc/150?u=4556"
                 },
                 {
                     "name": "Firstname Lastname",
-                    "profilePic": "https://i.pravatar.cc/150?u=4605"
+                    "profilePic": "https://i.pravatar.cc/150?u=9372"
                 }
             ],
-            "endorsements": 2168
+            "endorsements": 0
         },
         "description": "Go from conceptual to practical as you build your data modelling foundation. Explore data and data design concepts, before you begin sourcing, preparingdesigning and manipulating data.",
         "url": "https://www.edx.org/course/introduction-data-modeling-4",
@@ -354,22 +360,23 @@
         "organizationalAffiliation": "edX,Microsoft",
         "image": "https://prod-discovery.edx-cdn.org/media/course/image/0b54564e-51e5-4d84-a640-b73815c56b1a-032c7453c6d6.small.png",
         "cost": 0,
-        "comments": 215
+        "comments": 52
     },
     {
+        "id": "72640e0a-cf80-458d-a7a6-02c3107a9f44",
         "title": "Diseases and immunization optimization project",
         "endorsements": {
             "featuredEndorsers": [
                 {
                     "name": "Ksenia Cheinman",
-                    "profilePic": "https://i.pravatar.cc/150?u=4645"
+                    "profilePic": "https://i.pravatar.cc/150?u=1894"
                 },
                 {
                     "name": "Firstname Lastname",
-                    "profilePic": "https://i.pravatar.cc/150?u=5952"
+                    "profilePic": "https://i.pravatar.cc/150?u=4460"
                 }
             ],
-            "endorsements": 3726
+            "endorsements": 38
         },
         "description": "Great example of a web content improvement project based on user needs in the health sector. Includes approach, success metrics, discoveries, visuals.",
         "url": "https://blog.canada.ca/research-summaries/diseases-research-summary.html",
@@ -408,22 +415,23 @@
         "author": null,
         "organizationalAffiliation": "\"Treasury Board of Canada Secretariat, TBS\"",
         "cost": 0,
-        "comments": 275
+        "comments": 181
     },
     {
+        "id": "c117e3f0-b10a-4726-93b0-65cfa4f98c45",
         "title": "Weaponization of Education Data",
         "endorsements": {
             "featuredEndorsers": [
                 {
                     "name": "Ksenia Cheinman",
-                    "profilePic": "https://i.pravatar.cc/150?u=4443"
+                    "profilePic": "https://i.pravatar.cc/150?u=6444"
                 },
                 {
                     "name": "Firstname Lastname",
-                    "profilePic": "https://i.pravatar.cc/150?u=915"
+                    "profilePic": "https://i.pravatar.cc/150?u=8389"
                 }
             ],
-            "endorsements": 461
+            "endorsements": 5373
         },
         "description": "Thoroughly researched and documented, the author takes you on a journey of the dark side of data. Showing how prolific and devastating data misuse can be.",
         "url": "http://hackeducation.com/2017/12/11/top-ed-tech-trends-weaponized-data",
@@ -473,22 +481,23 @@
         "organizationalAffiliation": null,
         "image": "https://s3.amazonaws.com/hackedu/2017-ed-tech-trends-5.jpg",
         "cost": 0,
-        "comments": 166
+        "comments": 283
     },
     {
+        "id": "17e03edb-5827-4f30-b43c-155763e4dd50",
         "title": "GC UX Community Meetup",
         "endorsements": {
             "featuredEndorsers": [
                 {
                     "name": "Ksenia Cheinman",
-                    "profilePic": "https://i.pravatar.cc/150?u=6612"
+                    "profilePic": "https://i.pravatar.cc/150?u=5009"
                 },
                 {
                     "name": "Firstname Lastname",
-                    "profilePic": "https://i.pravatar.cc/150?u=6433"
+                    "profilePic": "https://i.pravatar.cc/150?u=8634"
                 }
             ],
-            "endorsements": 4387
+            "endorsements": 8009
         },
         "description": "Meet like-minded people trying to improve user experience in the Government of Canada context.",
         "url": "https://www.eventbrite.ca/e/gc-ux-community-meetup-rendez-vous-de-la-communaute-ux-du-gc-tickets-59967615753#",
@@ -528,22 +537,23 @@
         "organizationalAffiliation": null,
         "image": "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F59835521%2F2733832803%2F1%2Foriginal.jpg?w=1000&auto=compress&rect=0%2C18%2C960%2C480&s=103c73258eaa37dc45a196fee2608a86",
         "cost": 0,
-        "comments": 15
+        "comments": 86
     },
     {
+        "id": "809f521d-8412-44eb-b6dd-f8c7a08bc619",
         "title": "Content design using data and evidence",
         "endorsements": {
             "featuredEndorsers": [
                 {
                     "name": "Ksenia Cheinman",
-                    "profilePic": "https://i.pravatar.cc/150?u=4987"
+                    "profilePic": "https://i.pravatar.cc/150?u=8657"
                 },
                 {
                     "name": "Firstname Lastname",
-                    "profilePic": "https://i.pravatar.cc/150?u=4714"
+                    "profilePic": "https://i.pravatar.cc/150?u=8128"
                 }
             ],
-            "endorsements": 2584
+            "endorsements": 8720
         },
         "description": "Explains the difference between writing, editing, copyrighting and digital content design, tells the story of Gov.UK process of converting 75,000 pieces of content into 3,000, explains how to obtain data and evidence to support content design.",
         "url": "https://www.contentstrategy.com/podcast/ep-4-sarah-richards-and-content-design",
@@ -593,22 +603,23 @@
         "organizationalAffiliation": "UK Digital Service",
         "image": "https://assets.website-files.com/5acbe3b595ba2b13138c302b/5acd23a3fb4f189190e2def6_podcast-meta.png",
         "cost": 0,
-        "comments": 135
+        "comments": 177
     },
     {
+        "id": "941b9a39-a2eb-45b2-be26-660f50adf068",
         "title": "Ethics of algorithms: Mapping the debate",
         "endorsements": {
             "featuredEndorsers": [
                 {
                     "name": "Ksenia Cheinman",
-                    "profilePic": "https://i.pravatar.cc/150?u=2594"
+                    "profilePic": "https://i.pravatar.cc/150?u=7754"
                 },
                 {
                     "name": "Firstname Lastname",
-                    "profilePic": "https://i.pravatar.cc/150?u=278"
+                    "profilePic": "https://i.pravatar.cc/150?u=8272"
                 }
             ],
-            "endorsements": 241
+            "endorsements": 2122
         },
         "description": "Overview of the ethical problems introduced by algorithmic decision-making and an attempt to categorize them to better make sense of the types of ethical implications.",
         "url": "https://doi.org/10.1177/2053951716679679",
@@ -651,22 +662,23 @@
         "organizationalAffiliation": "University of Oxford",
         "image": "https://journals.sagepub.com/pb-assets/Images/SJ_Twitter_Card.jpg",
         "cost": 0,
-        "comments": 11
+        "comments": 80
     },
     {
+        "id": "c9ba6946-d100-4c06-8239-f5853fa2d142",
         "title": "Doing Research with Social Media Data - Ethics",
         "endorsements": {
             "featuredEndorsers": [
                 {
                     "name": "Ksenia Cheinman",
-                    "profilePic": "https://i.pravatar.cc/150?u=8589"
+                    "profilePic": "https://i.pravatar.cc/150?u=8279"
                 },
                 {
                     "name": "Firstname Lastname",
-                    "profilePic": "https://i.pravatar.cc/150?u=6855"
+                    "profilePic": "https://i.pravatar.cc/150?u=7083"
                 }
             ],
-            "endorsements": 9108
+            "endorsements": 2361
         },
         "description": "Overview of how and why to use social media data to better understand our social context, as well as the ethical implications surrounding this practice.",
         "url": "https://youtu.be/vF9Mgd-4tXQ",
@@ -708,22 +720,23 @@
         "organizationalAffiliation": "Ryerson University",
         "image": "https://i.ytimg.com/vi/vF9Mgd-4tXQ/maxresdefault.jpg",
         "cost": 0,
-        "comments": 61
+        "comments": 11
     },
     {
+        "id": "d27ca327-35ee-4f14-9ba5-5e420e5bd8ed",
         "title": "Designing for accessibility is not that hard",
         "endorsements": {
             "featuredEndorsers": [
                 {
                     "name": "Ksenia Cheinman",
-                    "profilePic": "https://i.pravatar.cc/150?u=3509"
+                    "profilePic": "https://i.pravatar.cc/150?u=4490"
                 },
                 {
                     "name": "Firstname Lastname",
-                    "profilePic": "https://i.pravatar.cc/150?u=5652"
+                    "profilePic": "https://i.pravatar.cc/150?u=8809"
                 }
             ],
-            "endorsements": 2648
+            "endorsements": 2776
         },
         "description": "Easy to implement, clear examples with captivating illustrations and a list of helpful tools to support web accessibility.",
         "url": "https://uxdesign.cc/designing-for-accessibility-is-not-that-hard-c04cc4779d94",
@@ -765,22 +778,23 @@
         "organizationalAffiliation": "UX Collective",
         "image": "https://miro.medium.com/freeze/max/1200/1*cHY0x1fZ1bI98CDD_Ox9OA.gif",
         "cost": 0,
-        "comments": 154
+        "comments": 134
     },
     {
+        "id": "ba299d74-8a10-4fa7-8155-0af6eb528a84",
         "title": "How to Use Airtable for Content Audits, Part 1",
         "endorsements": {
             "featuredEndorsers": [
                 {
                     "name": "Ksenia Cheinman",
-                    "profilePic": "https://i.pravatar.cc/150?u=3246"
+                    "profilePic": "https://i.pravatar.cc/150?u=292"
                 },
                 {
                     "name": "Firstname Lastname",
-                    "profilePic": "https://i.pravatar.cc/150?u=4764"
+                    "profilePic": "https://i.pravatar.cc/150?u=3223"
                 }
             ],
-            "endorsements": 4021
+            "endorsements": 8621
         },
         "description": "Excellent break down of how to do a web content audit using an online database tool that helps to visualize and sort through data effectively.",
         "url": "https://medium.com/@Think_Company/how-to-use-airtable-for-content-audits-part-1-d9007d67bbb7",
@@ -826,22 +840,23 @@
         "organizationalAffiliation": "Think Company",
         "image": "https://miro.medium.com/max/1200/0*hEV8I7Zeh2otlnjJ.png",
         "cost": 0,
-        "comments": 158
+        "comments": 247
     },
     {
+        "id": "67238635-e97d-4a97-9993-f71713274e7c",
         "title": "Information architecture course",
         "endorsements": {
             "featuredEndorsers": [
                 {
                     "name": "Ksenia Cheinman",
-                    "profilePic": "https://i.pravatar.cc/150?u=2846"
+                    "profilePic": "https://i.pravatar.cc/150?u=7829"
                 },
                 {
                     "name": "Firstname Lastname",
-                    "profilePic": "https://i.pravatar.cc/150?u=2136"
+                    "profilePic": "https://i.pravatar.cc/150?u=889"
                 }
             ],
-            "endorsements": 8303
+            "endorsements": 5330
         },
         "description": "Co-designed by government employees with insight into UX and IA contexts of the Government of Canada with many examples to illustrate concepts.",
         "url": "https://dis-sin.github.io/ia-learning/index-e.html",
@@ -889,22 +904,23 @@
         "author": "Ksenia  Cheinman",
         "organizationalAffiliation": "\"Canada School of Public Service, CSPS\",\"Canada Revenue Agency, CRA\"",
         "cost": 0,
-        "comments": 127
+        "comments": 288
     },
     {
+        "id": "d1d2726a-cf6f-4dd0-8726-cbf4c2ef5a55",
         "title": "Open Data 101",
         "endorsements": {
             "featuredEndorsers": [
                 {
                     "name": "Ashley Evans",
-                    "profilePic": "https://i.pravatar.cc/150?u=8069"
+                    "profilePic": "https://i.pravatar.cc/150?u=8081"
                 },
                 {
                     "name": "Firstname Lastname",
-                    "profilePic": "https://i.pravatar.cc/150?u=1612"
+                    "profilePic": "https://i.pravatar.cc/150?u=5883"
                 }
             ],
-            "endorsements": 9440
+            "endorsements": 7672
         },
         "description": "Describes Canada's open data principles and the importance of open data. Includes a glossary of well-used terms (data, machine readable, open government, open information, etc.).",
         "url": "https://open.canada.ca/en/open-data-principles",
@@ -943,22 +959,23 @@
         "author": null,
         "organizationalAffiliation": "\"Treasury Board of Canada Secretariat, TBS\"",
         "cost": 0,
-        "comments": 147
+        "comments": 37
     },
     {
+        "id": "fa57f97b-a4c0-4db5-a824-b831781777e9",
         "title": "Data Science 101",
         "endorsements": {
             "featuredEndorsers": [
                 {
                     "name": "Ashley Evans",
-                    "profilePic": "https://i.pravatar.cc/150?u=9139"
+                    "profilePic": "https://i.pravatar.cc/150?u=4789"
                 },
                 {
                     "name": "Firstname Lastname",
-                    "profilePic": "https://i.pravatar.cc/150?u=4696"
+                    "profilePic": "https://i.pravatar.cc/150?u=4232"
                 }
             ],
-            "endorsements": 3892
+            "endorsements": 4685
         },
         "description": "Open, free course for anyone interested in data science.",
         "url": "https://cognitiveclass.ai/courses/data-science-101/",
@@ -998,22 +1015,23 @@
         "organizationalAffiliation": "\"Treasury Board of Canada Secretariat, TBS\"",
         "image": "https://cognitiveclass.ai/wp-content/uploads/2016/08/Data-Science-101_smaller-image-e1471973150511.png",
         "cost": 0,
-        "comments": 195
+        "comments": 64
     },
     {
+        "id": "70e5b75e-1e3d-4f5a-967b-0f168f4bc5a2",
         "title": "Fundamental Principles of Analytical Design",
         "endorsements": {
             "featuredEndorsers": [
                 {
                     "name": "Ashley Evans",
-                    "profilePic": "https://i.pravatar.cc/150?u=697"
+                    "profilePic": "https://i.pravatar.cc/150?u=6995"
                 },
                 {
                     "name": "Firstname Lastname",
-                    "profilePic": "https://i.pravatar.cc/150?u=9641"
+                    "profilePic": "https://i.pravatar.cc/150?u=9075"
                 }
             ],
-            "endorsements": 69
+            "endorsements": 7548
         },
         "description": "Patrick Boily, AI/ML professor of the Digital Academy, summarizes Edward Tufte's 2006 article, Fundamental Principles of Analytical Design, and illustrates the principles through health and wealth data visualizations.",
         "url": "https://www.data-action-lab.com/wp-content/uploads/2018/10/DSRS_FPAD.pdfP",
@@ -1054,22 +1072,23 @@
         "author": "Patrick Boily",
         "organizationalAffiliation": "University of Ottawa",
         "cost": 0,
-        "comments": 285
+        "comments": 172
     },
     {
+        "id": "24c673d0-addd-4b8f-a54f-f2803c4ac8a0",
         "title": "AI Practitioners in Government of Canada",
         "endorsements": {
             "featuredEndorsers": [
                 {
                     "name": "Ashley Evans",
-                    "profilePic": "https://i.pravatar.cc/150?u=9638"
+                    "profilePic": "https://i.pravatar.cc/150?u=9196"
                 },
                 {
                     "name": "Firstname Lastname",
-                    "profilePic": "https://i.pravatar.cc/150?u=964"
+                    "profilePic": "https://i.pravatar.cc/150?u=2587"
                 }
             ],
-            "endorsements": 5899
+            "endorsements": 7571
         },
         "description": "Research and analysis by GCentrepreneurs on the AI practitioners landscape in the Government of Canada.",
         "url": "https://github.com/CSPS-EFPC-DAAN/Data-AI-ML/blob/master/Slides/3%20-%20AI%20practitioners%20in%20the%20GoC.pdf",
@@ -1111,22 +1130,23 @@
         "organizationalAffiliation": "GCentrepreneur",
         "image": "https://avatars2.githubusercontent.com/u/45179177?s=400&v=4",
         "cost": 0,
-        "comments": 128
+        "comments": 175
     },
     {
+        "id": "5a79fde1-1cde-49e9-b0f5-554a89b7ba77",
         "title": "Why design should include everyone",
         "endorsements": {
             "featuredEndorsers": [
                 {
                     "name": "Ashley Evans",
-                    "profilePic": "https://i.pravatar.cc/150?u=2834"
+                    "profilePic": "https://i.pravatar.cc/150?u=9053"
                 },
                 {
                     "name": "Firstname Lastname",
-                    "profilePic": "https://i.pravatar.cc/150?u=6901"
+                    "profilePic": "https://i.pravatar.cc/150?u=5101"
                 }
             ],
-            "endorsements": 8396
+            "endorsements": 351
         },
         "description": "Sinéad Burke is acutely aware of details that are practically invisible to many of us. At 105 centimeters (or 3' 5\") tall, the designed world -- from the height of a lock to the range of available shoe sizes -- often inhibits her ability to do things for herself. Here she tells us what it's like to navigate the world as a little person and asks: \"Who are we not designing for?\"",
         "url": "https://www.youtube.com/watch?v=RD_SLJG7oi82017",
@@ -1170,22 +1190,23 @@
         "organizationalAffiliation": "TED",
         "image": "https://i.ytimg.com/vi/RD_SLJG7oi8/maxresdefault.jpg",
         "cost": 0,
-        "comments": 66
+        "comments": 35
     },
     {
+        "id": "994cdaed-847f-485c-b9e8-1961061d8e33",
         "title": "Designing for public services",
         "endorsements": {
             "featuredEndorsers": [
                 {
                     "name": "Ashley Evans",
-                    "profilePic": "https://i.pravatar.cc/150?u=6536"
+                    "profilePic": "https://i.pravatar.cc/150?u=6319"
                 },
                 {
                     "name": "Firstname Lastname",
-                    "profilePic": "https://i.pravatar.cc/150?u=277"
+                    "profilePic": "https://i.pravatar.cc/150?u=1292"
                 }
             ],
-            "endorsements": 6265
+            "endorsements": 2095
         },
         "description": "IDEO and Nesta team up to provide advice and create guides on how to design public services.",
         "url": "http://5a5f89b8e10a225a44ac-ccbed124c38c4f7a3066210c073e7d55.r9.cf1.rackcdn.com/files/pdfs/Nesta_Ideo_Guide_DesigningForPublicServices_100117.pdf",
@@ -1235,22 +1256,23 @@
         "author": null,
         "organizationalAffiliation": "IDEO,Nesta",
         "cost": 0,
-        "comments": 176
+        "comments": 278
     },
     {
+        "id": "52825f48-a44c-4c8f-8dd6-d5ca61a04736",
         "title": "Canada.ca Content Style Guide",
         "endorsements": {
             "featuredEndorsers": [
                 {
                     "name": "Ashley Evans",
-                    "profilePic": "https://i.pravatar.cc/150?u=3514"
+                    "profilePic": "https://i.pravatar.cc/150?u=9548"
                 },
                 {
                     "name": "Firstname Lastname",
-                    "profilePic": "https://i.pravatar.cc/150?u=3518"
+                    "profilePic": "https://i.pravatar.cc/150?u=2542"
                 }
             ],
-            "endorsements": 7955
+            "endorsements": 2198
         },
         "description": "Here are rules to create web content on Canada.ca content. They are based on writing principles and techniques that help make web content clear and adapted to the needs of all people.",
         "url": "https://www.canada.ca/en/treasury-board-secretariat/services/government-communications/canada-content-style-guide.html#annotations:bTlN5DxaEemrHCvmqE9Exw",
@@ -1290,22 +1312,23 @@
         "author": null,
         "organizationalAffiliation": "\"Treasury Board of Canada Secretariat, TBS\"",
         "cost": 0,
-        "comments": 42
+        "comments": 169
     },
     {
+        "id": "01780e87-c675-4d62-884b-9cb18af189ca",
         "title": "Primer to Web Accessibility for Designers",
         "endorsements": {
             "featuredEndorsers": [
                 {
                     "name": "Ashley Evans",
-                    "profilePic": "https://i.pravatar.cc/150?u=2818"
+                    "profilePic": "https://i.pravatar.cc/150?u=5382"
                 },
                 {
                     "name": "Firstname Lastname",
-                    "profilePic": "https://i.pravatar.cc/150?u=3633"
+                    "profilePic": "https://i.pravatar.cc/150?u=6297"
                 }
             ],
-            "endorsements": 9906
+            "endorsements": 1211
         },
         "description": "Why designers should care about web accessibility and how-to get started.",
         "url": "https://uxplanet.org/a-primer-to-web-accessibility-for-designers-2c548448c612",
@@ -1346,22 +1369,23 @@
         "organizationalAffiliation": "Barrel",
         "image": "https://miro.medium.com/max/1200/1*iIf_E6-fjR5uihGK6MNDxA.jpeg",
         "cost": 0,
-        "comments": 245
+        "comments": 140
     },
     {
+        "id": "1912f69b-af97-4790-be1b-1345fc4dce73",
         "title": "Interviewing humans",
         "endorsements": {
             "featuredEndorsers": [
                 {
                     "name": "Ashley Evans",
-                    "profilePic": "https://i.pravatar.cc/150?u=8778"
+                    "profilePic": "https://i.pravatar.cc/150?u=6402"
                 },
                 {
                     "name": "Firstname Lastname",
-                    "profilePic": "https://i.pravatar.cc/150?u=8991"
+                    "profilePic": "https://i.pravatar.cc/150?u=646"
                 }
             ],
-            "endorsements": 1154
+            "endorsements": 4338
         },
         "description": "Excerpt of Erika Hall's book, Just Enough Research, on interviewing people.",
         "url": "https://alistapart.com/article/interviewing-humans/",
@@ -1401,22 +1425,23 @@
         "organizationalAffiliation": "Mule Design",
         "image": "https://alistapart.com/wp-content/uploads/2013/02/excerptillustration_300.png?fit=1920%2C938",
         "cost": 0,
-        "comments": 149
+        "comments": 52
     },
     {
+        "id": "5b5a25df-2be8-4772-a562-c241392b39fd",
         "title": "Ultimate Information Architecture Reading List",
         "endorsements": {
             "featuredEndorsers": [
                 {
                     "name": "Ashley Evans",
-                    "profilePic": "https://i.pravatar.cc/150?u=9722"
+                    "profilePic": "https://i.pravatar.cc/150?u=5017"
                 },
                 {
                     "name": "Firstname Lastname",
-                    "profilePic": "https://i.pravatar.cc/150?u=516"
+                    "profilePic": "https://i.pravatar.cc/150?u=4757"
                 }
             ],
-            "endorsements": 9757
+            "endorsements": 8395
         },
         "description": "A reading list to all things related to information architecture.",
         "url": "https://blog.optimalworkshop.com/the-ultimate-ia-reading-list/",
@@ -1456,22 +1481,23 @@
         "organizationalAffiliation": "Optimal Workshop",
         "image": "https://i0.wp.com/blog.optimalworkshop.com/wp-content/uploads/2019/06/The-ultimate-IA-reading-list_thumb.png?fit=1050%2C1050&ssl=1",
         "cost": 0,
-        "comments": 84
+        "comments": 166
     },
     {
+        "id": "12bbf572-eb19-4c3e-a488-52c740aa889a",
         "title": "Beginner's Guide to Rapid Prototyping",
         "endorsements": {
             "featuredEndorsers": [
                 {
                     "name": "Ashley Evans",
-                    "profilePic": "https://i.pravatar.cc/150?u=1595"
+                    "profilePic": "https://i.pravatar.cc/150?u=9074"
                 },
                 {
                     "name": "Firstname Lastname",
-                    "profilePic": "https://i.pravatar.cc/150?u=9678"
+                    "profilePic": "https://i.pravatar.cc/150?u=7542"
                 }
             ],
-            "endorsements": 2388
+            "endorsements": 2082
         },
         "description": "A beginner's guide to rapid prototyping.",
         "url": "https://www.freecodecamp.org/news/a-beginners-guide-to-rapid-prototyping-71e8722c17df/",
@@ -1512,22 +1538,23 @@
         "organizationalAffiliation": "freeCodeCamp",
         "image": "https://cdn-media-1.freecodecamp.org/images/1*HX9NJx68T86OwbXaqVkvFQ.jpeg",
         "cost": 0,
-        "comments": 131
+        "comments": 243
     },
     {
+        "id": "5472dfad-6c0b-477a-aae2-da9f28413775",
         "title": "Color review",
         "endorsements": {
             "featuredEndorsers": [
                 {
                     "name": "Ashley Evans",
-                    "profilePic": "https://i.pravatar.cc/150?u=9090"
+                    "profilePic": "https://i.pravatar.cc/150?u=5811"
                 },
                 {
                     "name": "Firstname Lastname",
-                    "profilePic": "https://i.pravatar.cc/150?u=4090"
+                    "profilePic": "https://i.pravatar.cc/150?u=9341"
                 }
             ],
-            "endorsements": 4565
+            "endorsements": 2406
         },
         "description": "A colour tool to ensure use of accessible colours and contrast.",
         "url": "https://color.review",
@@ -1568,22 +1595,23 @@
         "organizationalAffiliation": null,
         "image": "https://color.review/twitter-image-2.png",
         "cost": 0,
-        "comments": 255
+        "comments": 288
     },
     {
+        "id": "70a3bca3-fd92-4416-8ea4-2c789c4fba3d",
         "title": "Digital Service Standard",
         "endorsements": {
             "featuredEndorsers": [
                 {
                     "name": "Ashley Evans",
-                    "profilePic": "https://i.pravatar.cc/150?u=3059"
+                    "profilePic": "https://i.pravatar.cc/150?u=732"
                 },
                 {
                     "name": "Firstname Lastname",
-                    "profilePic": "https://i.pravatar.cc/150?u=1996"
+                    "profilePic": "https://i.pravatar.cc/150?u=8676"
                 }
             ],
-            "endorsements": 754
+            "endorsements": 1847
         },
         "description": "The Government of Ontario has created a Digital Service Standard that includes 14 points to help anyone build and deliver excellent government services.",
         "url": "https://www.ontario.ca/page/digital-service-standard",
@@ -1631,22 +1659,23 @@
         "author": null,
         "organizationalAffiliation": "Government of Ontario",
         "cost": 0,
-        "comments": 64
+        "comments": 199
     },
     {
+        "id": "810e31ef-8fe3-4dc2-a7f2-fbc6f4547eb3",
         "title": "Selecting & developing individuals for agile teams",
         "endorsements": {
             "featuredEndorsers": [
                 {
                     "name": "Ashley Evans",
-                    "profilePic": "https://i.pravatar.cc/150?u=9218"
+                    "profilePic": "https://i.pravatar.cc/150?u=4104"
                 },
                 {
                     "name": "Firstname Lastname",
-                    "profilePic": "https://i.pravatar.cc/150?u=1244"
+                    "profilePic": "https://i.pravatar.cc/150?u=9109"
                 }
             ],
-            "endorsements": 2606
+            "endorsements": 5812
         },
         "description": "A practical guide on how-to create an agile team.",
         "url": "https://www.mckinsey.com/business-functions/organization/our-insights/how-to-select-and-develop-individuals-for-successful-agile-teams-a-practical-guide#annotations:Mf2lJD9uEemH8cNZmjmKRA",
@@ -1692,22 +1721,23 @@
         "organizationalAffiliation": "McKinsey & Company",
         "image": "https://www.mckinsey.com/~/media/McKinsey/Business%20Functions/Organization/Our%20Insights/How%20to%20select%20and%20develop%20individuals%20for%20successful%20agile%20teams%20A%20practical%20guide/How-to-select-agile-teams_1536x1536_500.ashx",
         "cost": 0,
-        "comments": 0
+        "comments": 295
     },
     {
+        "id": "2c4aee15-f8f6-4867-b35f-0e8259e15731",
         "title": "Agile: How We're Working Differently",
         "endorsements": {
             "featuredEndorsers": [
                 {
                     "name": "Ashley Evans",
-                    "profilePic": "https://i.pravatar.cc/150?u=425"
+                    "profilePic": "https://i.pravatar.cc/150?u=2476"
                 },
                 {
                     "name": "Firstname Lastname",
-                    "profilePic": "https://i.pravatar.cc/150?u=8968"
+                    "profilePic": "https://i.pravatar.cc/150?u=6766"
                 }
             ],
-            "endorsements": 1277
+            "endorsements": 6729
         },
         "description": "Government of Canada example of agile.",
         "url": "https://www.mckinsey.com/business-functions/organization/our-insights/how-to-select-and-develop-individuals-for-successful-agile-teams-a-practical-guide#annotations:Mf2lJD9uEemH8cNZmjmKRA",
@@ -1748,22 +1778,23 @@
         "organizationalAffiliation": "\"Treasury Board of Canada Secretariat, TBS\"",
         "image": "https://www.mckinsey.com/~/media/McKinsey/Business%20Functions/Organization/Our%20Insights/How%20to%20select%20and%20develop%20individuals%20for%20successful%20agile%20teams%20A%20practical%20guide/How-to-select-agile-teams_1536x1536_500.ashx",
         "cost": 0,
-        "comments": 139
+        "comments": 56
     },
     {
+        "id": "362ac23c-9292-4d28-ab54-9e2ec0ca3fc1",
         "title": "Agile and government services: an introduction",
         "endorsements": {
             "featuredEndorsers": [
                 {
                     "name": "Ashley Evans",
-                    "profilePic": "https://i.pravatar.cc/150?u=3804"
+                    "profilePic": "https://i.pravatar.cc/150?u=4699"
                 },
                 {
                     "name": "Firstname Lastname",
-                    "profilePic": "https://i.pravatar.cc/150?u=1265"
+                    "profilePic": "https://i.pravatar.cc/150?u=7747"
                 }
             ],
-            "endorsements": 8805
+            "endorsements": 7750
         },
         "description": "Government of UK's approach to agile with case studies and examples.",
         "url": "https://www.gov.uk/service-manual/agile-delivery/agile-government-services-introduction",
@@ -1815,22 +1846,23 @@
         "organizationalAffiliation": "UK Digital Service",
         "image": "https://assets.publishing.service.gov.uk/static/opengraph-image-a1f7d89ffd0782738b1aeb0da37842d8bd0addbd724b8e58c3edbc7287cc11de.png",
         "cost": 0,
-        "comments": 197
+        "comments": 274
     },
     {
+        "id": "54eac184-ecd4-42af-a0e6-c2f950066949",
         "title": "What is agile government?",
         "endorsements": {
             "featuredEndorsers": [
                 {
                     "name": "Ashley Evans",
-                    "profilePic": "https://i.pravatar.cc/150?u=3530"
+                    "profilePic": "https://i.pravatar.cc/150?u=3471"
                 },
                 {
                     "name": "Firstname Lastname",
-                    "profilePic": "https://i.pravatar.cc/150?u=5224"
+                    "profilePic": "https://i.pravatar.cc/150?u=2695"
                 }
             ],
-            "endorsements": 9492
+            "endorsements": 4558
         },
         "description": "An answer to “What is agile government and how do I bring it to my team?” provided by the Apolitical community.",
         "url": "https://apolitical.co/question/what-is-agile-government-and-how-do-i-bring-it-to-my-team/",
@@ -1867,23 +1899,25 @@
         ],
         "author": null,
         "organizationalAffiliation": "Apolitical",
+        "image": "https://s3-eu-west-1.amazonaws.com/apolitical-wp/wp-content/uploads/2010/07/06083405/superbeing-tokyo-2696-filmsupply_mov.png",
         "cost": 0,
-        "comments": 246
+        "comments": 154
     },
     {
+        "id": "45082d58-e3c2-4866-8256-09b3b0c954c3",
         "title": "Practical workshop facilitation skills certificate",
         "endorsements": {
             "featuredEndorsers": [
                 {
                     "name": "Kiran Khullar",
-                    "profilePic": "https://i.pravatar.cc/150?u=6538"
+                    "profilePic": "https://i.pravatar.cc/150?u=1758"
                 },
                 {
                     "name": "Firstname Lastname",
-                    "profilePic": "https://i.pravatar.cc/150?u=6013"
+                    "profilePic": "https://i.pravatar.cc/150?u=7668"
                 }
             ],
-            "endorsements": 7302
+            "endorsements": 5942
         },
         "description": "Gain practical hands-on experience with facilitation.",
         "url": "http://www.winnipegtransitioncentre.com/professional-development/practical-workshop-facilitation-skills-certificate/",
@@ -1921,22 +1955,23 @@
         "author": null,
         "organizationalAffiliation": "Winnipeg Transition Centre",
         "cost": 1365,
-        "comments": 268
+        "comments": 221
     },
     {
+        "id": "4ba46f28-3705-4556-840e-e5461cdbeb19",
         "title": "Being Agile in the Ontario Public Service",
         "endorsements": {
             "featuredEndorsers": [
                 {
                     "name": "Isa David",
-                    "profilePic": "https://i.pravatar.cc/150?u=7736"
+                    "profilePic": "https://i.pravatar.cc/150?u=2444"
                 },
                 {
                     "name": "Firstname Lastname",
-                    "profilePic": "https://i.pravatar.cc/150?u=1275"
+                    "profilePic": "https://i.pravatar.cc/150?u=7135"
                 }
             ],
-            "endorsements": 9350
+            "endorsements": 7954
         },
         "description": "A great introductory overview of Agile principles and methods.",
         "url": "https://www.ontario.ca/page/being-agile-ontario-public-service",
@@ -1976,22 +2011,23 @@
         "author": null,
         "organizationalAffiliation": "Government of Ontario",
         "cost": 0,
-        "comments": 53
+        "comments": 52
     },
     {
+        "id": "6838aec2-e493-4092-be8a-3564623f14ad",
         "title": "Busrides.ca: Agile step-by-step",
         "endorsements": {
             "featuredEndorsers": [
                 {
                     "name": "Isa David",
-                    "profilePic": "https://i.pravatar.cc/150?u=1992"
+                    "profilePic": "https://i.pravatar.cc/150?u=8797"
                 },
                 {
                     "name": "Firstname Lastname",
-                    "profilePic": "https://i.pravatar.cc/150?u=7367"
+                    "profilePic": "https://i.pravatar.cc/150?u=6086"
                 }
             ],
-            "endorsements": 9199
+            "endorsements": 9581
         },
         "description": "Overview of what the agile methodology is and why it's relevant to us in the public service.",
         "url": "https://en.busrides-trajetsenbus.ca/episode-9/",
@@ -2028,22 +2064,23 @@
         "organizationalAffiliation": null,
         "image": "https://en.busrides-trajetsenbus.ca/wp-content/uploads/sites/2/2019/04/2019-04-15_12-31-28-1.png",
         "cost": 0,
-        "comments": 30
+        "comments": 250
     },
     {
+        "id": "47de3585-0c68-4830-a02f-61fe8019deed",
         "title": "Canadian Digi Gov Slack Group",
         "endorsements": {
             "featuredEndorsers": [
                 {
                     "name": "Ashley Evans",
-                    "profilePic": "https://i.pravatar.cc/150?u=882"
+                    "profilePic": "https://i.pravatar.cc/150?u=3327"
                 },
                 {
                     "name": "Firstname Lastname",
-                    "profilePic": "https://i.pravatar.cc/150?u=5814"
+                    "profilePic": "https://i.pravatar.cc/150?u=5346"
                 }
             ],
-            "endorsements": 8003
+            "endorsements": 3814
         },
         "description": "A Slack group chat to connect those working in the Canadian digital government space.",
         "url": "https://canadiandiggov.slack.com/",
@@ -2080,22 +2117,23 @@
         "author": null,
         "organizationalAffiliation": null,
         "cost": 0,
-        "comments": 232
+        "comments": 9
     },
     {
+        "id": "37706c2f-8cd0-48bf-a9ac-8600289fc278",
         "title": "Building a multidisciplinary team at ESDC",
         "endorsements": {
             "featuredEndorsers": [
                 {
                     "name": "Ashley Evans",
-                    "profilePic": "https://i.pravatar.cc/150?u=3806"
+                    "profilePic": "https://i.pravatar.cc/150?u=4947"
                 },
                 {
                     "name": "Firstname Lastname",
-                    "profilePic": "https://i.pravatar.cc/150?u=3271"
+                    "profilePic": "https://i.pravatar.cc/150?u=947"
                 }
             ],
-            "endorsements": 5373
+            "endorsements": 9535
         },
         "description": "A Canadian Digital Service Blog by one of their partners, ESDC, and their experience forming a multidisciplinary team.",
         "url": "https://digital.canada.ca/2019/06/19/building-a-multidisciplinary-team-at-esdc-to-serve-people-better/",
@@ -2136,22 +2174,23 @@
         "author": "Nancy Byrne",
         "organizationalAffiliation": "\"Employment and Social Development Canada, ESDC\"",
         "cost": 0,
-        "comments": 211
+        "comments": 27
     },
     {
+        "id": "601f9f5c-8a3a-4c5b-ad25-7646830a9388",
         "title": "Demystifying data analytics for policy analysts",
         "endorsements": {
             "featuredEndorsers": [
                 {
                     "name": "Ashley Evans",
-                    "profilePic": "https://i.pravatar.cc/150?u=3059"
+                    "profilePic": "https://i.pravatar.cc/150?u=8598"
                 },
                 {
                     "name": "Firstname Lastname",
-                    "profilePic": "https://i.pravatar.cc/150?u=4614"
+                    "profilePic": "https://i.pravatar.cc/150?u=9398"
                 }
             ],
-            "endorsements": 3775
+            "endorsements": 5112
         },
         "description": "Blog by Anna Wong on her journey learning data and data analysis and its relevance in a policy environment.",
         "url": "https://medium.com/@banannawong/demystifying-data-data-analytics-data-science-and-more-for-policy-analysts-84d38f64c1ef",
@@ -2190,22 +2229,23 @@
         "organizationalAffiliation": "\"Canada School of Public Service, CSPS\"",
         "image": "https://miro.medium.com/max/1200/0*wg1Tpiz0eWmfzaOT",
         "cost": 0,
-        "comments": 108
+        "comments": 142
     },
     {
+        "id": "327ab784-e01a-4dcc-9356-1a63074110c7",
         "title": "Finding Value in Everyday Learnings",
         "endorsements": {
             "featuredEndorsers": [
                 {
                     "name": "Ashley Evans",
-                    "profilePic": "https://i.pravatar.cc/150?u=4434"
+                    "profilePic": "https://i.pravatar.cc/150?u=8911"
                 },
                 {
                     "name": "Firstname Lastname",
-                    "profilePic": "https://i.pravatar.cc/150?u=3460"
+                    "profilePic": "https://i.pravatar.cc/150?u=1204"
                 }
             ],
-            "endorsements": 522
+            "endorsements": 4874
         },
         "description": "Blog by Amanda Bernardo on continuous learning outside of formal training and learning means.",
         "url": "https://medium.com/@Amanda_Bernardo/finding-the-value-in-every-day-learnings-681c5a7cbee4",
@@ -2244,22 +2284,23 @@
         "organizationalAffiliation": "\"Canada School of Public Service, CSPS\"",
         "image": "https://miro.medium.com/max/1200/1*kZvD-lzl_AgcEu092Wrjxw.jpeg",
         "cost": 0,
-        "comments": 138
+        "comments": 1
     },
     {
+        "id": "8a5541fa-1fa0-40a4-a3ea-bff78e267f4d",
         "title": "Inclusive Design Training Lesson 1: Empathizing",
         "endorsements": {
             "featuredEndorsers": [
                 {
                     "name": "Ashley Evans",
-                    "profilePic": "https://i.pravatar.cc/150?u=9139"
+                    "profilePic": "https://i.pravatar.cc/150?u=8266"
                 },
                 {
                     "name": "Firstname Lastname",
-                    "profilePic": "https://i.pravatar.cc/150?u=4479"
+                    "profilePic": "https://i.pravatar.cc/150?u=7751"
                 }
             ],
-            "endorsements": 7898
+            "endorsements": 2769
         },
         "description": "Understand empathy, service design, and disability. Playlist 1 of 6 on accessibility.",
         "url": "https://www.youtube.com/watch?v=LQ0wI5pJX3o&list=PLdcxts4DtHVFBKQJh6Bj85N-mUdqmku2Q",
@@ -2298,22 +2339,23 @@
         "organizationalAffiliation": "Ontario Digital Service",
         "image": "https://i.ytimg.com/vi/LQ0wI5pJX3o/maxresdefault.jpg",
         "cost": 0,
-        "comments": 109
+        "comments": 94
     },
     {
+        "id": "42b846bf-f9f3-45bf-a3b0-7e1d83d3630f",
         "title": "Digital Accessibility Matters: Creating a More Inclusive Public Service",
         "endorsements": {
             "featuredEndorsers": [
                 {
                     "name": "Ashley Evans",
-                    "profilePic": "https://i.pravatar.cc/150?u=7422"
+                    "profilePic": "https://i.pravatar.cc/150?u=3651"
                 },
                 {
                     "name": "Firstname Lastname",
-                    "profilePic": "https://i.pravatar.cc/150?u=675"
+                    "profilePic": "https://i.pravatar.cc/150?u=3897"
                 }
             ],
-            "endorsements": 8344
+            "endorsements": 1832
         },
         "description": "Learn how to use technology and enhance accessibility, and develop policies, legislation, processes and technological solutions to better meet the needs of all users.",
         "url": "https://www.youtube.com/watch?v=FCbITK316aA&t=1680s",
@@ -2350,22 +2392,23 @@
         "organizationalAffiliation": "\"Canada School of Public Service, CSPS\"",
         "image": "https://i.ytimg.com/vi/FCbITK316aA/maxresdefault.jpg",
         "cost": 0,
-        "comments": 181
+        "comments": 281
     },
     {
+        "id": "0c7bca15-9532-4ad1-9329-1fabdd7d138a",
         "title": "Lessons Learned After 3 yrs of Experimenting at the CRA",
         "endorsements": {
             "featuredEndorsers": [
                 {
                     "name": "Thom Kearney",
-                    "profilePic": "https://i.pravatar.cc/150?u=219"
+                    "profilePic": "https://i.pravatar.cc/150?u=7321"
                 },
                 {
                     "name": "Firstname Lastname",
-                    "profilePic": "https://i.pravatar.cc/150?u=9031"
+                    "profilePic": "https://i.pravatar.cc/150?u=5205"
                 }
             ],
-            "endorsements": 6415
+            "endorsements": 5836
         },
         "description": "The CRA has made experimentation a priority in recent years, and has become a leader in the Government of Canada in advocating for the use of experiments in evidence-based policymaking. That being said, the path towards experimentation hasn’t always been easy, and we’ve learned some lessons over the past few years. We were happy to share these lessons.",
         "url": "https://medium.com/@exp_works/lessons-learned-after-three-years-of-experimenting-in-the-canada-revenue-agency-423b9e9f12b9",
@@ -2411,22 +2454,23 @@
         "organizationalAffiliation": "\"Canada Revenue Agency, CRA\"",
         "image": "https://miro.medium.com/max/1200/1*70q_CWuS9UJdCBz3I6oN4g.jpeg",
         "cost": 0,
-        "comments": 268
+        "comments": 158
     },
     {
+        "id": "67346b48-e45f-477c-8b13-fdc00650b980",
         "title": "Health Data Challenge",
         "endorsements": {
             "featuredEndorsers": [
                 {
                     "name": "Thom Kearney",
-                    "profilePic": "https://i.pravatar.cc/150?u=164"
+                    "profilePic": "https://i.pravatar.cc/150?u=2641"
                 },
                 {
                     "name": "Firstname Lastname",
-                    "profilePic": "https://i.pravatar.cc/150?u=3458"
+                    "profilePic": "https://i.pravatar.cc/150?u=1606"
                 }
             ],
-            "endorsements": 1503
+            "endorsements": 1165
         },
         "description": "MaRS seeks to engage innovative Canadians – people and organizations of all backgrounds and skills – to propose and test new data sets, sources and methodologies to solve different health challenges.",
         "url": "http://www.healthdatachallenge.com",
@@ -2469,22 +2513,23 @@
         "organizationalAffiliation": "MaRS",
         "image": "http://www.healthdatachallenge.com/wp-content/uploads/2017/04/HDC-Facebook.png",
         "cost": 0,
-        "comments": 46
+        "comments": 147
     },
     {
+        "id": "07b735a2-d0b9-47d1-bfdf-1d576ac76ac7",
         "title": "Design Council Resources",
         "endorsements": {
             "featuredEndorsers": [
                 {
                     "name": "Thom Kearney",
-                    "profilePic": "https://i.pravatar.cc/150?u=8326"
+                    "profilePic": "https://i.pravatar.cc/150?u=3328"
                 },
                 {
                     "name": "Firstname Lastname",
-                    "profilePic": "https://i.pravatar.cc/150?u=3534"
+                    "profilePic": "https://i.pravatar.cc/150?u=8253"
                 }
             ],
-            "endorsements": 3328
+            "endorsements": 37
         },
         "description": "A collection of case studies and other materials for innovative policy design.",
         "url": "https://www.designcouncil.org.uk/resources/search",
@@ -2524,22 +2569,23 @@
         "author": null,
         "organizationalAffiliation": "Design Council",
         "cost": 0,
-        "comments": 233
+        "comments": 126
     },
     {
+        "id": "6b740035-cdce-4ec1-b0ae-d023ec5068cb",
         "title": "A|B Testing in Government 101",
         "endorsements": {
             "featuredEndorsers": [
                 {
                     "name": "Thom Kearney",
-                    "profilePic": "https://i.pravatar.cc/150?u=415"
+                    "profilePic": "https://i.pravatar.cc/150?u=1689"
                 },
                 {
                     "name": "Firstname Lastname",
-                    "profilePic": "https://i.pravatar.cc/150?u=9211"
+                    "profilePic": "https://i.pravatar.cc/150?u=3787"
                 }
             ],
-            "endorsements": 3677
+            "endorsements": 2874
         },
         "description": "Overview of A|B testing in government setting from of a collection of US Government videos available on Youtube via DigitalGov.",
         "url": "https://www.youtube.com/watch?v=K5nnKM3srqI",
@@ -2576,22 +2622,23 @@
         "organizationalAffiliation": "Consumer Financial Protection Bureau,\"US Digital Government, DigitalGov\"",
         "image": "https://i.ytimg.com/vi/K5nnKM3srqI/hqdefault.jpg",
         "cost": 0,
-        "comments": 134
+        "comments": 288
     },
     {
+        "id": "563b8f51-5465-4996-b19b-737d5e0843f6",
         "title": "Data Mining for Policymaking",
         "endorsements": {
             "featuredEndorsers": [
                 {
                     "name": "Thom Kearney",
-                    "profilePic": "https://i.pravatar.cc/150?u=8443"
+                    "profilePic": "https://i.pravatar.cc/150?u=4227"
                 },
                 {
                     "name": "Firstname Lastname",
-                    "profilePic": "https://i.pravatar.cc/150?u=2495"
+                    "profilePic": "https://i.pravatar.cc/150?u=2396"
                 }
             ],
-            "endorsements": 9218
+            "endorsements": 2221
         },
         "description": "Series on data mining in the context of policy.",
         "url": "http://www.sciencemetrics.org/277-2/",
@@ -2625,22 +2672,23 @@
         "author": "Brooke Struck",
         "organizationalAffiliation": "Science-Metrix Inc.",
         "cost": 0,
-        "comments": 185
+        "comments": 6
     },
     {
+        "id": "eb160930-b9f1-414f-9169-56687db7159e",
         "title": "DigitalGov",
         "endorsements": {
             "featuredEndorsers": [
                 {
                     "name": "Thom Kearney",
-                    "profilePic": "https://i.pravatar.cc/150?u=9504"
+                    "profilePic": "https://i.pravatar.cc/150?u=2437"
                 },
                 {
                     "name": "Firstname Lastname",
-                    "profilePic": "https://i.pravatar.cc/150?u=6380"
+                    "profilePic": "https://i.pravatar.cc/150?u=6198"
                 }
             ],
-            "endorsements": 1516
+            "endorsements": 1137
         },
         "description": "Digital resources for US government and othersFrom their site: Welcome to DigitalGov. Our mission is to transform how government learns, builds, delivers, and measures digital services in the 21st century. And we do that by providing people in government the tools, methods, practices and policy guidance they need to deliver effective and accessible digital services.",
         "url": "https://digital.gov/#",
@@ -2679,22 +2727,23 @@
         "organizationalAffiliation": "\"US Digital Government, DigitalGov\"",
         "image": "https://s3.amazonaws.com/digitalgov/digital-gov-card-2.jpg",
         "cost": 0,
-        "comments": 195
+        "comments": 36
     },
     {
+        "id": "baf7abe7-af33-4a7b-9a5c-35b48b394862",
         "title": "Handbook for Participatory Action Research",
         "endorsements": {
             "featuredEndorsers": [
                 {
                     "name": "Thom Kearney",
-                    "profilePic": "https://i.pravatar.cc/150?u=8495"
+                    "profilePic": "https://i.pravatar.cc/150?u=170"
                 },
                 {
                     "name": "Firstname Lastname",
-                    "profilePic": "https://i.pravatar.cc/150?u=1976"
+                    "profilePic": "https://i.pravatar.cc/150?u=387"
                 }
             ],
-            "endorsements": 7272
+            "endorsements": 5242
         },
         "description": "This handbook is an integrated collection of adapted and new tools and processes to engage people and mobilize evidence in complex settings involving multiple stakeholders. They draw inspiration from different disciplines, theoretical perspectives and methodological approaches. Aussi en Francais: https://docs.wixstatic.com/ugd/11f418_2b78b80c8e374163b844d0820acd55be.pdf",
         "url": "https://docs.wixstatic.com/ugd/11f418_c56ab3b5fc5c455091178ac894ab359d.pdf",
@@ -2732,22 +2781,23 @@
         "author": null,
         "organizationalAffiliation": "\"Social Analysis Systems 2 Dialogue, SAS2\"",
         "cost": 0,
-        "comments": 36
+        "comments": 138
     },
     {
+        "id": "4646274c-1f15-4eda-ab1a-3f2651aa1082",
         "title": "How to Simulate the Universe in 134 Easy Steps",
         "endorsements": {
             "featuredEndorsers": [
                 {
                     "name": "Thom Kearney",
-                    "profilePic": "https://i.pravatar.cc/150?u=9245"
+                    "profilePic": "https://i.pravatar.cc/150?u=3324"
                 },
                 {
                     "name": "Firstname Lastname",
-                    "profilePic": "https://i.pravatar.cc/150?u=330"
+                    "profilePic": "https://i.pravatar.cc/150?u=2095"
                 }
             ],
-            "endorsements": 6165
+            "endorsements": 5779
         },
         "description": "Modeling and simulation and demonstrate how it allows us to learn about a system through play, see how it evolves over time, and understand the underlying mechanism that make it tick.",
         "url": "https://ncase.me/OVC2016/#uninformed",
@@ -2802,22 +2852,23 @@
         "organizationalAffiliation": null,
         "image": "http://ncase.me/OVC2016/social/thumbnail.png",
         "cost": 0,
-        "comments": 17
+        "comments": 51
     },
     {
+        "id": "90055996-9270-408d-9571-7f09d12e252d",
         "title": "Beginner's Guide to Data Cleaning & Preprocessing",
         "endorsements": {
             "featuredEndorsers": [
                 {
                     "name": "Thom Kearney",
-                    "profilePic": "https://i.pravatar.cc/150?u=568"
+                    "profilePic": "https://i.pravatar.cc/150?u=5130"
                 },
                 {
                     "name": "Firstname Lastname",
-                    "profilePic": "https://i.pravatar.cc/150?u=8110"
+                    "profilePic": "https://i.pravatar.cc/150?u=4075"
                 }
             ],
-            "endorsements": 976
+            "endorsements": 3974
         },
         "description": "How to successfully prepare your data for a machine learning model in minutes.",
         "url": "https://towardsdatascience.com/the-complete-beginners-guide-to-data-cleaning-and-preprocessing-2070b7d4c6d",
@@ -2858,22 +2909,23 @@
         "organizationalAffiliation": "Towards Data Science",
         "image": "https://miro.medium.com/max/1200/1*rqquTRzaaVH6NiFF-Jz66A.jpeg",
         "cost": 0,
-        "comments": 95
+        "comments": 19
     },
     {
+        "id": "cdf38734-38dd-4d55-8ffb-af93ff8b3718",
         "title": "Problem Framing Expertise in Public Innovation",
         "endorsements": {
             "featuredEndorsers": [
                 {
                     "name": "Thom Kearney",
-                    "profilePic": "https://i.pravatar.cc/150?u=8210"
+                    "profilePic": "https://i.pravatar.cc/150?u=9948"
                 },
                 {
                     "name": "Firstname Lastname",
-                    "profilePic": "https://i.pravatar.cc/150?u=9152"
+                    "profilePic": "https://i.pravatar.cc/150?u=5084"
                 }
             ],
-            "endorsements": 3810
+            "endorsements": 8145
         },
         "description": "Problem framing practices require high-level expertise, and capability building in public and social innovation should consider these emerging practices and levels of expertise.",
         "url": "https://www.sciencedirect.com/science/article/pii/S2405872618301114",
@@ -2914,22 +2966,23 @@
         "author": "Mieke van der Bijl-Brouwer",
         "organizationalAffiliation": "Tongji University",
         "cost": 0,
-        "comments": 109
+        "comments": 137
     },
     {
+        "id": "6cc876ce-7ec6-4116-9bf7-afe752f18e40",
         "title": "18F Blog Delivering Civic Technology",
         "endorsements": {
             "featuredEndorsers": [
                 {
                     "name": "Thom Kearney",
-                    "profilePic": "https://i.pravatar.cc/150?u=7047"
+                    "profilePic": "https://i.pravatar.cc/150?u=5385"
                 },
                 {
                     "name": "Firstname Lastname",
-                    "profilePic": "https://i.pravatar.cc/150?u=6827"
+                    "profilePic": "https://i.pravatar.cc/150?u=2758"
                 }
             ],
-            "endorsements": 2033
+            "endorsements": 6357
         },
         "description": "A collection with a service delivery improvement focus that includes lessons learned, modern practices, convincing stakeholders, culture change and product launch topics.",
         "url": "https://18f.gsa.gov/blog/",
@@ -2981,23 +3034,25 @@
         ],
         "author": null,
         "organizationalAffiliation": "18F",
+        "image": "https://federalist.18f.gov/assets/img/logos/18F-Logo-M.png",
         "cost": 0,
-        "comments": 100
+        "comments": 185
     },
     {
+        "id": "a639e369-c3fd-482d-9027-06ca243ee4b3",
         "title": "Gamestorming",
         "endorsements": {
             "featuredEndorsers": [
                 {
                     "name": "Thom Kearney",
-                    "profilePic": "https://i.pravatar.cc/150?u=8748"
+                    "profilePic": "https://i.pravatar.cc/150?u=2454"
                 },
                 {
                     "name": "Firstname Lastname",
-                    "profilePic": "https://i.pravatar.cc/150?u=8309"
+                    "profilePic": "https://i.pravatar.cc/150?u=4171"
                 }
             ],
-            "endorsements": 1825
+            "endorsements": 838
         },
         "description": "Successful creative people tend to employ simple strategies and practices to get where they want to go. It’s not so much that they employ a consistent, repeatable process that leads to consistent creative results. It’s more like a workshop with a set of tools and strategies for examining things deeply, for exploring new ideas, for performing experiments and testing hypotheses, to generate new and surprising insights and results.We have collected the best of these practices wherever we could find them, with a special focus on Silicon Valley, innovative companies, and the information revolution.",
         "url": "https://gamestorming.com/",
@@ -3040,22 +3095,23 @@
         "author": null,
         "organizationalAffiliation": "Gamestorming",
         "cost": 0,
-        "comments": 13
+        "comments": 165
     },
     {
+        "id": "65a21871-7a09-43fe-9cc1-e45510909bf1",
         "title": "Innovation Toolkit",
         "endorsements": {
             "featuredEndorsers": [
                 {
                     "name": "Thom Kearney",
-                    "profilePic": "https://i.pravatar.cc/150?u=7470"
+                    "profilePic": "https://i.pravatar.cc/150?u=6699"
                 },
                 {
                     "name": "Firstname Lastname",
-                    "profilePic": "https://i.pravatar.cc/150?u=8258"
+                    "profilePic": "https://i.pravatar.cc/150?u=662"
                 }
             ],
-            "endorsements": 8419
+            "endorsements": 4936
         },
         "description": "A multi-disciplinary team of MITRE engineers curated the MITRE Innovation Toolkitto help our colleagues, sponsors, and collaborators jumpstart the innovation process. MITRE is associated with MIT",
         "url": "https://itk.mitre.org/",
@@ -3097,22 +3153,23 @@
         "author": null,
         "organizationalAffiliation": "MITRE",
         "cost": 0,
-        "comments": 62
+        "comments": 76
     },
     {
+        "id": "131ab338-fe38-4483-b690-17abe6e59a11",
         "title": "Prototyping in Policy — What For?!",
         "endorsements": {
             "featuredEndorsers": [
                 {
                     "name": "Thom Kearney",
-                    "profilePic": "https://i.pravatar.cc/150?u=4237"
+                    "profilePic": "https://i.pravatar.cc/150?u=6613"
                 },
                 {
                     "name": "Firstname Lastname",
-                    "profilePic": "https://i.pravatar.cc/150?u=2322"
+                    "profilePic": "https://i.pravatar.cc/150?u=1774"
                 }
             ],
-            "endorsements": 540
+            "endorsements": 9547
         },
         "description": "Prototypes turn an idea into a form to explore both technical and social feasibility. Whether an idea eventually fails or succeeds, prototyping can help policy-makers, researchers, and others to make the idea more real before investing heavily in it. It helps us sketch, in low-risk and low-resource ways, how a new policy might work. Ideally, it can ‘fail-forward’ or point to better ways to pilot it more robustly. The focus is not on the final outcome (the success or failure), but on the path and its learnings.",
         "url": "https://medium.com/legal-design-and-innovation/prototyping-in-policy-what-for-c7c567d922ec",
@@ -3161,22 +3218,23 @@
         "organizationalAffiliation": "Stanford Law School",
         "image": "https://miro.medium.com/max/1200/1*qbIrnqd9gKiaZx-mkcNGxQ.png",
         "cost": 0,
-        "comments": 201
+        "comments": 176
     },
     {
+        "id": "6d047bf3-7626-4401-97e8-2ab1b9185192",
         "title": "What's the Role of Design in Policy?",
         "endorsements": {
             "featuredEndorsers": [
                 {
                     "name": "Thom Kearney",
-                    "profilePic": "https://i.pravatar.cc/150?u=9002"
+                    "profilePic": "https://i.pravatar.cc/150?u=7814"
                 },
                 {
                     "name": "Firstname Lastname",
-                    "profilePic": "https://i.pravatar.cc/150?u=9000"
+                    "profilePic": "https://i.pravatar.cc/150?u=5810"
                 }
             ],
-            "endorsements": 8898
+            "endorsements": 667
         },
         "description": "The policy-making process is complex and potentially messy, with no ‘right way’. But this very messiness is what might make it particularly suited to design methods.",
         "url": "https://openpolicy.blog.gov.uk/2018/02/07/whats-the-role-of-design-in-policy/",
@@ -3224,22 +3282,23 @@
         "organizationalAffiliation": "\"Government of UK, GOV.UK\",Policy Lab UK",
         "image": "https://openpolicy.blog.gov.uk/wp-content/themes/gds-blogs/build/govuk_template/assets/images/opengraph-image.png?0.22.3",
         "cost": 0,
-        "comments": 107
+        "comments": 88
     },
     {
+        "id": "b4ca65b4-04ff-4213-8c1d-36e492ad6f9e",
         "title": "Design Thinking for Complex Environments",
         "endorsements": {
             "featuredEndorsers": [
                 {
                     "name": "Thom Kearney",
-                    "profilePic": "https://i.pravatar.cc/150?u=3771"
+                    "profilePic": "https://i.pravatar.cc/150?u=4005"
                 },
                 {
                     "name": "Firstname Lastname",
-                    "profilePic": "https://i.pravatar.cc/150?u=748"
+                    "profilePic": "https://i.pravatar.cc/150?u=487"
                 }
             ],
-            "endorsements": 7545
+            "endorsements": 7727
         },
         "description": "Nilufer Erdebil's talk on design thinking for problem solving. It provides a good overview of the concepts, Canadian context, pulling back and looking at problem before going straight to solutions, with a focus on empathy, personas and reframing to help understand problem better.",
         "url": "https://www.youtube.com/watch?v=7wPvG1uFY_M",
@@ -3282,22 +3341,23 @@
         "organizationalAffiliation": "TEDx",
         "image": "https://i.ytimg.com/vi/7wPvG1uFY_M/hqdefault.jpg",
         "cost": 0,
-        "comments": 26
+        "comments": 10
     },
     {
+        "id": "eb114234-c6c2-4d42-8283-40ce8422060b",
         "title": "Coalition to Advance Democracy in the Digital Age",
         "endorsements": {
             "featuredEndorsers": [
                 {
                     "name": "Thom Kearney",
-                    "profilePic": "https://i.pravatar.cc/150?u=130"
+                    "profilePic": "https://i.pravatar.cc/150?u=9326"
                 },
                 {
                     "name": "Firstname Lastname",
-                    "profilePic": "https://i.pravatar.cc/150?u=9573"
+                    "profilePic": "https://i.pravatar.cc/150?u=8870"
                 }
             ],
-            "endorsements": 8415
+            "endorsements": 9676
         },
         "description": "In countries and communities around the world, defenders of democracy are working to understand and respond to the ways that technology is impacting political and electoral processes. Civil society organizations, grassroots organizers, journalists, civic technologists, political parties, election monitors, fact-checkers, researchers and others are building new tools, developing new analytical models, and implementing local strategies to help navigate accelerating challenges like politically-motivated cyber threats, digital disinformation and computational propaganda. Both globally and regionally, key democracy stakeholders haven’t had a proper channel for information-sharing, research coordination, and advancing shared priorities at the intersection of tech and democracy. So we’re building one, as a community.",
         "url": "https://civichall.org/civicist/coalition-advance-democracy-digital-age/",
@@ -3347,22 +3407,23 @@
         "organizationalAffiliation": "Civic Hall",
         "image": "https://civichall.org/wp-content/uploads/2018/10/randy-colas-629191-unsplash.jpg",
         "cost": 0,
-        "comments": 43
+        "comments": 202
     },
     {
+        "id": "2087585a-6db3-4e12-914b-8a29e202a774",
         "title": "Making it Easier for Policy Makers to do Open Policy",
         "endorsements": {
             "featuredEndorsers": [
                 {
                     "name": "Thom Kearney",
-                    "profilePic": "https://i.pravatar.cc/150?u=7577"
+                    "profilePic": "https://i.pravatar.cc/150?u=8518"
                 },
                 {
                     "name": "Firstname Lastname",
-                    "profilePic": "https://i.pravatar.cc/150?u=6334"
+                    "profilePic": "https://i.pravatar.cc/150?u=7966"
                 }
             ],
-            "endorsements": 5850
+            "endorsements": 76
         },
         "description": "This article speaks about the definition of open policy making as being: open to diverse and divergent perspectives; open to the methods you employ to make better policy, and; open to the results from testing. And in many ways, this is what policy makers have always sought to do. However, this article provides us with various tools and ways to practice effective open policy making. Open policy is about harnessing new ways to learn about how policies are experienced and then designing collaboratively with service user",
         "url": "https://openpolicy.blog.gov.uk/2018/07/11/how-can-we-make-it-easier-for-policy-makers-to-practise-open-policy/",
@@ -3406,22 +3467,23 @@
         "organizationalAffiliation": "\"Government of UK, GOV.UK\",Policy Lab UK",
         "image": "https://openpolicy.blog.gov.uk/wp-content/themes/gds-blogs/build/govuk_template/assets/images/opengraph-image.png?0.22.3",
         "cost": 0,
-        "comments": 66
+        "comments": 224
     },
     {
+        "id": "d3afeeb7-7c72-46a6-8964-df5da2a00a65",
         "title": "Goodhart’s Law and Why Measurement is Hard",
         "endorsements": {
             "featuredEndorsers": [
                 {
                     "name": "Thom Kearney",
-                    "profilePic": "https://i.pravatar.cc/150?u=2277"
+                    "profilePic": "https://i.pravatar.cc/150?u=5105"
                 },
                 {
                     "name": "Firstname Lastname",
-                    "profilePic": "https://i.pravatar.cc/150?u=186"
+                    "profilePic": "https://i.pravatar.cc/150?u=9401"
                 }
             ],
-            "endorsements": 8610
+            "endorsements": 9666
         },
         "description": "This article explains why measures are used. \"There are lots of good reasons, and a useful heuristic for understanding where to use them is to look for the triad of intuition, trust, and complexity. Metrics are popular because they allow people to use measures to make rules — and these rules can often be pretty effective. Systems change in response to incentives, and good metrics let us make rules that create the right incentives to improve.\"",
         "url": "https://www.ribbonfarm.com/2016/06/09/goodharts-law-and-why-measurement-is-hard/",
@@ -3467,22 +3529,23 @@
         "organizationalAffiliation": "Ribbonfarm",
         "image": "https://206hwf3fj4w52u3br03fi242-wpengine.netdna-ssl.com/wp-content/uploads/2016/06/Measuring-Network.png",
         "cost": 0,
-        "comments": 134
+        "comments": 151
     },
     {
+        "id": "eceb0495-f047-4757-9d3e-3d027c75f4d5",
         "title": "How Public Policy Can Thrive in a Data World",
         "endorsements": {
             "featuredEndorsers": [
                 {
                     "name": "Thom Kearney",
-                    "profilePic": "https://i.pravatar.cc/150?u=3657"
+                    "profilePic": "https://i.pravatar.cc/150?u=2371"
                 },
                 {
                     "name": "Firstname Lastname",
-                    "profilePic": "https://i.pravatar.cc/150?u=1823"
+                    "profilePic": "https://i.pravatar.cc/150?u=7841"
                 }
             ],
-            "endorsements": 8288
+            "endorsements": 3641
         },
         "description": "This post brings together ideas on how policy makers can navigate - and thrive - in our digital world. We can do this by better utilising technology and using our \"human\" attributes to greater advantage; the two not only complement, but enhance each other.",
         "url": "https://www.linkedin.com/pulse/how-public-policy-can-thrive-data-world-audrey-lobo-pulo/",
@@ -3523,22 +3586,23 @@
         "organizationalAffiliation": null,
         "image": "https://media.licdn.com/dms/image/C5612AQFLY753PrcI6A/article-cover_image-shrink_600_2000/0?e=1570665600&v=beta&t=Nw07YYdfrG3fweKip46RpaVWhzucwYS8-8x5PoUAItI",
         "cost": 0,
-        "comments": 71
+        "comments": 20
     },
     {
+        "id": "055c5b00-d236-495f-a1ff-bbc8f94954f8",
         "title": "Twin Faces of Public Sector Design",
         "endorsements": {
             "featuredEndorsers": [
                 {
                     "name": "Thom Kearney",
-                    "profilePic": "https://i.pravatar.cc/150?u=9340"
+                    "profilePic": "https://i.pravatar.cc/150?u=6100"
                 },
                 {
                     "name": "Firstname Lastname",
-                    "profilePic": "https://i.pravatar.cc/150?u=7404"
+                    "profilePic": "https://i.pravatar.cc/150?u=5895"
                 }
             ],
-            "endorsements": 4339
+            "endorsements": 8636
         },
         "description": "Design thinking does not sufficiently account for the political and organizational contexts of policy work. Design thinking also errs in universally privileging one particular policy style over others, and fails to account for the reality of policy mixes. Despite these deficiencies, it is argued that design thinking can inform and enrich governance by helping policy designers produce more adaptable designs, better appreciate the behavioral dynamics of public sector design, and leverage networked approaches to social problem solving.",
         "url": "https://onlinelibrary.wiley.com/doi/10.1111/gove.12342",
@@ -3575,22 +3639,23 @@
         "author": null,
         "organizationalAffiliation": null,
         "cost": 0,
-        "comments": 98
+        "comments": 238
     },
     {
+        "id": "55be6696-a163-4368-9aef-7d7251b677c8",
         "title": "Designing Collaboration",
         "endorsements": {
             "featuredEndorsers": [
                 {
                     "name": "Thom Kearney",
-                    "profilePic": "https://i.pravatar.cc/150?u=5149"
+                    "profilePic": "https://i.pravatar.cc/150?u=5495"
                 },
                 {
                     "name": "Firstname Lastname",
-                    "profilePic": "https://i.pravatar.cc/150?u=301"
+                    "profilePic": "https://i.pravatar.cc/150?u=4983"
                 }
             ],
-            "endorsements": 7560
+            "endorsements": 6766
         },
         "description": "Collaboration is being talked about everywhere. Social collaboration tools are being rolled out daily, yet are struggling to deliver on the promise of seamless cross-organisational collaboration. Poor adoption. Confusion. Change stress. Uncertainty. These are just some of the challenges that come with the proliferation of social collaboration tools and their expansive feature sets. To find answers we need to look past the tools. We need to understand that tools don’t switch on collaboration, people do. We need to change the conversation from ‘collaboration tools’ to collaborative people.",
         "url": "https://designingcollaborationbook.com/",
@@ -3626,22 +3691,23 @@
         "organizationalAffiliation": null,
         "image": "https://i2.wp.com/designingcollaborationbook.com/wp-content/uploads/2018/08/Innosis-blocks.png?fit=508%2C507&ssl=1",
         "cost": 0,
-        "comments": 240
+        "comments": 183
     },
     {
+        "id": "91f3132c-c443-4abb-87b0-226734f4af35",
         "title": "The Tools and Discipline of Data Storytelling",
         "endorsements": {
             "featuredEndorsers": [
                 {
                     "name": "Thom Kearney",
-                    "profilePic": "https://i.pravatar.cc/150?u=4994"
+                    "profilePic": "https://i.pravatar.cc/150?u=7645"
                 },
                 {
                     "name": "Firstname Lastname",
-                    "profilePic": "https://i.pravatar.cc/150?u=2500"
+                    "profilePic": "https://i.pravatar.cc/150?u=397"
                 }
             ],
-            "endorsements": 1063
+            "endorsements": 8747
         },
         "description": "Data storytelling is usually made up of multiple data visualisations, connected through narrative. Effective data storytelling requires tools capable of visualising data and communicating narrative.",
         "url": "https://www.linkedin.com/pulse/tools-discipline-data-storytelling-kat-greenbrook",
@@ -3675,22 +3741,23 @@
         "organizationalAffiliation": null,
         "image": "https://media.licdn.com/dms/image/C5612AQHaOaV8DGHJMQ/article-cover_image-shrink_720_1280/0?e=1570665600&v=beta&t=mLxpnYOrx60ZbfYF1k-YYg5UH6wXw1_rQXjsDyfM37c",
         "cost": 0,
-        "comments": 299
+        "comments": 4
     },
     {
+        "id": "40cc2940-29d2-4f94-b212-b118c54b641b",
         "title": "From Research Labs to Data Training, Here's How to Bring Evidence into Policy",
         "endorsements": {
             "featuredEndorsers": [
                 {
                     "name": "Thom Kearney",
-                    "profilePic": "https://i.pravatar.cc/150?u=8153"
+                    "profilePic": "https://i.pravatar.cc/150?u=737"
                 },
                 {
                     "name": "Firstname Lastname",
-                    "profilePic": "https://i.pravatar.cc/150?u=1650"
+                    "profilePic": "https://i.pravatar.cc/150?u=7301"
                 }
             ],
-            "endorsements": 724
+            "endorsements": 4333
         },
         "description": "A critique of the relationship between research, evidence, and policy in Canada, and suggestions for how to work better together.",
         "url": "https://apolitical.co/solution_article/bring-evidence-into-policy/",
@@ -3728,22 +3795,23 @@
         "organizationalAffiliation": null,
         "image": "https://apolitical.co/wp-content/uploads/2018/11/rawpixel-983726-unsplash-1-1024x683.jpg",
         "cost": 0,
-        "comments": 127
+        "comments": 87
     },
     {
+        "id": "5d0b5cbe-ec56-4669-9b9d-4eb70ed88d07",
         "title": "In the Dark: The Cost of Canada’s Data Deficit",
         "endorsements": {
             "featuredEndorsers": [
                 {
                     "name": "Thom Kearney",
-                    "profilePic": "https://i.pravatar.cc/150?u=3347"
+                    "profilePic": "https://i.pravatar.cc/150?u=5731"
                 },
                 {
                     "name": "Firstname Lastname",
-                    "profilePic": "https://i.pravatar.cc/150?u=4162"
+                    "profilePic": "https://i.pravatar.cc/150?u=1594"
                 }
             ],
-            "endorsements": 4093
+            "endorsements": 6772
         },
         "description": "When it comes to basic data about its own citizens – from divorce rates to driving patterns to labour trends – Canada simply doesn’t have the answers. If information is power, this country has a big problem",
         "url": "https://www.theglobeandmail.com/canada/article-in-the-dark-the-cost-of-canadas-data-deficit/",
@@ -3779,22 +3847,23 @@
         "organizationalAffiliation": null,
         "image": "https://www.theglobeandmail.com/resizer/YzArKp8WoBYx6bBZLJzJ4K7aOkM=/1200x0/filters:quality(80)/arc-anglerfish-tgam-prod-tgam.s3.amazonaws.com/public/VISU63S7OJBO5EIKCF4ESMVREM.jpg",
         "cost": 0,
-        "comments": 217
+        "comments": 31
     },
     {
+        "id": "ced38f97-3f67-46ba-ae7b-5b7c0ffafb19",
         "title": "Behavioural Insights Team",
         "endorsements": {
             "featuredEndorsers": [
                 {
                     "name": "Thom Kearney",
-                    "profilePic": "https://i.pravatar.cc/150?u=47"
+                    "profilePic": "https://i.pravatar.cc/150?u=9687"
                 },
                 {
                     "name": "Firstname Lastname",
-                    "profilePic": "https://i.pravatar.cc/150?u=784"
+                    "profilePic": "https://i.pravatar.cc/150?u=1741"
                 }
             ],
-            "endorsements": 5455
+            "endorsements": 5392
         },
         "description": "We generate and apply behavioural insights to inform policy, improve public services, and deliver positive results for people and communities.",
         "url": "https://www.bi.team",
@@ -3835,22 +3904,23 @@
         "organizationalAffiliation": null,
         "image": "https://www.bi.team/wp-content/themes/bit/assets/img/default-share-image.jpg",
         "cost": 0,
-        "comments": 207
+        "comments": 170
     },
     {
+        "id": "addf7f11-f64d-418f-a36e-b83c6503b586",
         "title": "Five Models for Making Sense of Complex Systems",
         "endorsements": {
             "featuredEndorsers": [
                 {
                     "name": "Thom Kearney",
-                    "profilePic": "https://i.pravatar.cc/150?u=7933"
+                    "profilePic": "https://i.pravatar.cc/150?u=1553"
                 },
                 {
                     "name": "Firstname Lastname",
-                    "profilePic": "https://i.pravatar.cc/150?u=3079"
+                    "profilePic": "https://i.pravatar.cc/150?u=2708"
                 }
             ],
-            "endorsements": 9487
+            "endorsements": 8425
         },
         "description": "The five models are exploratory/conceptual or declarative/conceptual models (or maps or diagrams.) That means they are based in ideas, not data. These five diagrams are particularly useful for understanding complex systems. This seems more important every day, as we are all complexifying things full time",
         "url": "https://medium.com/@cwodtke/five-models-for-making-sense-of-complex-systems-134be897b6b3",
@@ -3888,22 +3958,23 @@
         "organizationalAffiliation": null,
         "image": "https://miro.medium.com/max/1200/1*6nHOCIbtHkT-M-j0MWZ8Vw.jpeg",
         "cost": 0,
-        "comments": 290
+        "comments": 192
     },
     {
+        "id": "fb292e14-623e-4ab6-9e6b-89c6da4500ad",
         "title": "Digital Government Atlas: Best Resources",
         "endorsements": {
             "featuredEndorsers": [
                 {
                     "name": "Thom Kearney",
-                    "profilePic": "https://i.pravatar.cc/150?u=8223"
+                    "profilePic": "https://i.pravatar.cc/150?u=4809"
                 },
                 {
                     "name": "Firstname Lastname",
-                    "profilePic": "https://i.pravatar.cc/150?u=9074"
+                    "profilePic": "https://i.pravatar.cc/150?u=2149"
                 }
             ],
-            "endorsements": 9040
+            "endorsements": 9517
         },
         "description": "A collection with these categories of resources: Digital government guidesDigital standardsGovernment GitHubsOpen source resourcesTools/toolkitsOpen data resourcesOpen data setsData visualisation",
         "url": "https://apolitical.co/solution_article/the-digital-government-atlas-the-worlds-best-tools-and-resources/",
@@ -3937,22 +4008,23 @@
         "organizationalAffiliation": null,
         "image": "https://apolitical.co/wp-content/uploads/2018/08/milky-way-2675322_1920.jpg",
         "cost": 0,
-        "comments": 299
+        "comments": 211
     },
     {
+        "id": "4a0a40c4-c208-40eb-981c-1e05092c3b55",
         "title": "7 Lenses Maturity Matrix",
         "endorsements": {
             "featuredEndorsers": [
                 {
                     "name": "Thom Kearney",
-                    "profilePic": "https://i.pravatar.cc/150?u=3563"
+                    "profilePic": "https://i.pravatar.cc/150?u=7921"
                 },
                 {
                     "name": "Firstname Lastname",
-                    "profilePic": "https://i.pravatar.cc/150?u=6404"
+                    "profilePic": "https://i.pravatar.cc/150?u=7271"
                 }
             ],
-            "endorsements": 7724
+            "endorsements": 8251
         },
         "description": "The 7 Lenses maturity matrix is a practical tool to help teams reflect on their transformation, have focused discussions, and identify which areas need more attention. The matrix was the result of extensive collaboration between colleagues across government, and the team have shared their experience of developing and using the tool.",
         "url": "https://transformingtogether.blog.gov.uk/2018/09/25/the-7-lenses-maturity-matrix/",
@@ -3987,22 +4059,23 @@
         "organizationalAffiliation": null,
         "image": "https://transformingtogether.blog.gov.uk/wp-content/themes/gds-blogs/build/govuk_template/assets/images/opengraph-image.png?0.22.3",
         "cost": 0,
-        "comments": 264
+        "comments": 150
     },
     {
+        "id": "34acc679-e101-4345-88f3-eb04a1c8b933",
         "title": "New Data Science Cheat Sheet",
         "endorsements": {
             "featuredEndorsers": [
                 {
                     "name": "Thom Kearney",
-                    "profilePic": "https://i.pravatar.cc/150?u=4649"
+                    "profilePic": "https://i.pravatar.cc/150?u=2428"
                 },
                 {
                     "name": "Firstname Lastname",
-                    "profilePic": "https://i.pravatar.cc/150?u=6500"
+                    "profilePic": "https://i.pravatar.cc/150?u=1115"
                 }
             ],
-            "endorsements": 5403
+            "endorsements": 8546
         },
         "description": "A reference in data science that covers basic concepts in probability, statistics, statistical learning, machine learning, deep learning, big data frameworks and SQL.",
         "url": "https://www.datasciencecentral.com/profiles/blogs/new-data-science-cheat-sheet",
@@ -4036,22 +4109,23 @@
         "organizationalAffiliation": null,
         "image": "https://storage.ning.com/topology/rest/1.0/file/get/1211594608?profile=RESIZE_710x",
         "cost": 0,
-        "comments": 72
+        "comments": 146
     },
     {
+        "id": "139c8af6-7479-414e-92b4-97e14a27cfbf",
         "title": "Bringing Together Policy and Digital Delivery",
         "endorsements": {
             "featuredEndorsers": [
                 {
                     "name": "Thom Kearney",
-                    "profilePic": "https://i.pravatar.cc/150?u=4944"
+                    "profilePic": "https://i.pravatar.cc/150?u=5601"
                 },
                 {
                     "name": "Firstname Lastname",
-                    "profilePic": "https://i.pravatar.cc/150?u=2709"
+                    "profilePic": "https://i.pravatar.cc/150?u=5888"
                 }
             ],
-            "endorsements": 1670
+            "endorsements": 5636
         },
         "description": "Within the Canadian government, there’s a growing movement to bring more traditional policy work into the digital era. This article speaks on why you should have a policy team within a digital delivery shop, and what it takes to be an effective policy person within a delivery team.",
         "url": "https://medium.com/@canadiandigitalservice/bringing-together-policy-and-digital-delivery-557449921aa8",
@@ -4089,22 +4163,23 @@
         "organizationalAffiliation": null,
         "image": "https://miro.medium.com/max/1200/1*oi_T0UtNu8pnxXB_W3EeSQ.jpeg",
         "cost": 0,
-        "comments": 221
+        "comments": 82
     },
     {
+        "id": "9551356b-7c4a-46d3-a769-7dd195e38be1",
         "title": "Design for Policy",
         "endorsements": {
             "featuredEndorsers": [
                 {
                     "name": "Thom Kearney",
-                    "profilePic": "https://i.pravatar.cc/150?u=6376"
+                    "profilePic": "https://i.pravatar.cc/150?u=6716"
                 },
                 {
                     "name": "Firstname Lastname",
-                    "profilePic": "https://i.pravatar.cc/150?u=4594"
+                    "profilePic": "https://i.pravatar.cc/150?u=6164"
                 }
             ],
-            "endorsements": 3611
+            "endorsements": 1266
         },
         "description": "Design for Policy is the first publication to chart the emergence of collaborative design approaches to innovation in public policy. Drawing on contributions from a range of the world’s leading academics, design practitioners and public managers, it provides a rich, detailed analysis of design as a tool for addressing public problems and capturing opportunities for achieving better and more efficient societal outcomes.",
         "url": "https://www.routledge.com/Design-for-Policy-1st-Edition/Bason/p/book/9781472413529",
@@ -4137,22 +4212,23 @@
         "organizationalAffiliation": null,
         "image": "https://images.tandf.co.uk/common/jackets/amazon/978147241/9781472413529.jpg",
         "cost": 0,
-        "comments": 115
+        "comments": 102
     },
     {
+        "id": "e441c693-8da6-4c01-81bc-13d4970e7bd3",
         "title": "Principles and Practices for Government in the Digital Age",
         "endorsements": {
             "featuredEndorsers": [
                 {
                     "name": "Thom Kearney",
-                    "profilePic": "https://i.pravatar.cc/150?u=7085"
+                    "profilePic": "https://i.pravatar.cc/150?u=6673"
                 },
                 {
                     "name": "Firstname Lastname",
-                    "profilePic": "https://i.pravatar.cc/150?u=6457"
+                    "profilePic": "https://i.pravatar.cc/150?u=7030"
                 }
             ],
-            "endorsements": 5800
+            "endorsements": 2153
         },
         "description": "The movement to modernize government technology has been focused on the delivery of government services using modern technology and best practices. But that is only half the solution; now we must also learn to drive policy and operations around delivery and users, and complete the feedback circuit. Only then can we effectively achieve the goals government policies intend. This article speaks about the importance of developing policy around a deep understanding of the needs of its intended beneficiaries, and increases ongoing situational awareness.",
         "url": "https://medium.com/code-for-america/delivery-driven-government-67e698c57c7b",
@@ -4190,22 +4266,23 @@
         "organizationalAffiliation": null,
         "image": "https://miro.medium.com/max/1200/0*02b8JUPMD7zT0ML4.",
         "cost": 0,
-        "comments": 200
+        "comments": 216
     },
     {
+        "id": "0e7b65d9-5499-440e-b677-2193e9416870",
         "title": "How Collective Intelligence Can Change our World",
         "endorsements": {
             "featuredEndorsers": [
                 {
                     "name": "Thom Kearney",
-                    "profilePic": "https://i.pravatar.cc/150?u=4521"
+                    "profilePic": "https://i.pravatar.cc/150?u=2135"
                 },
                 {
                     "name": "Firstname Lastname",
-                    "profilePic": "https://i.pravatar.cc/150?u=1093"
+                    "profilePic": "https://i.pravatar.cc/150?u=1390"
                 }
             ],
-            "endorsements": 6604
+            "endorsements": 4378
         },
         "description": "This article focusses on the definition of intelligence and the way it has been shaped and altered through time to reflect the changes of society and human behaviour. It touches on the type of support available for teams and groups working to address complex issues across a variety of organizational and societal contexts. Because of the greater diversity in this world, it creates a need for greater collective intelligence and synthesis. The focus of the article explores the question: How can collective intelligence arise?",
         "url": "https://michaelhoganpsychology.com/2018/08/20/a-commentary-on-big-mind-how-collective-intelligence-can-change-our-world-by-geoff-mulgan/",
@@ -4242,22 +4319,23 @@
         "organizationalAffiliation": null,
         "image": "https://michaelhoganpsychology.files.wordpress.com/2018/08/geoff.png",
         "cost": 0,
-        "comments": 11
+        "comments": 219
     },
     {
+        "id": "5431c3b8-6128-448e-817e-3f4bd189ce27",
         "title": "What is User Experience (UX) Design?",
         "endorsements": {
             "featuredEndorsers": [
                 {
                     "name": "Thom Kearney",
-                    "profilePic": "https://i.pravatar.cc/150?u=7086"
+                    "profilePic": "https://i.pravatar.cc/150?u=6172"
                 },
                 {
                     "name": "Firstname Lastname",
-                    "profilePic": "https://i.pravatar.cc/150?u=9042"
+                    "profilePic": "https://i.pravatar.cc/150?u=5837"
                 }
             ],
-            "endorsements": 7295
+            "endorsements": 1878
         },
         "description": "User experience (UX) design is the process of creating products that provide meaningful and relevant experiences to users. This involves the design of the entire process of acquiring and integrating the product, including aspects of branding, design, usability, and function.",
         "url": "https://www.interaction-design.org/literature/topics/ux-design",
@@ -4292,22 +4370,23 @@
         "organizationalAffiliation": null,
         "image": "https://public-media.interaction-design.org/images/website-thumbnail-image.png",
         "cost": 0,
-        "comments": 78
+        "comments": 219
     },
     {
+        "id": "6fce547f-0965-4dbc-860b-0bfbddcff625",
         "title": "Proposal for a Collaborative Design Framework",
         "endorsements": {
             "featuredEndorsers": [
                 {
                     "name": "Thom Kearney",
-                    "profilePic": "https://i.pravatar.cc/150?u=130"
+                    "profilePic": "https://i.pravatar.cc/150?u=8292"
                 },
                 {
                     "name": "Firstname Lastname",
-                    "profilePic": "https://i.pravatar.cc/150?u=5255"
+                    "profilePic": "https://i.pravatar.cc/150?u=8044"
                 }
             ],
-            "endorsements": 4787
+            "endorsements": 4535
         },
         "description": "Given the GoC's need for diversity and diverse perspectives, this could inform the way we co-design with more stakeholders to create more diverse data to inform policy making,  From the site: This book focuses on “massive codesign”: the idea that multiple and/or numerous participants having different voices collaborate in a design process broken down into different steps and formats and resulting in a relevant and diversified amount of data.",
         "url": "http://ojs.francoangeli.it/_omp/index.php/oa/catalog/book/303",
@@ -4347,22 +4426,23 @@
         "author": null,
         "organizationalAffiliation": null,
         "cost": 0,
-        "comments": 181
+        "comments": 61
     },
     {
+        "id": "bd63570f-8669-4870-afae-b99b0eaf8807",
         "title": "Data Skills for Public Servants: Where to Learn for Free",
         "endorsements": {
             "featuredEndorsers": [
                 {
                     "name": "Thom Kearney",
-                    "profilePic": "https://i.pravatar.cc/150?u=6453"
+                    "profilePic": "https://i.pravatar.cc/150?u=6140"
                 },
                 {
                     "name": "Firstname Lastname",
-                    "profilePic": "https://i.pravatar.cc/150?u=5352"
+                    "profilePic": "https://i.pravatar.cc/150?u=9708"
                 }
             ],
-            "endorsements": 4192
+            "endorsements": 1908
         },
         "description": "From leadership and communication to data and digital, this collection of these courses and resources will get you where you need to.",
         "url": "https://apolitical.co/solution_article/data-skills-for-public-servants-where-to-learn-for-free/",
@@ -4403,22 +4483,23 @@
         "organizationalAffiliation": null,
         "image": "https://apolitical.co/wp-content/uploads/2018/10/Optimized-folders.jpg",
         "cost": 0,
-        "comments": 102
+        "comments": 250
     },
     {
+        "id": "f066727e-fc34-4c5e-98e5-e322006cc85f",
         "title": "Democratization of Data Science",
         "endorsements": {
             "featuredEndorsers": [
                 {
                     "name": "Thom Kearney",
-                    "profilePic": "https://i.pravatar.cc/150?u=2041"
+                    "profilePic": "https://i.pravatar.cc/150?u=9167"
                 },
                 {
                     "name": "Firstname Lastname",
-                    "profilePic": "https://i.pravatar.cc/150?u=5249"
+                    "profilePic": "https://i.pravatar.cc/150?u=9046"
                 }
             ],
-            "endorsements": 9500
+            "endorsements": 2641
         },
         "description": "These days every industry is drenched in data, and the organizations that succeed are those that most quickly make sense of their data in order to adapt to what’s coming. The best way to enable fast discovery and deeper insights is to disperse data science expertise across an organization.",
         "url": "https://hbr.org/2018/07/the-democratization-of-data-science",
@@ -4451,22 +4532,23 @@
         "organizationalAffiliation": null,
         "image": "https://hbr.org/resources/images/article_assets/2018/07/jul18-27-833771544-Patricia-Toth-McCormick.jpg",
         "cost": 0,
-        "comments": 268
+        "comments": 15
     },
     {
+        "id": "44184e3b-419b-4b99-881c-b8864efd79c3",
         "title": "Introduction to GBA+",
         "endorsements": {
             "featuredEndorsers": [
                 {
                     "name": "Thom Kearney",
-                    "profilePic": "https://i.pravatar.cc/150?u=5256"
+                    "profilePic": "https://i.pravatar.cc/150?u=9325"
                 },
                 {
                     "name": "Firstname Lastname",
-                    "profilePic": "https://i.pravatar.cc/150?u=6503"
+                    "profilePic": "https://i.pravatar.cc/150?u=8800"
                 }
             ],
-            "endorsements": 6685
+            "endorsements": 345
         },
         "description": "Gender-based Analysis Plus (GBA+) is an analytical process used to assess how diverse groups of women, men and non-binary people may experience policies, programs and initiatives. GBA+ also considers many other identity factors, such as race, ethnicity, religion, age, and mental or physical disability.",
         "url": "https://cfc-swc.gc.ca/gba-acs/course-cours-2017/eng/mod00/mod00_01_01.html",
@@ -4504,22 +4586,23 @@
         "author": null,
         "organizationalAffiliation": null,
         "cost": 0,
-        "comments": 5
+        "comments": 91
     },
     {
+        "id": "d0eeab39-400d-429c-b1cb-4e8f701f955b",
         "title": "Abuse My Data, Just Do it Right",
         "endorsements": {
             "featuredEndorsers": [
                 {
                     "name": "Ksenia Cheinman",
-                    "profilePic": "https://i.pravatar.cc/150?u=2075"
+                    "profilePic": "https://i.pravatar.cc/150?u=9512"
                 },
                 {
                     "name": "Firstname Lastname",
-                    "profilePic": "https://i.pravatar.cc/150?u=8735"
+                    "profilePic": "https://i.pravatar.cc/150?u=6987"
                 }
             ],
-            "endorsements": 5357
+            "endorsements": 7456
         },
         "description": "Great, short opinion piece on data use and ethics with a number of important questions to ask ourselves in the process.",
         "url": "https://public.digital/signals/abuse-my-data-just-do-it-right/",
@@ -4563,22 +4646,23 @@
         "organizationalAffiliation": "IDEO",
         "image": "https://public.digital/wp-content/uploads/2019/06/signals1signals2-w.jpg",
         "cost": 0,
-        "comments": 219
+        "comments": 247
     },
     {
+        "id": "2b8ff393-eb0c-4a7a-aa55-938010b7daaf",
         "title": "Key pillar of our digital future: Tell Us Once",
         "endorsements": {
             "featuredEndorsers": [
                 {
                     "name": "Ksenia Cheinman",
-                    "profilePic": "https://i.pravatar.cc/150?u=493"
+                    "profilePic": "https://i.pravatar.cc/150?u=5162"
                 },
                 {
                     "name": "Firstname Lastname",
-                    "profilePic": "https://i.pravatar.cc/150?u=5224"
+                    "profilePic": "https://i.pravatar.cc/150?u=1817"
                 }
             ],
-            "endorsements": 7772
+            "endorsements": 4879
         },
         "description": "Easy to watch video that tells the \"opportunity\" story of public service modernization.",
         "url": "https://www.youtube.com/watch?v=eM186AW-fc4",
@@ -4617,22 +4701,23 @@
         "organizationalAffiliation": "\"Treasury Board of Canada Secretariat, TBS\"",
         "image": "https://i.ytimg.com/vi/eM186AW-fc4/maxresdefault.jpg",
         "cost": 0,
-        "comments": 133
+        "comments": 159
     },
     {
+        "id": "8241c79d-95bd-43b5-98ca-5e22a80be393",
         "title": "Changing mindsets by breaking silos",
         "endorsements": {
             "featuredEndorsers": [
                 {
                     "name": "Ksenia Cheinman",
-                    "profilePic": "https://i.pravatar.cc/150?u=7311"
+                    "profilePic": "https://i.pravatar.cc/150?u=9948"
                 },
                 {
                     "name": "Firstname Lastname",
-                    "profilePic": "https://i.pravatar.cc/150?u=8623"
+                    "profilePic": "https://i.pravatar.cc/150?u=4226"
                 }
             ],
-            "endorsements": 9491
+            "endorsements": 4105
         },
         "description": "An article about changing mindsets through logic rather than methodologies, by breaking silos, and bringing in UX practitioners.",
         "url": "https://public.digital/signals/changing-mindsets-by-breaking-silos/",
@@ -4673,22 +4758,23 @@
         "organizationalAffiliation": "Public Digital",
         "image": "https://public.digital/wp-content/uploads/2019/06/s1-uchiyama.jpg",
         "cost": 0,
-        "comments": 100
+        "comments": 291
     },
     {
+        "id": "9d2a2b89-7344-40cb-a308-f01ac935cc94",
         "title": "A|B Testing in Government 102",
         "endorsements": {
             "featuredEndorsers": [
                 {
                     "name": "Thom Kearney",
-                    "profilePic": "https://i.pravatar.cc/150?u=599"
+                    "profilePic": "https://i.pravatar.cc/150?u=6414"
                 },
                 {
                     "name": "Firstname Lastname",
-                    "profilePic": "https://i.pravatar.cc/150?u=8148"
+                    "profilePic": "https://i.pravatar.cc/150?u=4771"
                 }
             ],
-            "endorsements": 9108
+            "endorsements": 1432
         },
         "description": "Overview of A|B testing in government setting from of a collection of US Government videos available on Youtube via DigitalGov.",
         "url": "https://www.youtube.com/watch?v=ZO6uYBoseCQ",
@@ -4725,22 +4811,23 @@
         "organizationalAffiliation": "\"US Digital Government, DigitalGov\",Consumer Financial Protection Bureau",
         "image": "https://i.ytimg.com/vi/ZO6uYBoseCQ/hqdefault.jpg",
         "cost": 0,
-        "comments": 205
+        "comments": 130
     },
     {
+        "id": "1fccdc63-d757-4a55-bde1-8d2856c63f8d",
         "title": "Let’s write more blog posts: an experiment",
         "endorsements": {
             "featuredEndorsers": [
                 {
                     "name": "Ksenia Cheinman",
-                    "profilePic": "https://i.pravatar.cc/150?u=7141"
+                    "profilePic": "https://i.pravatar.cc/150?u=7996"
                 },
                 {
                     "name": "Firstname Lastname",
-                    "profilePic": "https://i.pravatar.cc/150?u=6375"
+                    "profilePic": "https://i.pravatar.cc/150?u=2117"
                 }
             ],
-            "endorsements": 669
+            "endorsements": 4909
         },
         "description": "An excellent strategy to share work in the open and learn from others via pair-writing.",
         "url": "https://amyhupe.co.uk/articles/lets-write-more-blog-posts-an-experiment/",
@@ -4785,22 +4872,23 @@
         "organizationalAffiliation": "\"Government of UK, GOV.UK\"",
         "image": "https://amyhupe.co.uk/assets/images/card.png",
         "cost": 0,
-        "comments": 177
+        "comments": 170
     },
     {
+        "id": "b0e55a72-e5d6-4874-b162-7743b8f477b7",
         "title": "De-risking custom technology projects - A handbook for state budgeting and oversight",
         "endorsements": {
             "featuredEndorsers": [
                 {
                     "name": "Ksenia Cheinman",
-                    "profilePic": "https://i.pravatar.cc/150?u=5673"
+                    "profilePic": "https://i.pravatar.cc/150?u=8666"
                 },
                 {
                     "name": "Firstname Lastname",
-                    "profilePic": "https://i.pravatar.cc/150?u=3749"
+                    "profilePic": "https://i.pravatar.cc/150?u=2478"
                 }
             ],
-            "endorsements": 2112
+            "endorsements": 1678
         },
         "description": "A handbook that walks you through how to minimize risk in technology projects, including Agile methods, human-centred design, and DevOps.",
         "url": "https://github.com/18F/technology-budgeting/blob/master/handbook.md",
@@ -4840,6 +4928,6 @@
         "organizationalAffiliation": "18F",
         "image": "https://avatars3.githubusercontent.com/u/6233994?s=400&v=4",
         "cost": 0,
-        "comments": 115
+        "comments": 144
     }
 ]
