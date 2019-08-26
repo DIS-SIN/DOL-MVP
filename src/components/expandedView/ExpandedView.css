@@ -38,6 +38,7 @@
 .expandedViewContentContainer .overlayButton {
     width: 35px;
     height: 35px;
+    padding: 0;
     -webkit-backdrop-filter: blur(0px);
     backdrop-filter: blur(0px);
     --webkit-backdrop-filter: blur(0px);
@@ -102,7 +103,7 @@
     flex-grow: 2;
 }
 
-.expandedViewTitleArea h1, .expandedViewTitleArea h3 {
+.expandedViewTitleArea h1, .expandedViewTitleArea h3, .expandedViewContentContainer h2, .expandedViewContentContainer p {
     margin: 0;
 }
 
@@ -131,3 +132,21 @@
     border: none;
     cursor: pointer;
 }
+
+/* #region Media Queries */
+
+@media only screen and (max-width: 500px), screen and (max-height: 500px) {
+
+    .expandedViewTitleArea {
+        position: relative;
+    }
+
+    .startResourceButton {
+        position: absolute;
+        top: -65px;
+        right: 0;
+    }
+    
+}
+
+/* #endregion */

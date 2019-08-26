@@ -46,7 +46,7 @@ function ExpandedView(props) {
                                     <h1>{Title(props.expandedViewContent.title, SpecialTitlePhrases)}</h1>
                                     <h3>{getAuthors()}</h3>
                                 </div>
-                                <button className="startResourceButton" onClick={() => {console.log("Clicked on Button")}}>Start <span className="icon">course</span></button>
+                                <button className="startResourceButton" onClick={() => {console.log("Clicked on Button")}}>{props.language.start} <span className="icon">course</span></button>
                             </div>
                             
                             <h2>{props.language.description}</h2>
