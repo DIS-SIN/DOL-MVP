@@ -1,21 +1,3 @@
-.Modal.expandedView {
-    position: relative;
-    top: 50px;
-    width: 750px;
-    max-width: 90%;
-    height: auto;
-    margin: 0 auto;
-}
-
-.expandedView img {
-    width: 100%;
-    object-fit: cover;
-    height: 300px;
-    border-radius: inherit;
-    border-bottom-left-radius: 0;
-    border-bottom-right-radius: 0;
-}
-
 .expandedViewScrollContainer {
     position: fixed;
     width: 750px;
@@ -42,4 +24,110 @@
     margin-bottom: 100px;
     border-radius: 13px;
     background-color: white;
+}
+
+.Modal.expandedView {
+    position: relative;
+    top: 50px;
+    width: 750px;
+    max-width: 90%;
+    height: auto;
+    margin: 0 auto;
+}
+
+.expandedViewContentContainer .overlayButton {
+    width: 35px;
+    height: 35px;
+    -webkit-backdrop-filter: blur(0px);
+    backdrop-filter: blur(0px);
+    --webkit-backdrop-filter: blur(0px);
+    background-color: #2DBFBF;
+    border-radius: 50%;
+    color: #E6FAF9;
+    font-size: 20px;
+    box-sizing: border-box;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+
+.expandedViewContentContainer .closeButton {
+    position: absolute;
+    font-size: 28px;
+    line-height: 28px;
+    top: 5px;
+    left: 5px;
+    background-color: rgba(255, 255, 255, 0.75);
+    color: #727272;
+}
+
+.expandedViewContentContainer .closeButton:focus {
+    border: solid 1px #2dbfbf;
+}
+
+.expandedViewActionButtons {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    display: flex;
+    justify-content: space-between;
+    width: 120px;
+}
+
+/* Image area container */
+.expandedViewImageArea{
+    border-radius: inherit;
+    height: 300px;
+}
+
+.expandedView img {
+    width: 100%;
+    object-fit: cover;
+    height: 100%;
+    border-radius: inherit;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.expandedViewTitleArea {
+    display: flex;
+    background-color: #f6f6f6;
+    border-bottom: 1px solid #d0d4d8;
+}
+
+.expandedViewTitleArea div:first-child {
+    flex-grow: 2;
+}
+
+.expandedViewTitleArea h1, .expandedViewTitleArea h3 {
+    margin: 0;
+}
+
+.expandedViewTitleArea h1 {
+    padding: 10px 0 0 10px;
+    line-height: 36px;
+}
+
+.expandedViewTitleArea h3 {
+    padding: 0 0 10px 10px;
+    font-weight: 500;
+    color: rgba(0, 0, 0, 0.9);
+}
+
+.startResourceButton {
+    min-width: 125px;
+    height: 36px;
+    margin: 15px;
+    align-self: center;
+    border-radius: 18px;
+    background: #2dbfbf;
+    font-weight: 500;
+    font-size: 25px;
+    color: #E7F9F8;
+    text-align: center;
+    border: none;
+    cursor: pointer;
 }
