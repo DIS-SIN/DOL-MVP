@@ -13,6 +13,20 @@ function ExpandedView(props) {
         window.open(props.expandedViewContent.url, "_blank");
     }
 
+    function shareResource() {
+        if (window.navigator.share) {
+            window.navigator.share({
+              title: props.expandedViewContent.title,
+              url: props.expandedViewContent.url
+            }).then(() => {
+              console.log('Thanks for sharing!');
+            })
+            .catch(console.error);
+          } else {
+            // fallback
+          }
+    }
+
     function getAuthors() {
         let author = props.expandedViewContent.author;
         let org = props.expandedViewContent.organizationalAffiliation;
@@ -40,7 +54,7 @@ function ExpandedView(props) {
                             <div className="expandedViewImageArea">
                                 <button className="icon overlayButton closeButton" onClick={props.handleCloseModal}>close</button>
                                 <div className="expandedViewActionButtons">
-                                    <button className="icon overlayButton">share</button>
+                                    <button className="icon overlayButton" onClick={shareResource}>share</button>
                                     <button className="icon overlayButton">bookmark</button>
                                     <button className="icon overlayButton">moreNoOutline</button>
                                 </div>
