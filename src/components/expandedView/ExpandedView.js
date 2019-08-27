@@ -16,15 +16,17 @@ function ExpandedView(props) {
     function shareResource() {
         if (window.navigator.share) {
             window.navigator.share({
-              title: props.expandedViewContent.title,
-              url: props.expandedViewContent.url
-            }).then(() => {
-              console.log('Thanks for sharing!');
-            })
-            .catch(console.error);
-          } else {
+            title: props.expandedViewContent.title,
+            url: props.expandedViewContent.url
+        }).then(() => {
+            console.log('Thanks for sharing!');
+        })
+        .catch(console.error);
+        }
+        else {
             // fallback
-          }
+            console.log("Needs manual share window");
+        }
     }
 
     function getAuthors() {
