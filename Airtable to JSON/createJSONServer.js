@@ -188,7 +188,8 @@ function getAuthor(resource) {
 
     if (author.includes(`","`)){
         // More than one author
-        author = author.replace(`","`, "+");
+        author = author.split(`","`).join("+");
+        console.log("AUTHOR:", author);
         author = JSON.parse(author);
         author = author.split("+");
 
