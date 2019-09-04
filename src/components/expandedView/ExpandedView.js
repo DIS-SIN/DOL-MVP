@@ -51,9 +51,10 @@ function ExpandedView(props) {
 
         return (
             <Modal closeTimeoutMS={150} isOpen={props.expandedViewVisible} contentLabel="Expanded View" onRequestClose={props.handleCloseModal} className="Modal expandedView" overlayClassName="Overlay">
-                <Helmet>
+                {/* <Helmet>
+                    <title>Hello World</title>
                     <title>{Title(props.expandedViewContent.title, SpecialTitlePhrases)}</title>
-                </Helmet>
+                </Helmet> */}
                 <ScrollLock>
                     <div className="expandedViewScrollContainer">
                         <div className="expandedViewContentContainer">
