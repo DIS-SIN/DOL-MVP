@@ -8,7 +8,7 @@ import ScrollLock from 'react-scrolllock';
 import {Helmet} from "react-helmet";
 import './Home.css';
 
-function App(props) {
+function Home(props) {
 
     // This hides all content from screen readers while the modal is open
     Modal.setAppElement('#root')
@@ -150,4 +150,4 @@ function App(props) {
     );
 }
 
-export default App;
+export default Home;
