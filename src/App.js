@@ -133,6 +133,7 @@ function App(props) {
                 
             </div>
             <button style={{margin: "20px"}} onClick={manualSwitchLanguage}>Change Language</button>
+            <GCFooter/>
         </div>
     );
 }
