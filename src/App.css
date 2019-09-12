@@ -43,7 +43,7 @@
 }
 
 body {
-    padding-top: 160px;
+    padding-top: 125px;
     overscroll-behavior: none;
     background-color: #EFEFF4;
 }
@@ -61,6 +61,10 @@ body {
     /* Better Font Rendering =========== */
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+}
+
+.gcHeader {
+    margin-bottom: 45px;
 }
 
 .cardViewIcon {
