@@ -6,6 +6,8 @@ import CardViewModalContent from './components/CardViewModalContent';
 import ExpandedView from './components/expandedView/ExpandedView';
 import Modal from 'react-modal';
 import ScrollLock from 'react-scrolllock';
+import firebase from 'firebase/app'
+import 'firebase/firestore';
 import './App.css';
 
 function App(props) {
@@ -38,13 +40,32 @@ function App(props) {
     /* #endregion */
 
     useEffect(() => {
-        fetch('https://raw.githubusercontent.com/DIS-SIN/DOL-MVP/master/Airtable%20to%20JSON/output/dolDB.json')
-        .then(response => response.json())
-        .then(data => {
-            console.log(data);
-            setResources(data);
-            
-            directResourceLink(data);
+        try {
+            var firebaseConfig = {
+                apiKey: "AIzaSyCEjvQBNLH87Y5d-eCy4JAR8HAMUmUs-uc",
+                authDomain: "digital-open-learning.firebaseapp.com",
+                databaseURL: "https://digital-open-learning.firebaseio.com",
+                projectId: "digital-open-learning",
+                storageBucket: "digital-open-learning.appspot.com",
+                messagingSenderId: "547442934763",
+                appId: "1:547442934763:web:93b5b076a533ba9938cfae"
+              };
+              // Initialize Firebase
+              firebase.initializeApp(firebaseConfig);
+        } catch (error) {
+            console.error(error);
+        }
+
+        firebase.firestore().collection("resources").get().then((data) => {
+            let resourceList = []
+            let res = null;
+            data.forEach(doc => {
+                res = Object.create(doc.data());
+                res.id = doc.id;
+                resourceList.push(res);
+            });
+            console.log(resourceList);
+            setResources(resourceList);
         });
     },[])
 
