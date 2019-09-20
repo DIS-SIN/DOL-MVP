@@ -80,7 +80,9 @@ function App(props) {
             });
         }
         else {
-            firebase.firestore().collection("resources").where("topic", "==", activeTopic).limit(9).get().then((data) => {
+            // Data from air table capitlizes only the first letter, this line ensures that format
+            let topic = activeTopic.charAt(0).toUpperCase() + activeTopic.toLowerCase().slice(1);
+            firebase.firestore().collection("resources").where("topic", "==", topic).limit(9).get().then((data) => {
                 let resourceList = []
                 let res = null;
                 data.forEach(doc => {
