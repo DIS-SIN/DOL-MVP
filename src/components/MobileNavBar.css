@@ -58,6 +58,7 @@
     -webkit-user-select: none;
     -moz-user-select: none;
     user-select: none;
+    transition: border-bottom .5s;
 }
 
 .row h3.active{

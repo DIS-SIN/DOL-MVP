@@ -5,10 +5,12 @@ import Card from './components/Card/Card';
 import CardViewModalContent from './components/CardViewModalContent';
 import ExpandedView from './components/expandedView/ExpandedView';
 import Modal from 'react-modal';
+import LoadingScreen from './components/LoadingScreen';
 import ScrollLock from 'react-scrolllock';
 import firebase from 'firebase/app'
 import 'firebase/firestore';
 import './App.css';
+import undefined from 'firebase/firestore';
 
 function App(props) {
 
@@ -16,6 +18,7 @@ function App(props) {
     Modal.setAppElement('#root')
 
     /* #region State Variables */
+    const [loading, setLoading] = useState(true);
 
     // Modal to switch between card & compact views
     const [modalVisible, showModal] = useState(false);
@@ -56,7 +59,7 @@ function App(props) {
             console.error(error);
         }
 
-        firebase.firestore().collection("resources").limit(9).get().then((data) => {
+        firebase.firestore().collection("resources").where("topic", "==", "Design").limit(9).get().then((data) => {
             let resourceList = []
             let res = null;
             data.forEach(doc => {
@@ -67,6 +70,7 @@ function App(props) {
             console.log(resourceList);
             setResources(resourceList);
             directResourceLink(resourceList);
+            setLoading(false);
         });
     },[])
 
@@ -137,6 +141,7 @@ function App(props) {
             <GCSplashScreen routes={{english: "/", french: "/"}}/>
             <GCHeader className="gcHeader"/>
             <MobileNavBar language={language}></MobileNavBar>
+            {loading ? <LoadingScreen/> : null}
             <div className="cardGrid">
                 <button className="icon cardViewIcon" onClick={handleOpenModal}>cardView</button>
                 <ScrollLock isActive={scrollLocked}>
