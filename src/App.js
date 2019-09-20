@@ -18,7 +18,12 @@ function App(props) {
     Modal.setAppElement('#root')
 
     /* #region State Variables */
+
+    // State variable to show/hide the loading screen
     const [loading, setLoading] = useState(true);
+
+    // Sets the active topic in the mobile nav bar
+    const [activeTopic, setTopic] = useState("For you");
 
     // Modal to switch between card & compact views
     const [modalVisible, showModal] = useState(false);
@@ -56,23 +61,40 @@ function App(props) {
               // Initialize Firebase
               firebase.initializeApp(firebaseConfig);
         } catch (error) {
-            console.error(error);
+            // console.error(error);
         }
 
-        firebase.firestore().collection("resources").where("topic", "==", "Design").limit(9).get().then((data) => {
-            let resourceList = []
-            let res = null;
-            data.forEach(doc => {
-                res = Object.create(doc.data());
-                res.id = doc.id;
-                resourceList.push(res);
+        if (activeTopic == "All" || activeTopic == "For you"){
+            firebase.firestore().collection("resources").limit(9).get().then((data) => {
+                let resourceList = []
+                let res = null;
+                data.forEach(doc => {
+                    res = Object.create(doc.data());
+                    res.id = doc.id;
+                    resourceList.push(res);
+                });
+                console.log(resourceList);
+                setResources(resourceList);
+                directResourceLink(resourceList);
+                setLoading(false);
             });
-            console.log(resourceList);
-            setResources(resourceList);
-            directResourceLink(resourceList);
-            setLoading(false);
-        });
-    },[])
+        }
+        else {
+            firebase.firestore().collection("resources").where("topic", "==", activeTopic).limit(9).get().then((data) => {
+                let resourceList = []
+                let res = null;
+                data.forEach(doc => {
+                    res = Object.create(doc.data());
+                    res.id = doc.id;
+                    resourceList.push(res);
+                });
+                console.log(resourceList);
+                setResources(resourceList);
+                directResourceLink(resourceList);
+                setLoading(false);
+            });
+        }
+    },[activeTopic])
 
     // Checks to see if the user is coming in from a shared link leading directly to a resource
     function directResourceLink(data) {
@@ -140,7 +162,7 @@ function App(props) {
         <div>
             <GCSplashScreen routes={{english: "/", french: "/"}}/>
             <GCHeader className="gcHeader"/>
-            <MobileNavBar language={language}></MobileNavBar>
+            <MobileNavBar language={language} activeTopic={activeTopic} setTopic={setTopic}></MobileNavBar>
             <div className="cardGrid">
                 {loading ? <LoadingScreen/> : null}
                 <button className="icon cardViewIcon" onClick={handleOpenModal}>cardView</button>
