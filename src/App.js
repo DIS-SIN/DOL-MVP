@@ -141,8 +141,8 @@ function App(props) {
             <GCSplashScreen routes={{english: "/", french: "/"}}/>
             <GCHeader className="gcHeader"/>
             <MobileNavBar language={language}></MobileNavBar>
-            {loading ? <LoadingScreen/> : null}
             <div className="cardGrid">
+                {loading ? <LoadingScreen/> : null}
                 <button className="icon cardViewIcon" onClick={handleOpenModal}>cardView</button>
                 <ScrollLock isActive={scrollLocked}>
                 <div style={{display:"none"}}>
