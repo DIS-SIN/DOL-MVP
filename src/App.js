@@ -56,7 +56,7 @@ function App(props) {
             console.error(error);
         }
 
-        firebase.firestore().collection("resources").get().then((data) => {
+        firebase.firestore().collection("resources").limit(9).get().then((data) => {
             let resourceList = []
             let res = null;
             data.forEach(doc => {
@@ -66,6 +66,7 @@ function App(props) {
             });
             console.log(resourceList);
             setResources(resourceList);
+            directResourceLink(resourceList);
         });
     },[])
 

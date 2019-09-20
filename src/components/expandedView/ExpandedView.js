@@ -1,6 +1,7 @@
 import React from 'react';
 import Title from 'title';
 import Tags from '../Card/Tags';
+import history from "../History";
 import Modal from 'react-modal';
 import ScrollLock from 'react-scrolllock';
 import {Helmet} from "react-helmet";
@@ -18,7 +19,7 @@ function ExpandedView(props) {
         if (window.navigator.share) {
             window.navigator.share({
             title: props.expandedViewContent.title,
-            url: props.expandedViewContent.url
+            url: window.location.href
         }).then(() => {
             console.log('Thanks for sharing!');
         })
@@ -48,6 +49,9 @@ function ExpandedView(props) {
     }
 
     if (props.expandedViewContent != null){
+
+        console.log(props);
+        history.replace(`/resource/${props.expandedViewContent.id}`);
 
         return (
             <Modal closeTimeoutMS={150} isOpen={props.expandedViewVisible} contentLabel="Expanded View" onRequestClose={props.handleCloseModal} className="Modal expandedView" overlayClassName="Overlay">
