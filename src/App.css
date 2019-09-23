@@ -43,7 +43,7 @@
 }
 
 body {
-    padding-top: 160px;
+    padding-top: 135px;
     overscroll-behavior: none;
     background-color: #EFEFF4;
 }
@@ -63,17 +63,32 @@ body {
     -moz-osx-font-smoothing: grayscale;
 }
 
-.cardViewIcon {
+.viewSettingsBar {
+    max-width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 45px;
+    box-sizing: border-box;
+    margin: 0 auto;
+}
+
+.viewIcon {
     background: none;
     border: none;
     padding: 0;
-    position: absolute;
-    right: 45px;
     font-size: 21px;
-    top: -25px;
     color: #BBBBBA;
     cursor: pointer;
     user-select: none;
+}
+
+.sortButton {
+    font-size: 21px;
+    font-weight: bold;
+}
+
+.sortButton span {
+    font-size: 30px;
 }
 
 .cardGrid {
@@ -146,7 +161,7 @@ body {
 @media only screen and (max-width: 500px), screen and (max-height: 500px) {
 
     body {
-        padding-top: 130px;
+        padding-top: 100px;
     }
 
     .Modal {

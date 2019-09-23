@@ -171,9 +171,12 @@ function App(props) {
     return (
         <div>
             <MobileNavBar language={language} setLanguage={setLanguage} activeTopic={activeTopic} setTopic={setTopic}></MobileNavBar>
+            <div className="viewSettingsBar">
+                <button className="viewIcon sortButton">Endorsements <span className="icon">dropdown</span></button>
+                <button className="icon viewIcon" onClick={handleOpenModal}>cardView</button>
+            </div>
             <div className="cardGrid">
                 {loading ? <LoadingScreen/> : null}
-                <button className="icon cardViewIcon" onClick={handleOpenModal}>cardView</button>
                 <ScrollLock isActive={scrollLocked}>
                 <div style={{display:"none"}}>
                 <Modal style={{ content: {right: modalXPosition}}} closeTimeoutMS={150} isOpen={modalVisible} contentLabel="Switch View Preferences Modal" onRequestClose={handleCloseModal} className="Modal" overlayClassName="Overlay">
