@@ -48,6 +48,7 @@ function App(props) {
     /* #endregion */
 
     useEffect(() => {
+        setLoading(true);
         try {
             var firebaseConfig = {
                 apiKey: "AIzaSyCEjvQBNLH87Y5d-eCy4JAR8HAMUmUs-uc",
@@ -96,7 +97,7 @@ function App(props) {
                 setLoading(false);
             });
         }
-    },[activeTopic])
+    },[activeTopic, language])
 
     // Checks to see if the user is coming in from a shared link leading directly to a resource
     function directResourceLink(data) {
