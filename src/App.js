@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from 'react';
-import {GCSplashScreen, GCHeader, GCFooter} from 'gc-tortilla';
 import MobileNavBar from './components/MobileNavBar';
 import Card from './components/Card/Card';
 import CardViewModalContent from './components/CardViewModalContent';
@@ -171,8 +170,6 @@ function App(props) {
 
     return (
         <div>
-            <GCSplashScreen routes={{english: "/", french: "/"}}/>
-            <GCHeader className="gcHeader"/>
             <MobileNavBar language={language} setLanguage={setLanguage} activeTopic={activeTopic} setTopic={setTopic}></MobileNavBar>
             <div className="cardGrid">
                 {loading ? <LoadingScreen/> : null}
@@ -192,7 +189,6 @@ function App(props) {
                 )) }
                 
             </div>
-            <GCFooter/>
         </div>
     );
 }
