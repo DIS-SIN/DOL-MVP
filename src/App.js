@@ -61,6 +61,8 @@ function App(props) {
               };
               // Initialize Firebase
               firebase.initializeApp(firebaseConfig);
+              // TEMPORARY ALERT FOR PROTOTYPE VERSION
+              alert("THIS IS A PROTOTYPE OF DIGITAL OPEN LEARNING\n\nPlease be aware that this is only a prototype version so things might not work as expected along with some missing features.");
         } catch (error) {
             // console.error(error);
         }
