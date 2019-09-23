@@ -65,7 +65,7 @@ function App(props) {
         }
 
         if (activeTopic == "All" || activeTopic == "For you"){
-            firebase.firestore().collection("resources").limit(9).get().then((data) => {
+            firebase.firestore().collection("resources").where(JSON.parse(localStorage.langIsEnglish) ? "languages.english" : "languages.french", "==", true).limit(9).get().then((data) => {
                 let resourceList = []
                 let res = null;
                 data.forEach(doc => {
@@ -82,7 +82,7 @@ function App(props) {
         else {
             // Data from air table capitlizes only the first letter, this line ensures that format
             let topic = activeTopic.charAt(0).toUpperCase() + activeTopic.toLowerCase().slice(1);
-            firebase.firestore().collection("resources").where("topic", "==", topic).limit(9).get().then((data) => {
+            firebase.firestore().collection("resources").where("topic", "==", topic).where(JSON.parse(localStorage.langIsEnglish) ? "languages.english" : "languages.french", "==", true).limit(9).get().then((data) => {
                 let resourceList = []
                 let res = null;
                 data.forEach(doc => {
@@ -123,16 +123,33 @@ function App(props) {
     }
 
     function updateLanguage(){
-        if (window.navigator.language){
-            if (window.navigator.language.includes("fr-")){
+        if (localStorage.langIsEnglish){
+            if (JSON.parse(localStorage.langIsEnglish) == true){
+                return require("./languages/en-CA.json");
+            }
+            else {
                 return require("./languages/fr-CA.json");
             }
         }
+        if (window.navigator.language){
+            if (window.navigator.language.includes("fr-")){
+                localStorage.langIsEnglish = false;
+                return require("./languages/fr-CA.json");
+            }
+        }
+        localStorage.langIsEnglish = true;
         return require("./languages/en-CA.json");
     }
 
     function manualSwitchLanguage(){
-        language.language === "English" ? setLanguage(require("./languages/fr-CA.json")) : setLanguage(require("./languages/en-CA.json"));
+        if (language.language === "English"){
+            localStorage.langIsEnglish = false;
+            setLanguage(require("./languages/fr-CA.json"));
+        }
+        else {
+            localStorage.langIsEnglish = true;
+            setLanguage(require("./languages/en-CA.json"));
+        }
     }
 
     function handleOpenModal(ev) {
