@@ -7,11 +7,23 @@ function MobileNavBar(props) {
         return props.activeTopic == topic ? "active" : undefined;
     }
 
+    function manualSwitchLanguage(){
+        if (props.language.language === "English"){
+            localStorage.langIsEnglish = false;
+            props.setLanguage(require("../languages/fr-CA.json"));
+        }
+        else {
+            localStorage.langIsEnglish = true;
+            props.setLanguage(require("../languages/en-CA.json"));
+        }
+    }
+
     return (
         <div className="mobileNavBar">
             <div className="row">
                 <div className="rowAccessory left">
-                    <img className="profile" src={require('../images/defaultProfile.jpg')} alt={props.language.profileIconAltText} title={props.language.profile}/>
+                    {/* <img className="profile" src={require('../images/defaultProfile.jpg')} alt={props.language.profileIconAltText} title={props.language.profile}/> */}
+                    <button className="languageButton" onClick={manualSwitchLanguage}><span className="icon">language</span>{props.language.language === "English" ? "Fr" : "En"}</button>
                 </div>
                 <input className="searchBar" type="text" placeholder={props.language.searchBarPlaceholder}/>
                 <div className="rowAccessory right">

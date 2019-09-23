@@ -72,6 +72,19 @@
     user-select: none;
 }
 
+.languageButton {
+    background-color: #c6cde0;
+    border: none;
+    padding: 0 3px;
+    font-size: 21px;
+    color: #ffffff;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+    border-radius: 5px;
+}
+
 .searchBar {
     flex-grow: 1;
     width: 645px;

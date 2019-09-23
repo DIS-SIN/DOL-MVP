@@ -141,17 +141,6 @@ function App(props) {
         return require("./languages/en-CA.json");
     }
 
-    function manualSwitchLanguage(){
-        if (language.language === "English"){
-            localStorage.langIsEnglish = false;
-            setLanguage(require("./languages/fr-CA.json"));
-        }
-        else {
-            localStorage.langIsEnglish = true;
-            setLanguage(require("./languages/en-CA.json"));
-        }
-    }
-
     function handleOpenModal(ev) {
         let modalWidth = 375;
         let modalOffset = 31;
@@ -181,7 +170,7 @@ function App(props) {
         <div>
             <GCSplashScreen routes={{english: "/", french: "/"}}/>
             <GCHeader className="gcHeader"/>
-            <MobileNavBar language={language} activeTopic={activeTopic} setTopic={setTopic}></MobileNavBar>
+            <MobileNavBar language={language} setLanguage={setLanguage} activeTopic={activeTopic} setTopic={setTopic}></MobileNavBar>
             <div className="cardGrid">
                 {loading ? <LoadingScreen/> : null}
                 <button className="icon cardViewIcon" onClick={handleOpenModal}>cardView</button>
@@ -200,7 +189,6 @@ function App(props) {
                 )) }
                 
             </div>
-            <button style={{margin: "20px"}} onClick={manualSwitchLanguage}>Change Language</button>
             <GCFooter/>
         </div>
     );
