@@ -100,6 +100,22 @@ function App(props) {
         }
     },[activeTopic, language])
 
+    function getMoreResources() {
+        setLoading(true);
+        firebase.firestore().collection("resources").where(JSON.parse(localStorage.langIsEnglish) ? "languages.english" : "languages.french", "==", true).orderBy("dateAdded", "desc").startAfter(resources[resources.length - 1].dateAdded).limit(9).get().then((data) => {
+            let resourceList = []
+            let res = null;
+            data.forEach(doc => {
+                res = Object.create(doc.data());
+                res.id = doc.id;
+                resourceList.push(res);
+            });
+            setResources(resources.concat(resourceList));
+            console.log(resources);
+            setLoading(false);
+        });
+    }
+
     // Checks to see if the user is coming in from a shared link leading directly to a resource
     function directResourceLink(data) {
         if (props.match.params.resourceID){
@@ -190,7 +206,7 @@ function App(props) {
                 { resources.map( (resource, index)=>(
                     <Card key={index} language={language} viewType={{cardViewEnabled, showCardView}} history={props.history} showExpandedView={showExpandedView} setExpandedViewContent={setExpandedViewContent} resource={resource}/>
                 )) }
-                
+                <button onClick={getMoreResources}>Load more</button>
             </div>
         </div>
     );
