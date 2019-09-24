@@ -66,7 +66,7 @@ body {
 .viewSettingsBar {
     max-width: 1200px;
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end;
     padding: 0 45px;
     box-sizing: border-box;
     margin: 0 auto;

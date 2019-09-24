@@ -67,7 +67,7 @@ function App(props) {
         }
 
         if (activeTopic == "All" || activeTopic == "For you"){
-            firebase.firestore().collection("resources").where(JSON.parse(localStorage.langIsEnglish) ? "languages.english" : "languages.french", "==", true).limit(9).get().then((data) => {
+            firebase.firestore().collection("resources").where(JSON.parse(localStorage.langIsEnglish) ? "languages.english" : "languages.french", "==", true).orderBy("dateAdded", "desc").limit(9).get().then((data) => {
                 let resourceList = []
                 let res = null;
                 data.forEach(doc => {
@@ -84,7 +84,7 @@ function App(props) {
         else {
             // Data from air table capitlizes only the first letter, this line ensures that format
             let topic = activeTopic.charAt(0).toUpperCase() + activeTopic.toLowerCase().slice(1);
-            firebase.firestore().collection("resources").where("topic", "==", topic).where(JSON.parse(localStorage.langIsEnglish) ? "languages.english" : "languages.french", "==", true).limit(9).get().then((data) => {
+            firebase.firestore().collection("resources").where("topic", "==", topic).where(JSON.parse(localStorage.langIsEnglish) ? "languages.english" : "languages.french", "==", true).orderBy("dateAdded", "desc").limit(9).get().then((data) => {
                 let resourceList = []
                 let res = null;
                 data.forEach(doc => {
@@ -172,7 +172,7 @@ function App(props) {
         <div>
             <MobileNavBar language={language} setLanguage={setLanguage} activeTopic={activeTopic} setTopic={setTopic}></MobileNavBar>
             <div className="viewSettingsBar">
-                <button className="viewIcon sortButton">Endorsements <span className="icon">dropdown</span></button>
+                {/* <button className="viewIcon sortButton">Endorsements <span className="icon">dropdown</span></button> */}
                 <button className="icon viewIcon" onClick={handleOpenModal}>cardView</button>
             </div>
             <div className="cardGrid">
