@@ -31,6 +31,10 @@
     margin: 0 auto;
 }
 
+.mobileNavBar .row:last-of-type::-webkit-scrollbar {
+    display: none;
+}
+
 .rowAccessory {
     display: flex;
     flex-direction: row;
