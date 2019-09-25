@@ -19,7 +19,7 @@ function ExpandedView(props) {
         if (window.navigator.share) {
             window.navigator.share({
             title: props.expandedViewContent.title,
-            url: window.location.href
+            url: props.expandedViewContent.dynamicLink
         }).then(() => {
             console.log('Thanks for sharing!');
         })
@@ -51,11 +51,11 @@ function ExpandedView(props) {
     if (props.expandedViewContent != null){
 
         console.log(props);
-        history.replace(`/resource/${props.expandedViewContent.id}`);
+        history.replace(`/resource/${props.expandedViewContent.dynamicLink.split("/resource/")[1]}`);
 
         return (
             <Modal closeTimeoutMS={150} isOpen={props.expandedViewVisible} contentLabel="Expanded View" onRequestClose={props.handleCloseModal} className="Modal expandedView" overlayClassName="Overlay">
-                <MetaTags title={props.expandedViewContent.title} description={props.expandedViewContent.description} url={window.location.href} image={props.expandedViewContent.image}/>
+                <MetaTags title={props.expandedViewContent.title} description={props.expandedViewContent.description} url={props.expandedViewContent.dynamicLink} image={props.expandedViewContent.image}/>
                 <ScrollLock>
                     <div className="expandedViewScrollContainer">
                         <div className="expandedViewContentContainer">

@@ -1,4 +1,37 @@
 {
-  "indexes": [],
-  "fieldOverrides": []
-}
+    "indexes": [
+      {
+        "collectionGroup": "resources",
+        "queryScope": "COLLECTION",
+        "fields": [
+          {
+            "fieldPath": "languages.english",
+            "order": "ASCENDING"
+          },
+          {
+            "fieldPath": "dateAdded",
+            "order": "DESCENDING"
+          }
+        ]
+      },
+      {
+        "collectionGroup": "resources",
+        "queryScope": "COLLECTION",
+        "fields": [
+          {
+            "fieldPath": "languages.english",
+            "order": "ASCENDING"
+          },
+          {
+            "fieldPath": "topic",
+            "order": "ASCENDING"
+          },
+          {
+            "fieldPath": "dateAdded",
+            "order": "DESCENDING"
+          }
+        ]
+      }
+    ],
+    "fieldOverrides": []
+  }
