@@ -127,7 +127,21 @@ function App(props) {
                 showExpandedView(true);
             }
             else{
-                props.history.push("/error");
+                firebase.firestore().collection("resources").doc(props.match.params.resourceID).get()
+                .then(doc => {
+                    if (!doc.exists) {
+                        console.error("No such document!");
+                    }
+                    else {
+                        console.log('Document data:', doc.data());
+                        setExpandedViewContent(doc.data());
+                        showExpandedView(true);
+                    }
+                })
+                .catch(err => {
+                    console.error(err);
+                    props.history.push("/error");
+                });
             }
         }
     }
