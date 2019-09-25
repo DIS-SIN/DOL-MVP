@@ -4,12 +4,12 @@ import Card from './components/Card/Card';
 import CardViewModalContent from './components/CardViewModalContent';
 import ExpandedView from './components/expandedView/ExpandedView';
 import Modal from 'react-modal';
+import MetaTags from './components/MetaTags';
 import LoadingScreen from './components/LoadingScreen';
 import ScrollLock from 'react-scrolllock';
 import firebase from 'firebase/app'
 import 'firebase/firestore';
 import './App.css';
-import undefined from 'firebase/firestore';
 
 function App(props) {
 
@@ -186,6 +186,7 @@ function App(props) {
 
     return (
         <div>
+            <MetaTags title="Digital Open Learning" description="An online learning platform" url="https://dol-test.ca" image="https://images.unsplash.com/photo-1501504905252-473c47e087f8?ixlib=rb-1.2.1&auto=format&fit=crop&w=1867&q=80"/>
             <MobileNavBar language={language} setLanguage={setLanguage} activeTopic={activeTopic} setTopic={setTopic}></MobileNavBar>
             <div className="viewSettingsBar">
                 {/* <button className="viewIcon sortButton">Endorsements <span className="icon">dropdown</span></button> */}

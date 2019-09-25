@@ -1,10 +1,10 @@
 import React from 'react';
 import Title from 'title';
 import Tags from '../Card/Tags';
+import MetaTags from '../MetaTags';
 import history from "../History";
 import Modal from 'react-modal';
 import ScrollLock from 'react-scrolllock';
-import {Helmet} from "react-helmet";
 import './ExpandedView.css';
 
 const SpecialTitlePhrases = require("../../languages/SpecialTitlePhrases.json");
@@ -55,9 +55,7 @@ function ExpandedView(props) {
 
         return (
             <Modal closeTimeoutMS={150} isOpen={props.expandedViewVisible} contentLabel="Expanded View" onRequestClose={props.handleCloseModal} className="Modal expandedView" overlayClassName="Overlay">
-                <Helmet>
-                    <title>{Title(props.expandedViewContent.title, SpecialTitlePhrases)}</title>
-                </Helmet>
+                <MetaTags title={props.expandedViewContent.title} description={props.expandedViewContent.description} url={window.location.href} image={props.expandedViewContent.image}/>
                 <ScrollLock>
                     <div className="expandedViewScrollContainer">
                         <div className="expandedViewContentContainer">
