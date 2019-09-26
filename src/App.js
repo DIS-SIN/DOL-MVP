@@ -5,6 +5,7 @@ import CardViewModalContent from './components/CardViewModalContent';
 import ExpandedView from './components/expandedView/ExpandedView';
 import Modal from 'react-modal';
 import MetaTags from './components/MetaTags';
+import history from "./components/History";
 import LoadingScreen from './components/LoadingScreen';
 import ScrollLock from 'react-scrolllock';
 import firebase from 'firebase/app'
@@ -186,16 +187,15 @@ function App(props) {
 
     function handleCloseModal(){
         showExpandedView(false);
-        props.history.push("");
         // This timeout is to prevent the view change modal jumping during the closing animation
         setTimeout(() => {
             showModal(false);
             // This timeout is due to the 150ms animation on the class .ReactModal__Overlay in App.css
             setTimeout(() => {
                 lockScrolling(false);
+                history.replace(`/`);
             }, 150);
         }, 1);
-        
     }
 
     return (

@@ -48,6 +48,13 @@ function ExpandedView(props) {
         }
     }
 
+    function listTags(tagType) {
+        let te = NodeList
+        {props.expandedViewContent.practices && props.expandedViewContent.practices.map( (practice, index)=>(
+            <p key={index}>{practice}</p>
+        )) }
+    }
+
     if (props.expandedViewContent != null){
 
         console.log(props);
@@ -82,8 +89,17 @@ function ExpandedView(props) {
                             <Tags language={props.language} difficulty={props.expandedViewContent.difficulty} timeEstimate={props.expandedViewContent.timeEstimate}></Tags>
                             <div className="tag">Hello World</div>
                             <h2>{props.language.practices}</h2>
+                            {props.expandedViewContent.practices && props.expandedViewContent.practices.map( (practice, index)=>(
+                                <p key={index}>{practice}</p>
+                            )) }
                             <h2>{props.language.skills}</h2>
+                            {props.expandedViewContent.skills && props.expandedViewContent.skills.map( (skill, index)=>(
+                                <p key={index}>{skill}</p>
+                            )) }
                             <h2>{props.language.digitalStandards}</h2>
+                            {props.expandedViewContent.digitalStandards && props.expandedViewContent.digitalStandards.map( (standard, index)=>(
+                                <p key={index}>{standard}</p>
+                            )) }
                         </div>
                     </div>
                 </ScrollLock>
