@@ -187,6 +187,7 @@ function App(props) {
 
     function handleCloseModal(){
         showExpandedView(false);
+        props.history.push("");
         // This timeout is to prevent the view change modal jumping during the closing animation
         setTimeout(() => {
             showModal(false);

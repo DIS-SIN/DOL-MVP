@@ -55,7 +55,7 @@ function ExpandedView(props) {
         )) }
     }
 
-    if (props.expandedViewContent != null){
+    if (props.expandedViewVisible){
 
         console.log(props);
         history.replace(`/resource/${props.expandedViewContent.dynamicLink.split("/resource/")[1]}`);
