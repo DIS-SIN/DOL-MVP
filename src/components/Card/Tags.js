@@ -86,13 +86,15 @@ function Tags(props) {
             </React.Fragment>
         );
     }
-
-    return (
-        <div className="tags">
-            {props.difficulty ? getDifficultyTag() : null}
-            {props.timeEstimate ? getTimeTag() : null}
-        </div>
-    );
+    if (props.difficulty || props.timeEstimate){
+        return (
+            <div className="tags">
+                {props.difficulty ? getDifficultyTag() : null}
+                {props.timeEstimate ? getTimeTag() : null}
+            </div>
+        );
+    }
+    return null;
 }
 
 export default Tags;
