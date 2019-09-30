@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState, useEffect} from 'react';
 import Title from 'title';
 import Tags from '../Card/Tags';
 import MetaTags from '../MetaTags';
@@ -10,6 +10,10 @@ import './ExpandedView.css';
 const SpecialTitlePhrases = require("../../languages/SpecialTitlePhrases.json");
 
 function ExpandedView(props) {
+
+    const [practices, setPractices] = useState(null);
+    const [skills, setSkills] = useState(null);
+    const [digitalStandards, setDigitalStandards] = useState(null);
 
     function startResource() {
         window.open(props.expandedViewContent.url, "_blank");
@@ -48,11 +52,32 @@ function ExpandedView(props) {
         }
     }
 
-    function listTags(tagType) {
-        let te = NodeList
-        {props.expandedViewContent.practices && props.expandedViewContent.practices.map( (practice, index)=>(
-            <p key={index}>{practice}</p>
-        )) }
+    useEffect( () => {
+        getTagData(props.expandedViewContent.practices, setPractices, "practice_en");
+        getTagData(props.expandedViewContent.skills, setSkills, "skill_en");
+        getTagData(props.expandedViewContent.digitalStandards, setDigitalStandards, "standard_en");
+    },[])
+
+    function getTagData(tagRefs, stateToUpdate, attribute) {
+        if (tagRefs){
+            let tags = [];
+            let tagRefsLength = tagRefs.length;
+            let doc = null;
+            tagRefs.forEach(async tagRef => {
+                doc = await tagRef.get()
+                if (!doc.exists) {
+                    console.log('No such document!');
+                    tagRefsLength--;
+                }
+                else {
+                    console.log(doc.data());
+                    tags.push(doc.data()[attribute]);
+                    if (tags.length >= tagRefsLength){
+                        stateToUpdate(tags);
+                    }
+                }  
+            });
+        }
     }
 
     if (props.expandedViewVisible){
@@ -87,17 +112,16 @@ function ExpandedView(props) {
                             <p>{props.expandedViewContent.description}</p>
                             <h2>{props.language.format}</h2>
                             <Tags language={props.language} difficulty={props.expandedViewContent.difficulty} timeEstimate={props.expandedViewContent.timeEstimate}></Tags>
-                            <div className="tag">Hello World</div>
                             <h2>{props.language.practices}</h2>
-                            {props.expandedViewContent.practices && props.expandedViewContent.practices.map( (practice, index)=>(
+                            {practices && practices.map( (practice, index)=>(
                                 <p key={index}>{practice}</p>
                             )) }
                             <h2>{props.language.skills}</h2>
-                            {props.expandedViewContent.skills && props.expandedViewContent.skills.map( (skill, index)=>(
+                            {skills && skills.map( (skill, index)=>(
                                 <p key={index}>{skill}</p>
                             )) }
                             <h2>{props.language.digitalStandards}</h2>
-                            {props.expandedViewContent.digitalStandards && props.expandedViewContent.digitalStandards.map( (standard, index)=>(
+                            {digitalStandards && digitalStandards.map( (standard, index)=>(
                                 <p key={index}>{standard}</p>
                             )) }
                         </div>

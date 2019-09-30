@@ -49,8 +49,8 @@ function Tags(props) {
 
     return (
         <div className="tags">
-            {getDifficultyTag()}
-            {getTimeTag()}
+            {props.difficulty ? getDifficultyTag() : null}
+            {props.timeEstimate ? getTimeTag() : null}
         </div>
     );
 }
