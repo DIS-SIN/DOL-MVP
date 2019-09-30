@@ -6,7 +6,7 @@ function Tags(props) {
     const [tags, setTags] = useState(null);
 
     useEffect( () => {
-        if (typeof(props.docRefs)){
+        if (props.docRefs){
             getTagData(props.docRefs, setTags, props.attribute);
         }
     },[])
@@ -76,7 +76,7 @@ function Tags(props) {
         }
     }
 
-    if (typeof(props.docRefs)){
+    if (props.docRefs){
         return (
             <React.Fragment>
                 <h2>{props.title}</h2>
