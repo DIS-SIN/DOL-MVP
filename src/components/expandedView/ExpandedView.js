@@ -75,14 +75,15 @@ function ExpandedView(props) {
                                 </div>
                                 <button className="startResourceButton" onClick={startResource}>{props.language.start} <span className="icon">course</span></button>
                             </div>
-                            
-                            <h2>{props.language.description}</h2>
-                            <p>{props.expandedViewContent.description}</p>
-                            <h2>{props.language.format}</h2>
-                            <Tags language={props.language} difficulty={props.expandedViewContent.difficulty} timeEstimate={props.expandedViewContent.timeEstimate}></Tags>
-                            <Tags language={props.language} title={props.language.practices} docRefs={props.expandedViewContent.practices} attribute="practice"/>
-                            <Tags language={props.language} title={props.language.skills} docRefs={props.expandedViewContent.skills} attribute="skill"/>
-                            <Tags language={props.language} title={props.language.digitalStandards} docRefs={props.expandedViewContent.digitalStandards} attribute="standard"/>
+                            <div className="expandedViewContentArea">
+                                <h2>{props.language.description}</h2>
+                                <p>{props.expandedViewContent.description}</p>
+                                <h2>{props.language.format}</h2>
+                                <Tags language={props.language} difficulty={props.expandedViewContent.difficulty} timeEstimate={props.expandedViewContent.timeEstimate}></Tags>
+                                <Tags language={props.language} title={props.language.practices} docRefs={props.expandedViewContent.practices} attribute="practice"/>
+                                <Tags language={props.language} title={props.language.skills} docRefs={props.expandedViewContent.skills} attribute="skill"/>
+                                <Tags language={props.language} title={props.language.digitalStandards} docRefs={props.expandedViewContent.digitalStandards} attribute="standard"/>
+                            </div>
                         </div>
                     </div>
                 </ScrollLock>

@@ -131,12 +131,17 @@
     cursor: pointer;
 }
 
-.expandedViewContentContainer h2 {
-    margin: 10px 0 0 10px;
+.expandedViewContentArea {
+    padding: 0 10px 10px 10px;
 }
 
-.expandedViewContentContainer p {
-    margin: 0 0 0 10px;
+.expandedViewContentArea h2 {
+    margin: 0;
+    margin-top: 10px;
+}
+
+.expandedViewContentArea p:not(.tag) {
+    margin: 0;
 }
 
 /* #region Media Queries */

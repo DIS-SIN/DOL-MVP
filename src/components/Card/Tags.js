@@ -7,11 +7,11 @@ function Tags(props) {
 
     useEffect( () => {
         if (props.docRefs){
-            getTagData(props.docRefs, setTags, props.attribute);
+            getTagData(props.docRefs, setTags);
         }
     },[])
 
-    function getTagData(tagRefs, stateToUpdate, attribute) {
+    function getTagData(tagRefs, stateToUpdate) {
         if (tagRefs){
             let tags = [];
             let tagRefsLength = tagRefs.length;
@@ -23,7 +23,7 @@ function Tags(props) {
                     tagRefsLength--;
                 }
                 else {
-                    tags.push(doc.data()[`${attribute}_${props.language.language.substr(0,2).toLowerCase()}`]);
+                    tags.push(doc.data());
                     if (tags.length >= tagRefsLength){
                         stateToUpdate(tags);
                     }
@@ -80,9 +80,11 @@ function Tags(props) {
         return (
             <React.Fragment>
                 <h2>{props.title}</h2>
-                {tags && tags.map( (tag, index)=>(
-                    <p key={index}>{tag}</p>
-                )) }
+                <div className="tags">
+                    {tags && tags.map( (tag, index)=>(
+                        <p className="tag" style={{backgroundColor: tag.tagColours.secondaryColour, color: tag.tagColours.primaryColour}} key={index}>{tag[`${props.attribute}_${props.language.language.substr(0,2).toLowerCase()}`]}</p>
+                    )) }
+                </div>
             </React.Fragment>
         );
     }
