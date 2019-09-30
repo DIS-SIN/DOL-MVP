@@ -1,7 +1,36 @@
-import React from 'react';
+import React, {useState, useEffect} from 'react';
 import './Tags.css';
 
 function Tags(props) {
+
+    const [tags, setTags] = useState(null);
+
+    useEffect( () => {
+        if (typeof(props.docRefs)){
+            getTagData(props.docRefs, setTags, props.attribute);
+        }
+    },[])
+
+    function getTagData(tagRefs, stateToUpdate, attribute) {
+        if (tagRefs){
+            let tags = [];
+            let tagRefsLength = tagRefs.length;
+            let doc = null;
+            tagRefs.forEach(async tagRef => {
+                doc = await tagRef.get()
+                if (!doc.exists) {
+                    console.log('No such document!');
+                    tagRefsLength--;
+                }
+                else {
+                    tags.push(doc.data()[`${attribute}_${props.language.language.substr(0,2).toLowerCase()}`]);
+                    if (tags.length >= tagRefsLength){
+                        stateToUpdate(tags);
+                    }
+                }  
+            });
+        }
+    }
 
     function getDifficultyTag() {
         switch (props.difficulty) {
@@ -45,6 +74,17 @@ function Tags(props) {
         else {
             return (<div className="tag advanced">{abbreviateTime(timeEst)} hrs</div>);
         }
+    }
+
+    if (typeof(props.docRefs)){
+        return (
+            <React.Fragment>
+                <h2>{props.title}</h2>
+                {tags && tags.map( (tag, index)=>(
+                    <p key={index}>{tag}</p>
+                )) }
+            </React.Fragment>
+        );
     }
 
     return (

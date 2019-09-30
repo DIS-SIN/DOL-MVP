@@ -11,10 +11,6 @@ const SpecialTitlePhrases = require("../../languages/SpecialTitlePhrases.json");
 
 function ExpandedView(props) {
 
-    const [practices, setPractices] = useState(null);
-    const [skills, setSkills] = useState(null);
-    const [digitalStandards, setDigitalStandards] = useState(null);
-
     function startResource() {
         window.open(props.expandedViewContent.url, "_blank");
     }
@@ -52,34 +48,6 @@ function ExpandedView(props) {
         }
     }
 
-    useEffect( () => {
-        console.log(props.language);
-        getTagData(props.expandedViewContent.practices, setPractices, "practice");
-        getTagData(props.expandedViewContent.skills, setSkills, "skill");
-        getTagData(props.expandedViewContent.digitalStandards, setDigitalStandards, "standard");
-    },[])
-
-    function getTagData(tagRefs, stateToUpdate, attribute) {
-        if (tagRefs){
-            let tags = [];
-            let tagRefsLength = tagRefs.length;
-            let doc = null;
-            tagRefs.forEach(async tagRef => {
-                doc = await tagRef.get()
-                if (!doc.exists) {
-                    console.log('No such document!');
-                    tagRefsLength--;
-                }
-                else {
-                    tags.push(doc.data()[`${attribute}_${props.language.language.substr(0,2).toLowerCase()}`]);
-                    if (tags.length >= tagRefsLength){
-                        stateToUpdate(tags);
-                    }
-                }  
-            });
-        }
-    }
-
     if (props.expandedViewVisible){
 
         console.log(props);
@@ -112,18 +80,9 @@ function ExpandedView(props) {
                             <p>{props.expandedViewContent.description}</p>
                             <h2>{props.language.format}</h2>
                             <Tags language={props.language} difficulty={props.expandedViewContent.difficulty} timeEstimate={props.expandedViewContent.timeEstimate}></Tags>
-                            <h2>{props.language.practices}</h2>
-                            {practices && practices.map( (practice, index)=>(
-                                <p key={index}>{practice}</p>
-                            )) }
-                            <h2>{props.language.skills}</h2>
-                            {skills && skills.map( (skill, index)=>(
-                                <p key={index}>{skill}</p>
-                            )) }
-                            <h2>{props.language.digitalStandards}</h2>
-                            {digitalStandards && digitalStandards.map( (standard, index)=>(
-                                <p key={index}>{standard}</p>
-                            )) }
+                            <Tags language={props.language} title={props.language.practices} docRefs={props.expandedViewContent.practices} attribute="practice"/>
+                            <Tags language={props.language} title={props.language.skills} docRefs={props.expandedViewContent.skills} attribute="skill"/>
+                            <Tags language={props.language} title={props.language.digitalStandards} docRefs={props.expandedViewContent.digitalStandards} attribute="standard"/>
                         </div>
                     </div>
                 </ScrollLock>
