@@ -53,9 +53,10 @@ function ExpandedView(props) {
     }
 
     useEffect( () => {
-        getTagData(props.expandedViewContent.practices, setPractices, "practice_en");
-        getTagData(props.expandedViewContent.skills, setSkills, "skill_en");
-        getTagData(props.expandedViewContent.digitalStandards, setDigitalStandards, "standard_en");
+        console.log(props.language);
+        getTagData(props.expandedViewContent.practices, setPractices, "practice");
+        getTagData(props.expandedViewContent.skills, setSkills, "skill");
+        getTagData(props.expandedViewContent.digitalStandards, setDigitalStandards, "standard");
     },[])
 
     function getTagData(tagRefs, stateToUpdate, attribute) {
@@ -70,8 +71,7 @@ function ExpandedView(props) {
                     tagRefsLength--;
                 }
                 else {
-                    console.log(doc.data());
-                    tags.push(doc.data()[attribute]);
+                    tags.push(doc.data()[`${attribute}_${props.language.language.substr(0,2).toLowerCase()}`]);
                     if (tags.length >= tagRefsLength){
                         stateToUpdate(tags);
                     }
