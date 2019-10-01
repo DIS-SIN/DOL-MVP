@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import MobileNavBar from './components/MobileNavBar';
 import Card from './components/Card/Card';
 import CardViewModalContent from './components/CardViewModalContent';
@@ -45,10 +45,14 @@ function App(props) {
     // State to store the resources fetched from the JSON API
     const [resources, setResources] = useState([]);
 
+    // State to hide the showMoreButton
+    const [seeMoreButtonVisible, setSeeMoreButtonVisible] = useState(true);
+
     /* #endregion */
 
     useEffect(() => {
         setLoading(true);
+        setSeeMoreButtonVisible(true);
         try {
             var firebaseConfig = {
                 apiKey: "AIzaSyCEjvQBNLH87Y5d-eCy4JAR8HAMUmUs-uc",
@@ -103,6 +107,7 @@ function App(props) {
 
     function getMoreResources() {
         setLoading(true);
+        let currentResources = resources;
         firebase.firestore().collection("resources").where(JSON.parse(localStorage.langIsEnglish) ? "languages.english" : "languages.french", "==", true).orderBy("dateAdded", "desc").startAfter(resources[resources.length - 1].dateAdded).limit(9).get().then((data) => {
             let resourceList = []
             let res = null;
@@ -112,9 +117,14 @@ function App(props) {
                 resourceList.push(res);
             });
             setResources(resources.concat(resourceList));
+            if (currentResources === resources){
+                // Hides the show more button
+                setSeeMoreButtonVisible(false);
+                console.log("Button is visible?: ", seeMoreButtonVisible);
+            }
             console.log(resources);
             setLoading(false);
-        });
+        })
     }
 
     // Checks to see if the user is coming in from a shared link leading directly to a resource
@@ -205,7 +215,7 @@ function App(props) {
         if (cardViewEnabled && numberOfBlanks != 0){
             [...Array(3 - numberOfBlanks)].forEach(blank => {
                 blankCards.push(
-                    <div className="blank card"></div>
+                    <div key={`blank_${blank}`} className="blank card"></div>
                 );
             });
             return blankCards;
@@ -239,7 +249,7 @@ function App(props) {
                 {renderBlankCards()}
             </div>
             <div className="seeMoreButton">
-                <button className="seeMoreButton" onClick={getMoreResources}>Load more</button>
+                <button className={!seeMoreButtonVisible ? "hide" : null} onClick={getMoreResources}>Load more</button>
             </div>
         </div>
     );

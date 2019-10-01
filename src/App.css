@@ -117,6 +117,9 @@ body {
     font-weight: 500;
     cursor: pointer;
 }
+.seeMoreButton button.hide {
+    display: none;
+}
 
 .Modal {
     position: absolute;
