@@ -202,7 +202,7 @@ function App(props) {
     function renderBlankCards() {
         let blankCards = [];
         let numberOfBlanks = resources.length % 3;
-        if (numberOfBlanks != 0){
+        if (cardViewEnabled && numberOfBlanks != 0){
             [...Array(3 - numberOfBlanks)].forEach(blank => {
                 blankCards.push(
                     <div className="blank card"></div>
