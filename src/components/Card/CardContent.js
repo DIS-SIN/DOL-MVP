@@ -1,5 +1,5 @@
 import React from 'react';
-import Title from 'title';
+import {titleCase} from '../../Helpers';
 import ActivityBar from './ActivityBar';
 import Tags from './Tags';
 import './CardContent.css';
@@ -42,7 +42,7 @@ function CardContent(props) {
 
     return (
         <div className="cardContent">
-            <h4 onClick={showExpandedView} tabIndex={0} className="cardTitle">{Title(props.resource.title, SpecialTitlePhrases)}</h4>
+            <h4 onClick={showExpandedView} tabIndex={0} className="cardTitle">{titleCase(props.resource.title, props.language.language)}</h4>
             <div>
             <ActivityBar language={props.language} endorsements={props.resource.endorsements} comments={props.resource.comments}/>
 

@@ -1,13 +1,11 @@
 import React, {useState, useEffect} from 'react';
-import Title from 'title';
+import {titleCase} from '../../Helpers';
 import Tags from '../Card/Tags';
 import MetaTags from '../MetaTags';
 import history from "../History";
 import Modal from 'react-modal';
 import ScrollLock from 'react-scrolllock';
 import './ExpandedView.css';
-
-const SpecialTitlePhrases = require("../../languages/SpecialTitlePhrases.json");
 
 function ExpandedView(props) {
 
@@ -70,7 +68,7 @@ function ExpandedView(props) {
                             </div>
                             <div className="expandedViewTitleArea">
                                 <div>
-                                    <h1>{Title(props.expandedViewContent.title, SpecialTitlePhrases)}</h1>
+                                    <h1>{titleCase(props.language.language, props.expandedViewContent.title)}</h1>
                                     <h3>{getAuthors()}</h3>
                                 </div>
                                 <button className="startResourceButton" onClick={startResource}>{props.language.start} <span className="icon">course</span></button>
