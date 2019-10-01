@@ -199,6 +199,20 @@ function App(props) {
         }, 1);
     }
 
+    function renderBlankCards() {
+        let blankCards = [];
+        let numberOfBlanks = resources.length % 3;
+        if (numberOfBlanks != 0){
+            [...Array(3 - numberOfBlanks)].forEach(blank => {
+                blankCards.push(
+                    <div className="blank card"></div>
+                );
+            });
+            return blankCards;
+        }
+        return null;
+    }
+
     return (
         <div>
             <MetaTags title="Digital Open Learning" description="An online learning platform" url="https://dol-test.ca" image="https://images.unsplash.com/photo-1501504905252-473c47e087f8?ixlib=rb-1.2.1&auto=format&fit=crop&w=1867&q=80"/>
@@ -222,7 +236,10 @@ function App(props) {
                 { resources.map( (resource, index)=>(
                     <Card key={index} language={language} viewType={{cardViewEnabled, showCardView}} history={props.history} showExpandedView={showExpandedView} setExpandedViewContent={setExpandedViewContent} resource={resource}/>
                 )) }
-                <button onClick={getMoreResources}>Load more</button>
+                {renderBlankCards()}
+            </div>
+            <div className="seeMoreButton">
+                <button className="seeMoreButton" onClick={getMoreResources}>Load more</button>
             </div>
         </div>
     );
