@@ -82,6 +82,7 @@ function App(props) {
                 });
                 console.log(resourceList);
                 setResources(resourceList);
+                checkForMoreResources(resourceList);
                 directResourceLink(resourceList);
                 setLoading(false);
             });
@@ -99,11 +100,24 @@ function App(props) {
                 });
                 console.log(resourceList);
                 setResources(resourceList);
+                checkForMoreResources(resourceList);
                 directResourceLink(resourceList);
                 setLoading(false);
             });
         }
     },[activeTopic, language])
+
+    async function checkForMoreResources(resourceList) {
+        if (resourceList === null || resourceList.length == 0){
+            setSeeMoreButtonVisible(false);
+            return;
+        }
+        let startAfter = resourceList[resourceList.length - 1];
+        let resource = await firebase.firestore().collection("resources").where(JSON.parse(localStorage.langIsEnglish) ? "languages.english" : "languages.french", "==", true).orderBy("dateAdded", "desc").startAfter(startAfter.dateAdded).limit(1).get();
+        if (resource.docs.length == 0) {
+            setSeeMoreButtonVisible(false);
+        }
+    }
 
     function getMoreResources() {
         setLoading(true);
@@ -117,11 +131,9 @@ function App(props) {
                 resourceList.push(res);
             });
             setResources(resources.concat(resourceList));
-            if (currentResources === resources){
-                // Hides the show more button
-                setSeeMoreButtonVisible(false);
-                console.log("Button is visible?: ", seeMoreButtonVisible);
-            }
+
+            checkForMoreResources(resourceList);
+    
             console.log(resources);
             setLoading(false);
         })
