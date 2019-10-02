@@ -68,7 +68,7 @@ function ExpandedView(props) {
                             </div>
                             <div className="expandedViewTitleArea">
                                 <div>
-                                    <h1>{titleCase(props.language.language, props.expandedViewContent.title)}</h1>
+                                    <h1>{titleCase(props.expandedViewContent.title, props.language.language)}</h1>
                                     <h3>{getAuthors()}</h3>
                                 </div>
                                 <button className="startResourceButton" onClick={startResource}>{props.language.start} <span className="icon">course</span></button>
