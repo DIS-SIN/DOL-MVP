@@ -104,12 +104,12 @@ body {
 .seeMoreButton {
     display: flex;
     justify-content: center;
+    margin: 15px 0 50px;
 }
 
 .seeMoreButton button {
     padding: 5px 10px;
     font-size: 1em;
-    margin: 15px 0 50px;
     border-radius: 4px;
     border-color: #2dbfbf;
     color: #2dbfbf;
