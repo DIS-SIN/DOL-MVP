@@ -3,6 +3,7 @@ import {titleCase} from '../../Helpers';
 import Tags from '../Card/Tags';
 import MetaTags from '../MetaTags';
 import history from "../History";
+import {getContentType} from "../../Helpers";
 import Modal from 'react-modal';
 import { Dropdown } from 'react-bootstrap';
 import ScrollLock from 'react-scrolllock';
@@ -118,7 +119,7 @@ function ExpandedView(props) {
                                     <h1>{titleCase(props.expandedViewContent.title, props.language.language)}</h1>
                                     <h3>{getAuthors()}</h3>
                                 </div>
-                                <button className="startResourceButton" onClick={startResource}>{props.language.start} <span className="icon">course</span></button>
+                                <button className="startResourceButton" onClick={startResource}>{props.language.start} <span className="icon">{getContentType(props.expandedViewContent.format)}</span></button>
                             </div>
                             <div className="expandedViewContentArea">
                                 <h2>{props.language.description}</h2>

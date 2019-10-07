@@ -1,11 +1,12 @@
 import React, { useState } from 'react';
 import CardContent from './CardContent';
 import InteractionBar from './InteractionBar';
+import {getContentType} from '../../Helpers';
 import './Card.css';
 
 function Card(props) {
 
-    const [contentType] = useState(getContentType());
+    const [contentType] = useState(getContentType(props.resource.format));
     const [typeClass] = useState(getTypeClass());
 
     function getTypeClass() {
@@ -19,30 +20,6 @@ function Card(props) {
             return "icon course";
         }
         return "icon";
-    }
-
-    function getContentType() {
-        let contentType = props.resource.format.toLowerCase();
-        switch (contentType) {
-            case "read":
-                return "read";
-                break;
-            case "use":
-                return "read";
-                break;
-            case "participate":
-                return "course";
-                break;
-            case "watch":
-                return "watch";
-                break;
-            case "listen":
-                return "listen";
-                break;
-            default:
-                return "read";
-                break;
-        }
     }
 
     // Card View
