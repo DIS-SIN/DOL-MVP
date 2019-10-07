@@ -4,8 +4,6 @@ import ActivityBar from './ActivityBar';
 import Tags from './Tags';
 import './CardContent.css';
 
-const SpecialTitlePhrases = require("../../languages/SpecialTitlePhrases.json");
-
 function CardContent(props) {
 
     function showExpandedView(){
