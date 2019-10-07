@@ -31,7 +31,7 @@ function Card(props) {
                     <img src={props.resource.image} onError={imageErrorHandler} alt="" title=""/>
                 </div>
                 <CardContent language={props.language} showExpandedView={props.showExpandedView} setExpandedViewContent={props.setExpandedViewContent} lockBodyScroll={props.lockBodyScroll} cardViewEnabled={props.viewType.cardViewEnabled} resource={props.resource}></CardContent>
-                <InteractionBar language={props.language}></InteractionBar>
+                {/* <InteractionBar language={props.language}></InteractionBar> */}
             </div>
         );
     }
@@ -49,7 +49,7 @@ function Card(props) {
                         </div>
                     </div>
                 </div>
-                <InteractionBar language={props.language}></InteractionBar>
+                {/* <InteractionBar language={props.language}></InteractionBar> */}
             </div>
         );
     }

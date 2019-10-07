@@ -109,8 +109,8 @@ function ExpandedView(props) {
                                 <button className="icon overlayButton closeButton" onClick={props.handleCloseModal}>close</button>
                                 <div className="expandedViewActionButtons">
                                     {setShareMethod()}
-                                    <button className="icon overlayButton">bookmark</button>
-                                    <button className="icon overlayButton">moreNoOutline</button>
+                                    {/* <button className="icon overlayButton">bookmark</button>
+                                    <button className="icon overlayButton">moreNoOutline</button> */}
                                 </div>
                                 <img src={props.expandedViewContent.image} onError={imageErrorHandler}></img>
                             </div>

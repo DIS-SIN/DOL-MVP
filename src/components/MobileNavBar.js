@@ -32,7 +32,7 @@ function MobileNavBar(props) {
             </div>
             <div className="row">
                 <h3 className={checkIfActive("All")} onClick={() => {props.setTopic("All")}}>{props.language.all}</h3>
-                <h3 className={checkIfActive("For you")} onClick={() => {props.setTopic("For you")}}>{props.language.forYou}</h3>
+                {/* <h3 className={checkIfActive("For you")} onClick={() => {props.setTopic("For you")}}>{props.language.forYou}</h3> */}
                 <h3 className={checkIfActive("Design")} onClick={() => {props.setTopic("Design")}}>{props.language.design}</h3>
                 <h3 className={checkIfActive("Digital Government")} onClick={() => {props.setTopic("Digital Government")}}>{props.language.digitalGovernment}</h3>
                 <h3 className={checkIfActive("Data")} onClick={() => {props.setTopic("Data")}}>{props.language.data}</h3>

@@ -41,7 +41,7 @@ function CardContent(props) {
         <div className="cardContent">
             <h4 onClick={showExpandedView} tabIndex={0} className="cardTitle">{titleCase(props.resource.title, props.language.language)}</h4>
             <div>
-            <ActivityBar language={props.language} endorsements={props.resource.endorsements} comments={props.resource.comments}/>
+            {/* <ActivityBar language={props.language} endorsements={props.resource.endorsements} comments={props.resource.comments}/> */}
 
             </div>
             <p className="cardDescription">{compactDescription(props.resource.description)}</p>
