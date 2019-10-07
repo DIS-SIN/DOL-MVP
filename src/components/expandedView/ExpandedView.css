@@ -84,6 +84,26 @@
     padding: 0;
 }
 
+.shareDropDown div a {
+    text-decoration: none;
+}
+
+.shareDropDown div .email {
+    color: #484848;
+}
+.shareDropDown div .twitter {
+    color: #38A1F3;
+}
+.shareDropDown div .facebook {
+    color: #4267b2;
+}
+.shareDropDown div .linkedin {
+    color: #0077B5;
+}
+.shareDropDown div .pinterest {
+    color: #BD081C;
+}
+
 /* Image area container */
 .expandedViewImageArea{
     border-radius: inherit;

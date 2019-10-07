@@ -43,6 +43,12 @@ function ExpandedView(props) {
         if (method == "twitter"){
             intentURL = `https://twitter.com/share?url=${encodeURI(props.expandedViewContent.dynamicLink)}&text=${encodeURI("Check this out on Digital Open Learning!")}`;
         }
+        if (method == "linkedin"){
+            intentURL = `https://www.linkedin.com/shareArticle?mini=true&url=${encodeURI(props.expandedViewContent.dynamicLink)}&title=${encodeURI(props.expandedViewContent.title)}`;
+        }
+        if (method == "pinterest"){
+            intentURL = `http://pinterest.com/pin/create/button/?url=${encodeURI(props.expandedViewContent.dynamicLink)}&description=${props.expandedViewContent.title}`;
+        }
         window.open(intentURL, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=300,width=600');
     }
 
@@ -59,9 +65,11 @@ function ExpandedView(props) {
                         <button className="icon overlayButton">share</button>
                     </Dropdown.Toggle>
                     <Dropdown.Menu>
-                        <Dropdown.Item onClick={() => shareResource("email")}>Email</Dropdown.Item>
-                        <Dropdown.Item onClick={() => shareResource("twitter")}>Twitter</Dropdown.Item>
-                        <Dropdown.Item onClick={() => shareResource("facebook")}>Facebook</Dropdown.Item>
+                        <Dropdown.Item className="email" onClick={() => shareResource("email")}><span className="icon">email</span> Email</Dropdown.Item>
+                        <Dropdown.Item className="twitter" onClick={() => shareResource("twitter")}><span className="icon">twitter</span> Twitter</Dropdown.Item>
+                        <Dropdown.Item className="facebook" onClick={() => shareResource("facebook")}><span className="icon">facebook</span> Facebook</Dropdown.Item>
+                        <Dropdown.Item className="linkedin" onClick={() => shareResource("linkedin")}><span className="icon">linkedin</span> LinkedIn</Dropdown.Item>
+                        <Dropdown.Item className="pinterest" onClick={() => shareResource("pinterest")}><span className="icon">pinterest</span> Pinterest</Dropdown.Item>
                     </Dropdown.Menu>
                 </Dropdown>
             );
