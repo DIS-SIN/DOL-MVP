@@ -157,6 +157,10 @@
     cursor: pointer;
 }
 
+.startResourceButton .icon {
+    font-size: 20px;
+}
+
 .expandedViewContentArea {
     padding: 0 10px 10px 10px;
 }
