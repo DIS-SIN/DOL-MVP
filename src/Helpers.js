@@ -3,7 +3,7 @@ import TitleFR from 'titlecase-french';
 const SpecialTitlePhrases = require("./languages/SpecialTitlePhrases.json");
 
 export function titleCase(text, language) {
-    return language.language == "English" ? Title(text, SpecialTitlePhrases) : TitleFR.convert(text);
+    return JSON.parse(localStorage.langIsEnglish) ? Title(text, SpecialTitlePhrases) : TitleFR.convert(text);
 }
 
 export function getContentType(format) {
