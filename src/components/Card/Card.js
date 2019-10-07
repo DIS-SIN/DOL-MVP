@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import CardContent from './CardContent';
 import InteractionBar from './InteractionBar';
-import {getContentType} from '../../Helpers';
+import {getContentType, imageErrorHandler} from '../../Helpers';
 import './Card.css';
 
 function Card(props) {
@@ -28,7 +28,7 @@ function Card(props) {
             <div className="card">
                 <div className="cardPreview">
                     <span className={typeClass}>{contentType}</span>
-                    <img src={props.resource.image} alt="" title=""/>
+                    <img src={props.resource.image} onError={imageErrorHandler} alt="" title=""/>
                 </div>
                 <CardContent language={props.language} showExpandedView={props.showExpandedView} setExpandedViewContent={props.setExpandedViewContent} lockBodyScroll={props.lockBodyScroll} cardViewEnabled={props.viewType.cardViewEnabled} resource={props.resource}></CardContent>
                 <InteractionBar language={props.language}></InteractionBar>
@@ -45,7 +45,7 @@ function Card(props) {
                     <div className="cardPreview">
                         <div className="compactCardPreview">
                             <span className={typeClass}>{contentType}</span>
-                            <img src={props.resource.image} alt="" title=""/>
+                            <img src={props.resource.image} onError={imageErrorHandler} alt="" title=""/>
                         </div>
                     </div>
                 </div>

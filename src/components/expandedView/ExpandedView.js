@@ -3,7 +3,7 @@ import {titleCase} from '../../Helpers';
 import Tags from '../Card/Tags';
 import MetaTags from '../MetaTags';
 import history from "../History";
-import {getContentType} from "../../Helpers";
+import {getContentType, imageErrorHandler} from "../../Helpers";
 import Modal from 'react-modal';
 import { Dropdown } from 'react-bootstrap';
 import ScrollLock from 'react-scrolllock';
@@ -112,7 +112,7 @@ function ExpandedView(props) {
                                     <button className="icon overlayButton">bookmark</button>
                                     <button className="icon overlayButton">moreNoOutline</button>
                                 </div>
-                                <img src={props.expandedViewContent.image}></img>
+                                <img src={props.expandedViewContent.image} onError={imageErrorHandler}></img>
                             </div>
                             <div className="expandedViewTitleArea">
                                 <div>

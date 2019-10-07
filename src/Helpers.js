@@ -29,3 +29,7 @@ export function getContentType(format) {
             break;
     }
 }
+
+export function imageErrorHandler(ev) {
+    ev.target.src = "/images/errorImage.jpg";
+}
