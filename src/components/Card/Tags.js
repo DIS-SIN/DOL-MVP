@@ -82,7 +82,7 @@ function Tags(props) {
                 <h2>{props.title}</h2>
                 <div className="tags">
                     {tags && tags.map( (tag, index)=>(
-                        <p className="tag" style={{backgroundColor: tag.tagColours.secondaryColour, color: tag.tagColours.primaryColour}} key={index}>{tag[`${props.attribute}_${props.language.language.substr(0,2).toLowerCase()}`]}</p>
+                        <p className="tag" key={index}>{tag[`${props.attribute}_${props.language.language.substr(0,2).toLowerCase()}`]}</p>
                     )) }
                 </div>
             </React.Fragment>

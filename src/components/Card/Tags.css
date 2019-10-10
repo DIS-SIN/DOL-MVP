@@ -15,15 +15,15 @@
 
 .beginner {
     color: #16390a;
-    background-color: #D0F7C5;
+    background-color: #D0F7C5 !important;
 }
 
 .intermediate {
     color: #422c06;
-    background-color: #ffeab6;
+    background-color: #ffeab6 !important;
 }
 
 .advanced {
     color: #6B2613;
-    background-color: #FDE2D5;
+    background-color: #FDE2D5 !important;
 }
