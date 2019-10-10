@@ -125,6 +125,12 @@
     border-bottom: 1px solid #d0d4d8;
 }
 
+.expandedViewTitleArea div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
 .expandedViewTitleArea div:first-child {
     flex-grow: 2;
 }

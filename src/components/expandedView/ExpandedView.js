@@ -81,16 +81,16 @@ function ExpandedView(props) {
         let author = props.expandedViewContent.author;
         let org = props.expandedViewContent.organizationalAffiliation;
         if (author && org){
-            return `${author} - ${org}`;
+            return <h3>{`${author} - ${org}`}</h3>;
         }
         else if (author){
-            return author;
+            return <h3>{author}</h3>;
         }
         else if (org){
-            return org;
+            return <h3>{org}</h3>;
         }
         else{
-            return "No Author - No Organization";
+            return <div style={{height: "10px"}} />;
         }
     }
 
@@ -117,7 +117,7 @@ function ExpandedView(props) {
                             <div className="expandedViewTitleArea">
                                 <div>
                                     <h1>{titleCase(props.expandedViewContent.title, props.language.language)}</h1>
-                                    <h3>{getAuthors()}</h3>
+                                    {getAuthors()}
                                 </div>
                                 <button className="startResourceButton" onClick={startResource}>{props.language.start} <span className="icon">{getContentType(props.expandedViewContent.format)}</span></button>
                             </div>
