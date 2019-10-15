@@ -1,7 +1,36 @@
-import React from 'react';
+import React, {useState, useEffect} from 'react';
 import './Tags.css';
 
 function Tags(props) {
+
+    const [tags, setTags] = useState(null);
+
+    useEffect( () => {
+        if (props.docRefs){
+            getTagData(props.docRefs, setTags);
+        }
+    },[])
+
+    function getTagData(tagRefs, stateToUpdate) {
+        if (tagRefs){
+            let tags = [];
+            let tagRefsLength = tagRefs.length;
+            let doc = null;
+            tagRefs.forEach(async tagRef => {
+                doc = await tagRef.get()
+                if (!doc.exists) {
+                    console.log('No such document!');
+                    tagRefsLength--;
+                }
+                else {
+                    tags.push(doc.data());
+                    if (tags.length >= tagRefsLength){
+                        stateToUpdate(tags);
+                    }
+                }  
+            });
+        }
+    }
 
     function getDifficultyTag() {
         switch (props.difficulty) {
@@ -47,12 +76,27 @@ function Tags(props) {
         }
     }
 
-    return (
-        <div className="tags">
-            {getDifficultyTag()}
-            {getTimeTag()}
-        </div>
-    );
+    if (props.docRefs){
+        return (
+            <React.Fragment>
+                <h2>{props.title}</h2>
+                <div className="tags">
+                    {tags && tags.map( (tag, index)=>(
+                        <p className="tag" key={index}>{tag[`${props.attribute}_${props.language.language.substr(0,2).toLowerCase()}`]}</p>
+                    )) }
+                </div>
+            </React.Fragment>
+        );
+    }
+    if (props.difficulty || props.timeEstimate){
+        return (
+            <div className="tags">
+                {props.difficulty ? getDifficultyTag() : null}
+                {props.timeEstimate ? getTimeTag() : null}
+            </div>
+        );
+    }
+    return null;
 }
 
 export default Tags;

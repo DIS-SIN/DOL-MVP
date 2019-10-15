@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import MobileNavBar from './components/MobileNavBar';
 import Card from './components/Card/Card';
 import CardViewModalContent from './components/CardViewModalContent';
@@ -45,10 +45,14 @@ function App(props) {
     // State to store the resources fetched from the JSON API
     const [resources, setResources] = useState([]);
 
+    // State to hide the showMoreButton
+    const [seeMoreButtonVisible, setSeeMoreButtonVisible] = useState(true);
+
     /* #endregion */
 
     useEffect(() => {
         setLoading(true);
+        setSeeMoreButtonVisible(true);
         try {
             var firebaseConfig = {
                 apiKey: "AIzaSyCEjvQBNLH87Y5d-eCy4JAR8HAMUmUs-uc",
@@ -78,6 +82,7 @@ function App(props) {
                 });
                 console.log(resourceList);
                 setResources(resourceList);
+                checkForMoreResources(resourceList);
                 directResourceLink(resourceList);
                 setLoading(false);
             });
@@ -95,14 +100,28 @@ function App(props) {
                 });
                 console.log(resourceList);
                 setResources(resourceList);
+                checkForMoreResources(resourceList);
                 directResourceLink(resourceList);
                 setLoading(false);
             });
         }
     },[activeTopic, language])
 
+    async function checkForMoreResources(resourceList) {
+        if (resourceList === null || resourceList.length == 0){
+            setSeeMoreButtonVisible(false);
+            return;
+        }
+        let startAfter = resourceList[resourceList.length - 1];
+        let resource = await firebase.firestore().collection("resources").where(JSON.parse(localStorage.langIsEnglish) ? "languages.english" : "languages.french", "==", true).orderBy("dateAdded", "desc").startAfter(startAfter.dateAdded).limit(1).get();
+        if (resource.docs.length == 0) {
+            setSeeMoreButtonVisible(false);
+        }
+    }
+
     function getMoreResources() {
         setLoading(true);
+        let currentResources = resources;
         firebase.firestore().collection("resources").where(JSON.parse(localStorage.langIsEnglish) ? "languages.english" : "languages.french", "==", true).orderBy("dateAdded", "desc").startAfter(resources[resources.length - 1].dateAdded).limit(9).get().then((data) => {
             let resourceList = []
             let res = null;
@@ -112,9 +131,12 @@ function App(props) {
                 resourceList.push(res);
             });
             setResources(resources.concat(resourceList));
+
+            checkForMoreResources(resourceList);
+    
             console.log(resources);
             setLoading(false);
-        });
+        })
     }
 
     // Checks to see if the user is coming in from a shared link leading directly to a resource
@@ -199,6 +221,20 @@ function App(props) {
         }, 1);
     }
 
+    function renderBlankCards() {
+        let blankCards = [];
+        let numberOfBlanks = resources.length % 3;
+        if (cardViewEnabled && numberOfBlanks != 0){
+            [...Array(3 - numberOfBlanks)].forEach(blank => {
+                blankCards.push(
+                    <div key={`blank_${blank}`} className="blank card"></div>
+                );
+            });
+            return blankCards;
+        }
+        return null;
+    }
+
     return (
         <div>
             <MetaTags title="Digital Open Learning" description="An online learning platform" url="https://dol-test.ca" image="https://images.unsplash.com/photo-1501504905252-473c47e087f8?ixlib=rb-1.2.1&auto=format&fit=crop&w=1867&q=80"/>
@@ -217,12 +253,15 @@ function App(props) {
                 </Modal>
                 </div>
                 </ScrollLock>
-                <ExpandedView language={language} handleCloseModal={handleCloseModal} expandedViewVisible={expandedViewVisible} expandedViewContent={expandedViewContent} handleCloseModal={handleCloseModal}/>
+                {expandedViewVisible ? <ExpandedView language={language} handleCloseModal={handleCloseModal} expandedViewVisible={expandedViewVisible} expandedViewContent={expandedViewContent} handleCloseModal={handleCloseModal}/> : null}
 
                 { resources.map( (resource, index)=>(
                     <Card key={index} language={language} viewType={{cardViewEnabled, showCardView}} history={props.history} showExpandedView={showExpandedView} setExpandedViewContent={setExpandedViewContent} resource={resource}/>
                 )) }
-                <button onClick={getMoreResources}>Load more</button>
+                {renderBlankCards()}
+            </div>
+            <div className="seeMoreButton">
+                <button className={!seeMoreButtonVisible ? "hide" : null} onClick={getMoreResources}>Load more</button>
             </div>
         </div>
     );

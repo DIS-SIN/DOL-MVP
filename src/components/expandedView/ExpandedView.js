@@ -1,13 +1,13 @@
-import React from 'react';
-import Title from 'title';
+import React, {useState, useEffect} from 'react';
+import {titleCase} from '../../Helpers';
 import Tags from '../Card/Tags';
 import MetaTags from '../MetaTags';
 import history from "../History";
+import {getContentType, imageErrorHandler} from "../../Helpers";
 import Modal from 'react-modal';
+import { Dropdown } from 'react-bootstrap';
 import ScrollLock from 'react-scrolllock';
 import './ExpandedView.css';
-
-const SpecialTitlePhrases = require("../../languages/SpecialTitlePhrases.json");
 
 function ExpandedView(props) {
 
@@ -15,7 +15,7 @@ function ExpandedView(props) {
         window.open(props.expandedViewContent.url, "_blank");
     }
 
-    function shareResource() {
+    function shareWithAPI() {
         if (window.navigator.share) {
             window.navigator.share({
             title: props.expandedViewContent.title,
@@ -31,28 +31,67 @@ function ExpandedView(props) {
         }
     }
 
+    function shareResource(method) {
+        let intentURL = null;
+        if (method == "email"){
+            intentURL = `mailto:?Subject=${encodeURI("Check this out on Digital Open Learning!")}&body=${encodeURI(props.expandedViewContent.title + "\n" + props.expandedViewContent.dynamicLink)}`;
+            window.open(intentURL);
+            return;
+        }
+        if (method == "facebook"){
+            intentURL = `https://www.facebook.com/sharer/sharer.php?u=${encodeURI(props.expandedViewContent.dynamicLink)}&t=${encodeURI(props.expandedViewContent.title)}`;
+        }
+        if (method == "twitter"){
+            intentURL = `https://twitter.com/share?url=${encodeURI(props.expandedViewContent.dynamicLink)}&text=${encodeURI("Check this out on Digital Open Learning!")}`;
+        }
+        if (method == "linkedin"){
+            intentURL = `https://www.linkedin.com/shareArticle?mini=true&url=${encodeURI(props.expandedViewContent.dynamicLink)}&title=${encodeURI(props.expandedViewContent.title)}`;
+        }
+        if (method == "pinterest"){
+            intentURL = `http://pinterest.com/pin/create/button/?url=${encodeURI(props.expandedViewContent.dynamicLink)}&description=${props.expandedViewContent.title}`;
+        }
+        window.open(intentURL, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=300,width=600');
+    }
+
+    function setShareMethod() {
+        if (window.navigator.share) {
+            return (
+                <button className="icon overlayButton" onClick={shareWithAPI}>share</button>
+            );
+        }
+        else {
+            return (
+                <Dropdown className="shareDropDown">
+                    <Dropdown.Toggle variant="success" id="dropdown-basic" className="button">
+                        <button className="icon overlayButton">share</button>
+                    </Dropdown.Toggle>
+                    <Dropdown.Menu>
+                        <Dropdown.Item className="email" onClick={() => shareResource("email")}><span className="icon">email</span> Email</Dropdown.Item>
+                        <Dropdown.Item className="twitter" onClick={() => shareResource("twitter")}><span className="icon">twitter</span> Twitter</Dropdown.Item>
+                        <Dropdown.Item className="facebook" onClick={() => shareResource("facebook")}><span className="icon">facebook</span> Facebook</Dropdown.Item>
+                        <Dropdown.Item className="linkedin" onClick={() => shareResource("linkedin")}><span className="icon">linkedin</span> LinkedIn</Dropdown.Item>
+                        <Dropdown.Item className="pinterest" onClick={() => shareResource("pinterest")}><span className="icon">pinterest</span> Pinterest</Dropdown.Item>
+                    </Dropdown.Menu>
+                </Dropdown>
+            );
+        }
+    }
+
     function getAuthors() {
         let author = props.expandedViewContent.author;
         let org = props.expandedViewContent.organizationalAffiliation;
         if (author && org){
-            return `${author} - ${org}`;
+            return <h3>{`${author} - ${org}`}</h3>;
         }
         else if (author){
-            return author;
+            return <h3>{author}</h3>;
         }
         else if (org){
-            return org;
+            return <h3>{org}</h3>;
         }
         else{
-            return "No Author - No Organization";
+            return <div style={{height: "10px"}} />;
         }
-    }
-
-    function listTags(tagType) {
-        let te = NodeList
-        {props.expandedViewContent.practices && props.expandedViewContent.practices.map( (practice, index)=>(
-            <p key={index}>{practice}</p>
-        )) }
     }
 
     if (props.expandedViewVisible){
@@ -69,37 +108,28 @@ function ExpandedView(props) {
                             <div className="expandedViewImageArea">
                                 <button className="icon overlayButton closeButton" onClick={props.handleCloseModal}>close</button>
                                 <div className="expandedViewActionButtons">
-                                    <button className="icon overlayButton" onClick={shareResource}>share</button>
+                                    {setShareMethod()}
                                     <button className="icon overlayButton">bookmark</button>
                                     <button className="icon overlayButton">moreNoOutline</button>
                                 </div>
-                                <img src={props.expandedViewContent.image}></img>
+                                <img src={props.expandedViewContent.image} onError={imageErrorHandler}></img>
                             </div>
                             <div className="expandedViewTitleArea">
                                 <div>
-                                    <h1>{Title(props.expandedViewContent.title, SpecialTitlePhrases)}</h1>
-                                    <h3>{getAuthors()}</h3>
+                                    <h1>{titleCase(props.expandedViewContent.title, props.language.language)}</h1>
+                                    {getAuthors()}
                                 </div>
-                                <button className="startResourceButton" onClick={startResource}>{props.language.start} <span className="icon">course</span></button>
+                                <button className="startResourceButton" onClick={startResource}>{props.language.start} <span className="icon">{getContentType(props.expandedViewContent.format)}</span></button>
                             </div>
-                            
-                            <h2>{props.language.description}</h2>
-                            <p>{props.expandedViewContent.description}</p>
-                            <h2>{props.language.format}</h2>
-                            <Tags language={props.language} difficulty={props.expandedViewContent.difficulty} timeEstimate={props.expandedViewContent.timeEstimate}></Tags>
-                            <div className="tag">Hello World</div>
-                            <h2>{props.language.practices}</h2>
-                            {props.expandedViewContent.practices && props.expandedViewContent.practices.map( (practice, index)=>(
-                                <p key={index}>{practice}</p>
-                            )) }
-                            <h2>{props.language.skills}</h2>
-                            {props.expandedViewContent.skills && props.expandedViewContent.skills.map( (skill, index)=>(
-                                <p key={index}>{skill}</p>
-                            )) }
-                            <h2>{props.language.digitalStandards}</h2>
-                            {props.expandedViewContent.digitalStandards && props.expandedViewContent.digitalStandards.map( (standard, index)=>(
-                                <p key={index}>{standard}</p>
-                            )) }
+                            <div className="expandedViewContentArea">
+                                <h2>{props.language.description}</h2>
+                                <p>{props.expandedViewContent.description}</p>
+                                <h2>{props.language.format}</h2>
+                                <Tags language={props.language} difficulty={props.expandedViewContent.difficulty} timeEstimate={props.expandedViewContent.timeEstimate}></Tags>
+                                <Tags language={props.language} title={props.language.practices} docRefs={props.expandedViewContent.practices} attribute="practice"/>
+                                <Tags language={props.language} title={props.language.skills} docRefs={props.expandedViewContent.skills} attribute="skill"/>
+                                <Tags language={props.language} title={props.language.digitalStandards} docRefs={props.expandedViewContent.digitalStandards} attribute="standard"/>
+                            </div>
                         </div>
                     </div>
                 </ScrollLock>

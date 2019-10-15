@@ -26,6 +26,7 @@
 
 .mobileNavBar .row:last-of-type{
     overflow-x: scroll;
+    -webkit-overflow-scrolling: touch;
     max-width: 100%;
     justify-content: start;
     margin: 0 auto;
