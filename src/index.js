@@ -2,9 +2,22 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import Router from './Router';
+import ApolloClient from "apollo-boost";
+import { ApolloProvider } from "react-apollo";
 import * as serviceWorker from './serviceWorker';
 
-ReactDOM.render(<Router />, document.getElementById('root'));
+const client = new ApolloClient({
+    uri: process.env.REACT_APP_GRAPHQL_URI
+});
+
+const Main = () => (
+    <ApolloProvider client={client}>
+      <Router />
+    </ApolloProvider>
+);
+  
+
+ReactDOM.render(<Main />, document.getElementById('root'));
 
 // If you want your app to work offline and load faster, you can change
 // unregister() to register() below. Note this comes with some pitfalls.

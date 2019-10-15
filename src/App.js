@@ -23,7 +23,7 @@ function App(props) {
     const [loading, setLoading] = useState(true);
 
     // Sets the active topic in the mobile nav bar
-    const [activeTopic, setTopic] = useState("For you");
+    const [activeTopic, setTopic] = useState("");
 
     // Modal to switch between card & compact views
     const [modalVisible, showModal] = useState(false);
@@ -42,68 +42,81 @@ function App(props) {
     // Language state to hold the selected language's dictionary
     const [language, setLanguage] = useState(updateLanguage());
 
+    // State to get the first n resources
+    const [first, setFirst] = useState(updateLanguage());
+
     // State to store the resources fetched from the JSON API
     const [resources, setResources] = useState([]);
+
+    // State to hide the showMoreButton
+    const [seeMoreButtonVisible, setSeeMoreButtonVisible] = useState(true);
 
     /* #endregion */
 
     useEffect(() => {
         setLoading(true);
-        
-        if (activeTopic == "All" || activeTopic == "For you"){
-            /* GET RESOURCES BY LANGUAGE
-            firebase.firestore().collection("resources").where(JSON.parse(localStorage.langIsEnglish) ? "languages.english" : "languages.french", "==", true).orderBy("dateAdded", "desc").limit(9).get().then((data) => {
-                let resourceList = []
-                let res = null;
-                data.forEach(doc => {
-                    res = Object.create(doc.data());
-                    res.id = doc.id;
-                    resourceList.push(res);
-                });
-                console.log(resourceList);
-                setResources(resourceList);
-                directResourceLink(resourceList);
-                setLoading(false);
-            });
-            */
+        setSeeMoreButtonVisible(true);
 
-        }
-        else {
+        const query = `query getResourcesByTopic($topic:String,$lang:String,$first:Int){resourcesByTopic(topic:$topic,lang:$lang,first:$first){title,image,timeEstimate,comments,description,dateAdded,topic_of{name},creationYear{formatted},practiced_as{name},resource_lang{name},resource_skill{name},tagged{name},type_of{name},endorsed_by{lastName,firstName,profilePic},endorsements,difficulty,cost,uid,primary_used_as{name},resource_dig_standard{name},secondary_used_as{name}}}`
 
-            // Data from air table capitlizes only the first letter, this line ensures that format
-            let topic = activeTopic.charAt(0).toUpperCase() + activeTopic.toLowerCase().slice(1);
-            /* QUERY BY TOPIC
-            firebase.firestore().collection("resources").where("topic", "==", topic).where(JSON.parse(localStorage.langIsEnglish) ? "languages.english" : "languages.french", "==", true).orderBy("dateAdded", "desc").limit(9).get().then((data) => {
+        fetch('http://localhost:4001/GRAPHQL', {
+            method: 'POST',
+            headers: {
+              'Content-Type': 'application/json',
+              'Accept': 'application/json',
+            },
+            body: JSON.stringify({
+              query,
+              variables: { topic: activeTopic, lang: language.language === "Français" ? "french": "english"}, first: 9})
+          })
+            .then(r => r.json())
+            .then(data => {
                 let resourceList = []
-                let res = null;
-                data.forEach(doc => {
-                    res = Object.create(doc.data());
-                    res.id = doc.id;
-                    resourceList.push(res);
-                });
-                console.log(resourceList);
-                setResources(resourceList);
-                directResourceLink(resourceList);
+                data.data.resourcesByTopic.map(resource => {
+                    // Reformat neo4j Json output to DOL json
+                    let {title, description, endorsements, difficulty, cost, dateAdded, uid, image, timeEstimate} = resource
+
+                    let creationYear = resource.creationYear.formatted
+                    let practices = resource.practiced_as.map(practice => practice.name)
+                    let skills = resource.resource_skill.map(skill => skill.name)
+                    let tags = resource.tagged.map(tag => tag.name)
+                    let types = resource.tagged.map(a_type => a_type.name)
+                    let useCases = resource.secondary_used_as.map(sec_usage => sec_usage.name)
+                    let digitalStandards = resource.resource_dig_standard.map(standard => standard.name)
+
+                    let topic = resource.topic_of.map(t => t.name) ? resource.topic_of.map(t => t.name)[0] : null
+                    let language = resource.resource_lang.map(l => l.name) ? resource.resource_lang.map(l => l.name)[0] : null  
+                    let format = resource.primary_used_as.map(f => f.name) ? resource.primary_used_as.map(f => f.name)[0] : null  
+
+                    let featuredEndorsers = resource.endorsed_by.map(endorser => {
+                        let {firstName, lastName, profilePic} = endorser 
+                        let name = firstName + " " + lastName
+                        return {name, profilePic}
+                    })
+
+                    let new_resource = {title, description, difficulty, cost, dateAdded, uid, image, timeEstimate, creationYear, practices, skills, tags, types, useCases, digitalStandards, topic, language, format, endorsements: {featuredEndorsers, endorsements}}
+
+                    resourceList.push(new_resource)
+                })
+                console.log(resourceList)
                 setLoading(false);
+                setResources(resourceList)
+                //checkForMoreResources(resourceList);
+                directResourceLink(resourceList);
             });
-            */
-        }
     },[activeTopic, language])
+
+    async function checkForMoreResources(resourceList) {
+        if (resourceList === null || resourceList.length == 0){
+            setSeeMoreButtonVisible(false);
+            return;
+        }
+        // CHECK FOR MORE RESOURCES
+    }
 
     function getMoreResources() {
         setLoading(true);
-        firebase.firestore().collection("resources").where(JSON.parse(localStorage.langIsEnglish) ? "languages.english" : "languages.french", "==", true).orderBy("dateAdded", "desc").startAfter(resources[resources.length - 1].dateAdded).limit(9).get().then((data) => {
-            let resourceList = []
-            let res = null;
-            data.forEach(doc => {
-                res = Object.create(doc.data());
-                res.id = doc.id;
-                resourceList.push(res);
-            });
-            setResources(resources.concat(resourceList));
-            console.log(resources);
-            setLoading(false);
-        });
+        // GET MORE RESOURCES
     }
 
     // Checks to see if the user is coming in from a shared link leading directly to a resource
@@ -188,6 +201,20 @@ function App(props) {
         }, 1);
     }
 
+    function renderBlankCards() {
+        let blankCards = [];
+        let numberOfBlanks = resources.length % 3;
+        if (cardViewEnabled && numberOfBlanks != 0){
+            [...Array(3 - numberOfBlanks)].forEach(blank => {
+                blankCards.push(
+                    <div key={`blank_${blank}`} className="blank card"></div>
+                );
+            });
+            return blankCards;
+        }
+        return null;
+    }
+
     return (
         <div>
             <MetaTags title="Digital Open Learning" description="An online learning platform" url="https://dol-test.ca" image="https://images.unsplash.com/photo-1501504905252-473c47e087f8?ixlib=rb-1.2.1&auto=format&fit=crop&w=1867&q=80"/>
@@ -206,12 +233,15 @@ function App(props) {
                 </Modal>
                 </div>
                 </ScrollLock>
-                <ExpandedView language={language} handleCloseModal={handleCloseModal} expandedViewVisible={expandedViewVisible} expandedViewContent={expandedViewContent} handleCloseModal={handleCloseModal}/>
+                {expandedViewVisible ? <ExpandedView language={language} handleCloseModal={handleCloseModal} expandedViewVisible={expandedViewVisible} expandedViewContent={expandedViewContent} handleCloseModal={handleCloseModal}/> : null}
 
                 { resources.map( (resource, index)=>(
                     <Card key={index} language={language} viewType={{cardViewEnabled, showCardView}} history={props.history} showExpandedView={showExpandedView} setExpandedViewContent={setExpandedViewContent} resource={resource}/>
                 )) }
-                <button onClick={getMoreResources}>Load more</button>
+                {renderBlankCards()}
+            </div>
+            <div className="seeMoreButton">
+                <button className={!seeMoreButtonVisible ? "hide" : null} onClick={getMoreResources}>Load more</button>
             </div>
         </div>
     );
