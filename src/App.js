@@ -49,25 +49,9 @@ function App(props) {
 
     useEffect(() => {
         setLoading(true);
-        try {
-            var firebaseConfig = {
-                apiKey: "AIzaSyCEjvQBNLH87Y5d-eCy4JAR8HAMUmUs-uc",
-                authDomain: "digital-open-learning.firebaseapp.com",
-                databaseURL: "https://digital-open-learning.firebaseio.com",
-                projectId: "digital-open-learning",
-                storageBucket: "digital-open-learning.appspot.com",
-                messagingSenderId: "547442934763",
-                appId: "1:547442934763:web:93b5b076a533ba9938cfae"
-              };
-              // Initialize Firebase
-              firebase.initializeApp(firebaseConfig);
-              // TEMPORARY ALERT FOR PROTOTYPE VERSION
-              alert("THIS IS A PROTOTYPE OF DIGITAL OPEN LEARNING\n\nPlease be aware that this is only a prototype version so things might not work as expected along with some missing features.");
-        } catch (error) {
-            // console.error(error);
-        }
-
+        
         if (activeTopic == "All" || activeTopic == "For you"){
+            /* GET RESOURCES BY LANGUAGE
             firebase.firestore().collection("resources").where(JSON.parse(localStorage.langIsEnglish) ? "languages.english" : "languages.french", "==", true).orderBy("dateAdded", "desc").limit(9).get().then((data) => {
                 let resourceList = []
                 let res = null;
@@ -81,10 +65,14 @@ function App(props) {
                 directResourceLink(resourceList);
                 setLoading(false);
             });
+            */
+
         }
         else {
+
             // Data from air table capitlizes only the first letter, this line ensures that format
             let topic = activeTopic.charAt(0).toUpperCase() + activeTopic.toLowerCase().slice(1);
+            /* QUERY BY TOPIC
             firebase.firestore().collection("resources").where("topic", "==", topic).where(JSON.parse(localStorage.langIsEnglish) ? "languages.english" : "languages.french", "==", true).orderBy("dateAdded", "desc").limit(9).get().then((data) => {
                 let resourceList = []
                 let res = null;
@@ -98,6 +86,7 @@ function App(props) {
                 directResourceLink(resourceList);
                 setLoading(false);
             });
+            */
         }
     },[activeTopic, language])
 
