@@ -21,3 +21,7 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+/**/neo4j_export.cypher
+/**/new_data.json
+/**/test_data.json
+
