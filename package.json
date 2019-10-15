@@ -18,7 +18,8 @@
     "react-router-dom": "^5.0.1",
     "react-scripts": "3.0.1",
     "react-scrolllock": "^4.0.1",
-    "title": "^3.4.1"
+    "title": "^3.4.1",
+    "titlecase-french": "^1.0.1"
   },
   "scripts": {
     "start": "react-scripts start",

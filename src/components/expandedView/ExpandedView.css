@@ -78,6 +78,32 @@
     width: 120px;
 }
 
+.expandedViewActionButtons .shareDropDown .button {
+    background: none;
+    border: none;
+    padding: 0;
+}
+
+.shareDropDown div a {
+    text-decoration: none;
+}
+
+.shareDropDown div .email {
+    color: #484848;
+}
+.shareDropDown div .twitter {
+    color: #38A1F3;
+}
+.shareDropDown div .facebook {
+    color: #4267b2;
+}
+.shareDropDown div .linkedin {
+    color: #0077B5;
+}
+.shareDropDown div .pinterest {
+    color: #BD081C;
+}
+
 /* Image area container */
 .expandedViewImageArea{
     border-radius: inherit;
@@ -97,6 +123,12 @@
     display: flex;
     background-color: #f6f6f6;
     border-bottom: 1px solid #d0d4d8;
+}
+
+.expandedViewTitleArea div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .expandedViewTitleArea div:first-child {
@@ -131,12 +163,29 @@
     cursor: pointer;
 }
 
-.expandedViewContentContainer h2 {
-    margin: 10px 0 0 10px;
+.startResourceButton .icon {
+    font-size: 20px;
 }
 
-.expandedViewContentContainer p {
-    margin: 0 0 0 10px;
+.expandedViewContentArea {
+    padding: 0 10px 10px 10px;
+}
+
+.expandedViewContentArea h2 {
+    margin: 0;
+    margin-top: 10px;
+}
+
+.expandedViewContentArea p:not(.tag) {
+    margin: 0;
+}
+
+.expandedViewContentArea .tags .tag {
+    background-color: #cee1f5;
+}
+
+.expandedViewContentArea .tags .tag:nth-child(2n){
+    background-color: #d2d2d2;
 }
 
 /* #region Media Queries */

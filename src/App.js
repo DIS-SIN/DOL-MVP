@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import MobileNavBar from './components/MobileNavBar';
 import Card from './components/Card/Card';
 import CardViewModalContent from './components/CardViewModalContent';
