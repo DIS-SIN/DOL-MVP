@@ -11,6 +11,8 @@ import ScrollLock from 'react-scrolllock';
 import firebase from 'firebase/app'
 import 'firebase/firestore';
 import './App.css';
+import gql from 'graphql-tag';
+import { useQuery } from '@apollo/react-hooks';
 
 function App(props) {
 
@@ -43,7 +45,7 @@ function App(props) {
     const [language, setLanguage] = useState(updateLanguage());
 
     // State to get the first n resources
-    const [first, setFirst] = useState(updateLanguage());
+    const [first, setFirst] = useState(9);
 
     // State to store the resources fetched from the JSON API
     const [resources, setResources] = useState([]);
@@ -51,72 +53,109 @@ function App(props) {
     // State to hide the showMoreButton
     const [seeMoreButtonVisible, setSeeMoreButtonVisible] = useState(true);
 
+    // NEO4J URI
+
+    const neoj_URI = process.env.REACT_APP_GRAPHQL_URI || 'http://localhost:4001/graphql'
+
     /* #endregion */
 
     useEffect(() => {
         setLoading(true);
         setSeeMoreButtonVisible(true);
 
-        const query = `query getResourcesByTopic($topic:String,$lang:String,$first:Int){resourcesByTopic(topic:$topic,lang:$lang,first:$first){title,image,timeEstimate,comments,description,dateAdded,topic_of{name},creationYear{formatted},practiced_as{name},resource_lang{name},resource_skill{name},tagged{name},type_of{name},endorsed_by{lastName,firstName,profilePic},endorsements,difficulty,cost,uid,primary_used_as{name},resource_dig_standard{name},secondary_used_as{name}}}`
+        const query = `query getResourcesByTopic($topic:String,$lang:String){resourcesByTopic(topic:$topic,lang:$lang,first:` + first + `){title,image,timeEstimate,comments,description,dateAdded,topic_of{name},creationYear{formatted},practiced_as{name},resource_lang{name},resource_skill{name},tagged{name},type_of{name},endorsed_by{lastName,firstName,profilePic},endorsements,difficulty,cost,uid,primary_used_as{name},resource_dig_standard{name},secondary_used_as{name}}}`
 
-        fetch('http://localhost:4001/GRAPHQL', {
-            method: 'POST',
-            headers: {
-              'Content-Type': 'application/json',
-              'Accept': 'application/json',
-            },
-            body: JSON.stringify({
-              query,
-              variables: { topic: activeTopic, lang: language.language === "Français" ? "french": "english"}, first: 9})
-          })
-            .then(r => r.json())
-            .then(data => {
-                let resourceList = []
-                data.data.resourcesByTopic.map(resource => {
-                    // Reformat neo4j Json output to DOL json
-                    let {title, description, endorsements, difficulty, cost, dateAdded, uid, image, timeEstimate} = resource
+        const variables = { topic: activeTopic, lang: language.language === "Français" ? "french": "english"}
 
-                    let creationYear = resource.creationYear.formatted
-                    let practices = resource.practiced_as.map(practice => practice.name)
-                    let skills = resource.resource_skill.map(skill => skill.name)
-                    let tags = resource.tagged.map(tag => tag.name)
-                    let types = resource.tagged.map(a_type => a_type.name)
-                    let useCases = resource.secondary_used_as.map(sec_usage => sec_usage.name)
-                    let digitalStandards = resource.resource_dig_standard.map(standard => standard.name)
 
-                    let topic = resource.topic_of.map(t => t.name) ? resource.topic_of.map(t => t.name)[0] : null
-                    let language = resource.resource_lang.map(l => l.name) ? resource.resource_lang.map(l => l.name)[0] : null  
-                    let format = resource.primary_used_as.map(f => f.name) ? resource.primary_used_as.map(f => f.name)[0] : null  
+        fetchData(neoj_URI, query, variables).then((data) => {
+            setLoading(false);
+            let resourceList = formatJSON(data)            
+            setResources(resourceList)
+            checkForMoreResources(resourceList);
+            directResourceLink(resourceList);
+        }).catch(err => console.log(err));
+    },[activeTopic, language, first])
 
-                    let featuredEndorsers = resource.endorsed_by.map(endorser => {
-                        let {firstName, lastName, profilePic} = endorser 
-                        let name = firstName + " " + lastName
-                        return {name, profilePic}
-                    })
 
-                    let new_resource = {title, description, difficulty, cost, dateAdded, uid, image, timeEstimate, creationYear, practices, skills, tags, types, useCases, digitalStandards, topic, language, format, endorsements: {featuredEndorsers, endorsements}}
-
-                    resourceList.push(new_resource)
+    const fetchData = (url, query, variables) => {
+        return new Promise((resolve, reject) => {
+            fetch(url, {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                    'Accept': 'application/json',
+                },
+                body: JSON.stringify({
+                    query,
+                    variables
                 })
-                console.log(resourceList)
-                setLoading(false);
-                setResources(resourceList)
-                //checkForMoreResources(resourceList);
-                directResourceLink(resourceList);
-            });
-    },[activeTopic, language])
+            })
+            .then(r => r.json())
+            .then(data => resolve(data))
+            .catch(err => reject(err))
+        })
+    }
+
+    function formatJSON(data){
+        let resourceList = []
+        data.data.resourcesByTopic.map(resource => {
+            // Reformat neo4j Json output to DOL json
+            let {title, description, endorsements, difficulty, cost, dateAdded, uid, image, timeEstimate} = resource
+
+            let creationYear = resource.creationYear.formatted
+            let practices = resource.practiced_as.map(practice => practice.name)
+            let skills = resource.resource_skill.map(skill => skill.name)
+            let tags = resource.tagged.map(tag => tag.name)
+            let types = resource.tagged.map(a_type => a_type.name)
+            let useCases = resource.secondary_used_as.map(sec_usage => sec_usage.name)
+            let digitalStandards = resource.resource_dig_standard.map(standard => standard.name)
+
+            let topic = resource.topic_of.map(t => t.name) ? resource.topic_of.map(t => t.name)[0] : null
+            let language = resource.resource_lang.map(l => l.name) ? resource.resource_lang.map(l => l.name)[0] : null  
+            let format = resource.primary_used_as.map(f => f.name) ? resource.primary_used_as.map(f => f.name)[0] : null  
+
+            let featuredEndorsers = resource.endorsed_by.map(endorser => {
+                let {firstName, lastName, profilePic} = endorser 
+                let name = firstName + " " + lastName
+                return {name, profilePic}
+            })
+
+            let new_resource = {title, description, difficulty, cost, dateAdded, uid, image, timeEstimate, creationYear, practices, skills, tags, types, useCases, digitalStandards, topic, language, format, endorsements: {featuredEndorsers, endorsements}}
+
+            resourceList.push(new_resource)
+        })
+
+        return resourceList
+    }
 
     async function checkForMoreResources(resourceList) {
         if (resourceList === null || resourceList.length == 0){
             setSeeMoreButtonVisible(false);
             return;
         }
-        // CHECK FOR MORE RESOURCES
+
+        const query = `query getResourcesByTopic($topic:String,$lang:String){resourcesByTopic(topic:$topic,lang:$lang,first:` + (first + 10) + `){title,image,timeEstimate,comments,description,dateAdded,topic_of{name},creationYear{formatted},practiced_as{name},resource_lang{name},resource_skill{name},tagged{name},type_of{name},endorsed_by{lastName,firstName,profilePic},endorsements,difficulty,cost,uid,primary_used_as{name},resource_dig_standard{name},secondary_used_as{name}}}`
+
+        const variables = { topic: activeTopic, lang: language.language === "Français" ? "french": "english"}
+
+        fetchData(neoj_URI, query, variables).then(data => {
+            if (data === null || data.data.resourcesByTopic.length === 0 || data.data.resourcesByTopic.length === resourceList.length){
+                setSeeMoreButtonVisible(false);
+                return;
+            }
+
+            setSeeMoreButtonVisible(true);
+            return;
+        }).catch(err => {
+            setSeeMoreButtonVisible(false);
+            return;
+        })
     }
 
     function getMoreResources() {
         setLoading(true);
-        // GET MORE RESOURCES
+        setFirst(first + 9)
     }
 
     // Checks to see if the user is coming in from a shared link leading directly to a resource
