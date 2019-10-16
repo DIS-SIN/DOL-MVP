@@ -9,10 +9,9 @@ import history from "./components/History";
 import LoadingScreen from './components/LoadingScreen';
 import ScrollLock from 'react-scrolllock';
 import firebase from 'firebase/app'
+import 'bootstrap/dist/css/bootstrap.min.css';
 import 'firebase/firestore';
 import './App.css';
-import gql from 'graphql-tag';
-import { useQuery } from '@apollo/react-hooks';
 
 function App(props) {
 
@@ -63,7 +62,7 @@ function App(props) {
         setLoading(true);
         setSeeMoreButtonVisible(true);
 
-        const query = `query getResourcesByTopic($topic:String,$lang:String){resourcesByTopic(topic:$topic,lang:$lang,first:` + first + `){title,image,timeEstimate,comments,description,dateAdded,topic_of{name},creationYear{formatted},practiced_as{name},resource_lang{name},resource_skill{name},tagged{name},type_of{name},endorsed_by{lastName,firstName,profilePic},endorsements,difficulty,cost,uid,primary_used_as{name},resource_dig_standard{name},secondary_used_as{name}}}`
+        const query = `query getResourcesByTopic($topic:String,$lang:String){resourcesByTopic(topic:$topic,lang:$lang,first:` + first + `){title,image,timeEstimate,comments,url,description,dateAdded,topic_of{name},creationYear{formatted},practiced_as{name},resource_lang{name},resource_skill{name},tagged{name},type_of{name},endorsed_by{lastName,firstName,profilePic},endorsements,difficulty,cost,uid,primary_used_as{name},resource_dig_standard{name},secondary_used_as{name}}}`
 
         const variables = { topic: activeTopic, lang: language.language === "Français" ? "french": "english"}
 
@@ -135,7 +134,7 @@ function App(props) {
             return;
         }
 
-        const query = `query getResourcesByTopic($topic:String,$lang:String){resourcesByTopic(topic:$topic,lang:$lang,first:` + (first + 10) + `){title,image,timeEstimate,comments,description,dateAdded,topic_of{name},creationYear{formatted},practiced_as{name},resource_lang{name},resource_skill{name},tagged{name},type_of{name},endorsed_by{lastName,firstName,profilePic},endorsements,difficulty,cost,uid,primary_used_as{name},resource_dig_standard{name},secondary_used_as{name}}}`
+        const query = `query getResourcesByTopic($topic:String,$lang:String){resourcesByTopic(topic:$topic,lang:$lang,first:` + (first + 10) + `){title,image,timeEstimate,comments,url,description,dateAdded,topic_of{name},creationYear{formatted},practiced_as{name},resource_lang{name},resource_skill{name},tagged{name},type_of{name},endorsed_by{lastName,firstName,profilePic},endorsements,difficulty,cost,uid,primary_used_as{name},resource_dig_standard{name},secondary_used_as{name}}}`
 
         const variables = { topic: activeTopic, lang: language.language === "Français" ? "french": "english"}
 

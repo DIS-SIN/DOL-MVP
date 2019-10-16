@@ -1,4 +1,5 @@
 import React, {useState} from 'react';
+import { Link } from 'react-router-dom'
 import './MobileNavBar.css';
 
 function MobileNavBar(props) {
@@ -24,6 +25,7 @@ function MobileNavBar(props) {
                 <div className="rowAccessory left">
                     {/* <img className="profile" src={require('../images/defaultProfile.jpg')} alt={props.language.profileIconAltText} title={props.language.profile}/> */}
                     <button className="languageButton" onClick={manualSwitchLanguage}><span className="icon">language</span>{props.language.language === "English" ? "Fr" : "En"}</button>
+                    <Link to="admin/add" className="languageButton adminButton">Admin</Link>
                 </div>
                 <input className="searchBar" type="text" placeholder={props.language.searchBarPlaceholder}/>
                 <div className="rowAccessory right">
