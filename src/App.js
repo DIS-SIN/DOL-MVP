@@ -9,6 +9,7 @@ import history from "./components/History";
 import LoadingScreen from './components/LoadingScreen';
 import ScrollLock from 'react-scrolllock';
 import firebase from 'firebase/app'
+import {postData, neoj_URI} from './lib/common.js'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'firebase/firestore';
 import './App.css';
@@ -52,9 +53,6 @@ function App(props) {
     // State to hide the showMoreButton
     const [seeMoreButtonVisible, setSeeMoreButtonVisible] = useState(true);
 
-    // NEO4J URI
-
-    const neoj_URI = process.env.REACT_APP_GRAPHQL_URI || 'http://localhost:4001/graphql'
 
     /* #endregion */
 
@@ -67,7 +65,7 @@ function App(props) {
         const variables = { topic: activeTopic, lang: language.language === "Français" ? "french": "english"}
 
 
-        fetchData(neoj_URI, query, variables).then((data) => {
+        postData(neoj_URI, query, variables).then((data) => {
             setLoading(false);
             let resourceList = formatJSON(data)            
             setResources(resourceList)
@@ -75,26 +73,6 @@ function App(props) {
             directResourceLink(resourceList);
         }).catch(err => console.log(err));
     },[activeTopic, language, first])
-
-
-    const fetchData = (url, query, variables) => {
-        return new Promise((resolve, reject) => {
-            fetch(url, {
-                method: 'POST',
-                headers: {
-                    'Content-Type': 'application/json',
-                    'Accept': 'application/json',
-                },
-                body: JSON.stringify({
-                    query,
-                    variables
-                })
-            })
-            .then(r => r.json())
-            .then(data => resolve(data))
-            .catch(err => reject(err))
-        })
-    }
 
     function formatJSON(data){
         let resourceList = []
@@ -138,7 +116,7 @@ function App(props) {
 
         const variables = { topic: activeTopic, lang: language.language === "Français" ? "french": "english"}
 
-        fetchData(neoj_URI, query, variables).then(data => {
+        postData(neoj_URI, query, variables).then(data => {
             if (data === null || data.data.resourcesByTopic.length === 0 || data.data.resourcesByTopic.length === resourceList.length){
                 setSeeMoreButtonVisible(false);
                 return;
@@ -286,3 +264,4 @@ function App(props) {
 }
 
 export default App;
+
