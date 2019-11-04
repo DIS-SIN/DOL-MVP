@@ -9,7 +9,7 @@ import history from "./components/History";
 import LoadingScreen from './components/LoadingScreen';
 import ScrollLock from 'react-scrolllock';
 import firebase from 'firebase/app'
-import {postData, neoj_URI} from './lib/common.js'
+import {postData, neoj_URI, prepData} from './lib/common.js'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'firebase/firestore';
 import './App.css';
@@ -67,44 +67,14 @@ function App(props) {
 
         postData(neoj_URI, query, variables).then((data) => {
             setLoading(false);
-            let resourceList = formatJSON(data)            
-            setResources(resourceList)
+            let resourceList = prepData(data.data.resourcesByTopic);      
+            setResources(resourceList);
             checkForMoreResources(resourceList);
             directResourceLink(resourceList);
         }).catch(err => console.log(err));
     },[activeTopic, language, first])
 
-    function formatJSON(data){
-        let resourceList = []
-        data.data.resourcesByTopic.map(resource => {
-            // Reformat neo4j Json output to DOL json
-            let {title, description, endorsements, difficulty, cost, dateAdded, uid, image, timeEstimate} = resource
-
-            let creationYear = resource.creationYear.formatted
-            let practices = resource.practiced_as.map(practice => practice.name)
-            let skills = resource.resource_skill.map(skill => skill.name)
-            let tags = resource.tagged.map(tag => tag.name)
-            let types = resource.tagged.map(a_type => a_type.name)
-            let useCases = resource.secondary_used_as.map(sec_usage => sec_usage.name)
-            let digitalStandards = resource.resource_dig_standard.map(standard => standard.name)
-
-            let topic = resource.topic_of.map(t => t.name) ? resource.topic_of.map(t => t.name)[0] : null
-            let language = resource.resource_lang.map(l => l.name) ? resource.resource_lang.map(l => l.name)[0] : null  
-            let format = resource.primary_used_as.map(f => f.name) ? resource.primary_used_as.map(f => f.name)[0] : null  
-
-            let featuredEndorsers = resource.endorsed_by.map(endorser => {
-                let {firstName, lastName, profilePic} = endorser 
-                let name = firstName + " " + lastName
-                return {name, profilePic}
-            })
-
-            let new_resource = {title, description, difficulty, cost, dateAdded, uid, image, timeEstimate, creationYear, practices, skills, tags, types, useCases, digitalStandards, topic, language, format, endorsements: {featuredEndorsers, endorsements}}
-
-            resourceList.push(new_resource)
-        })
-
-        return resourceList
-    }
+    
 
     async function checkForMoreResources(resourceList) {
         if (resourceList === null || resourceList.length == 0){

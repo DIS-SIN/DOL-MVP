@@ -1,14 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import { Form, Card, Container, Row, Col, Button, Nav} from 'react-bootstrap';
-import './AddResourceView.css';
+import './Admin.css';
 import {postData, neoj_URI} from '../../lib/common.js'
-import { rename } from 'fs';
 
 const description = ["The Digital Academy is developing an open online learning environment for curation of quality learning resources.", "Know of great tools, templates, courses, events, webinars, articles, etc on digital topics? Add them here.", "Your expertise will contribute to the living repository of content."]
-
-const addResource = (data) => {
-    /* */
-}
 
 const AddResourceView = (props) => {
 
@@ -152,8 +147,8 @@ const AddResourceView = (props) => {
 
                 const use = counts.reduce((prev, current) => (prev.count > current.count) ? prev : current).usage
                                
-                postData(neoj_URI, associationQueryGenerator("AddPrimaryUsageResources", "_ResourceInput", "_PrimaryUsageInput"), {from: {uid: ruid_data.data.getRandomUid}, to: {name:(use ? use : "All")}}).then((user_data) => {
-                    console.log("Endorser added to resource")     
+                postData(neoj_URI, associationQueryGenerator("AddPrimaryUsageResources", "_ResourceInput", "_PrimaryUsageInput"), {from: {uid: ruid_data.data.getRandomUid}, to: {name:(use ? use : "All")}}).then((prim_usage_data) => {
+                    console.log("Primary Usage added to resource")     
                 }).catch(err => {
                     console.log(err)
                 });

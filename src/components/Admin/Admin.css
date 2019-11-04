@@ -1,0 +1,14 @@
+.topImage{
+    height: 200px;
+    width: 300px;
+}
+
+body{
+    background-color: white;
+}
+
+.table {
+    overflow-x: auto;
+    display: block !important;
+    table-layout: auto !important;
+}
