@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from "react-router-dom";
-import {Table, Container, Row, Modal, Button, Alert} from 'react-bootstrap';
+import {Table, Container, Row, Col, Modal, Button, Alert} from 'react-bootstrap';
 import {postData, neoj_URI, prepData} from '../../lib/common.js';
 import './Admin.css';
 
@@ -65,26 +65,32 @@ const ViewResources = (props) => {
 
     return (
         <Container fluid>
-            <Row key="row 1">
-                {deleteMessage ? <Alert key="deleteMessage" variant={deleteVariant}>{deleteMessage}</Alert> : ""}
+            <Row>
+                <Col>
+                <Link to="/admin/add" className="languageButton adminButton">Add Resource</Link>
+                    <Link to="/" className="languageButton adminButton">Home</Link>
+                    <Row key="row 1" className="mt-2">
+                        {deleteMessage ? <Alert key="deleteMessage" variant={deleteVariant}>{deleteMessage}</Alert> : ""}
+                    </Row>
+                    <Row key="row 2">
+                        <BasicTable data={data.data} keys={keys} handleShow={handleShow} />
+                    </Row>
+                    <Modal show={showModal} onHide={handleClose}>
+                        <Modal.Header closeButton>
+                            <Modal.Title>Delete resource</Modal.Title>
+                        </Modal.Header>
+                        <Modal.Body>Are you sure you want to delete "{deleteResource['title']}"?</Modal.Body>
+                        <Modal.Footer>
+                        <Button key="close" variant="secondary" onClick={handleClose}>
+                            No
+                        </Button>
+                        <Button key="delete" variant="danger" onClick={handleDelete}>
+                            Delete
+                        </Button>
+                        </Modal.Footer>
+                    </Modal>
+                </Col>
             </Row>
-            <Row key="row 2">
-                <BasicTable data={data.data} keys={keys} handleShow={handleShow} />
-            </Row>
-            <Modal show={showModal} onHide={handleClose}>
-                <Modal.Header closeButton>
-                    <Modal.Title>Delete resource</Modal.Title>
-                </Modal.Header>
-                <Modal.Body>Are you sure you want to delete "{deleteResource['title']}"?</Modal.Body>
-                <Modal.Footer>
-                <Button key="close" variant="secondary" onClick={handleClose}>
-                    No
-                </Button>
-                <Button key="delete" variant="danger" onClick={handleDelete}>
-                    Delete
-                </Button>
-                </Modal.Footer>
-            </Modal>
         </Container>
     )
 }

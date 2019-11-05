@@ -34,7 +34,7 @@ module.exports.prepData = (data) => {
         let types = resource.type_of.map(a_type => a_type.name)
         let useCases = resource.secondary_used_as.map(sec_usage => sec_usage.name)
         let digitalStandards = resource.resource_dig_standard.map(standard => standard.name)
-        let resourceOrg = resource.resource_org[0] ?  resource.resource_org[0]['name'] : "";
+        let resourceOrg = resource.resource_org ?  resource.resource_org[0]['name'] : "";
 
         let topic = resource.topic_of.map(t => t.name) ? resource.topic_of.map(t => t.name)[0] : null
         let language = resource.resource_lang.map(l => l.name) ? resource.resource_lang.map(l => l.name)[0] : null  

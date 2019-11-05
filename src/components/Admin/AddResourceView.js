@@ -209,92 +209,94 @@ const AddResourceView = (props) => {
     return (
         <Container>
         <Row>
-            <Form onSubmit={handleSubmit}>
-                <TopCard title="Learning resources - quick entry form" description={description} />
-                <FormInput label="Resource name" value={resourceName} setInfo={setResourceName} size="lg" width="8" required={true}/>
-                <FormInput label="Resource link (URL)" size="lg" width="8" value={resourceLink} setInfo={setResourceLink} required={true}/>
-                <FormInput label="Why is this a good resource?" size="lg" width="8" subText="This information may be used as a teaser or description text for the curated resource." type="textarea" value={resourceDescription} setInfo={setResourceDescription} required={true}/>
+            <Col>
+                <Form onSubmit={handleSubmit}>
+                    <TopCard title="Learning resources - quick entry form" description={description} />
+                    <FormInput label="Resource name" value={resourceName} setInfo={setResourceName} size="lg" width="8" required={true}/>
+                    <FormInput label="Resource link (URL)" size="lg" width="8" value={resourceLink} setInfo={setResourceLink} required={true}/>
+                    <FormInput label="Why is this a good resource?" size="lg" width="8" subText="This information may be used as a teaser or description text for the curated resource." type="textarea" value={resourceDescription} setInfo={setResourceDescription} required={true}/>
 
-                <Row className="mt-4">
-                    <Form.Group as={Col} md="8">
-                        <Form.Label>Can we use your name and organization next to description of resource</Form.Label> 
-                        <Form.Text className="text-muted mb-3">Choose "Yes" if we can use your name and organization to help the community discover those who are interested or are experts in a certain topic.</Form.Text>
+                    <Row className="mt-4">
+                        <Form.Group as={Col} md="8">
+                            <Form.Label>Can we use your name and organization next to description of resource</Form.Label> 
+                            <Form.Text className="text-muted mb-3">Choose "Yes" if we can use your name and organization to help the community discover those who are interested or are experts in a certain topic.</Form.Text>
 
-                        <Form.Text className="text-muted mb-2">Choose "No" if you want your description to remain anonymous.</Form.Text>
-                        <CheckBoxes selectedValues={resourceOrgDecision} setInfo={setResourceOrgDecision} name="orgSelect" type="radio" items={["Yes/ Oui", "No/ Non"]} inline={false}/>
-                    </Form.Group>
-                </Row>
+                            <Form.Text className="text-muted mb-2">Choose "No" if you want your description to remain anonymous.</Form.Text>
+                            <CheckBoxes selectedValues={resourceOrgDecision} setInfo={setResourceOrgDecision} name="orgSelect" type="radio" items={["Yes/ Oui", "No/ Non"]} inline={false}/>
+                        </Form.Group>
+                    </Row>
 
-                
-                <FormInput label="Resource provided by ... from ..." size="lg" width="8" subText="Please add your full name and organization you work for" value={resourceOrganization} setInfo={setResourceOrganization}/>          
+                    
+                    <FormInput label="Resource provided by ... from ..." size="lg" width="8" subText="Please add your full name and organization you work for" value={resourceOrganization} setInfo={setResourceOrganization}/>          
 
-                <Row className="mt-4">
-                    <Form.Group as={Col} md="8">
-                        <Form.Label>Resource language</Form.Label> 
-                        <Form.Text className="text-muted mb-3">Choose 1 or more options that apply.</Form.Text>
-                        <CheckBoxes name="langSelect" selectedValues={resourceLang} setInfo={setResourceLang} type="checkbox" items={["English", "French", "Not Applicable"]} inline={false}/>
-                    </Form.Group>
-                </Row>                    
+                    <Row className="mt-4">
+                        <Form.Group as={Col} md="8">
+                            <Form.Label>Resource language</Form.Label> 
+                            <Form.Text className="text-muted mb-3">Choose 1 or more options that apply.</Form.Text>
+                            <CheckBoxes name="langSelect" selectedValues={resourceLang} setInfo={setResourceLang} type="checkbox" items={["English", "French", "Not Applicable"]} inline={false}/>
+                        </Form.Group>
+                    </Row>                    
 
-                <Row className="mt-4">
-                    <Form.Group as={Col} md="8">
-                        <Form.Label>Time to use the resource</Form.Label> 
-                        <Form.Text className="text-muted mb-3">Choose 1 option</Form.Text>
-                        <CheckBoxes required={true} selectedValues={resourceTime} setInfo={setResourceTime} name="timeSelect" type="radio" items={["5 min", "10 min", "30 min", "60 min", "2 h", "4 h", "7.5 h", "20 h", "40 h", "N/A"]} inline={true}/>
-                    </Form.Group>
-                </Row>  
+                    <Row className="mt-4">
+                        <Form.Group as={Col} md="8">
+                            <Form.Label>Time to use the resource</Form.Label> 
+                            <Form.Text className="text-muted mb-3">Choose 1 option</Form.Text>
+                            <CheckBoxes required={true} selectedValues={resourceTime} setInfo={setResourceTime} name="timeSelect" type="radio" items={["5 min", "10 min", "30 min", "60 min", "2 h", "4 h", "7.5 h", "20 h", "40 h", "N/A"]} inline={true}/>
+                        </Form.Group>
+                    </Row>  
 
-                <Row className="mt-4">
-                    <Form.Group as={Col} md="8">
-                        <Form.Label>How is this resource best used?</Form.Label> 
-                        <Form.Text className="text-muted mb-3">There are 5 broad types of tasks with more specific sub-tasks:</Form.Text>
+                    <Row className="mt-4">
+                        <Form.Group as={Col} md="8">
+                            <Form.Label>How is this resource best used?</Form.Label> 
+                            <Form.Text className="text-muted mb-3">There are 5 broad types of tasks with more specific sub-tasks:</Form.Text>
+                            
+                            <BroadTypes types={usages} isFetching={data.isFetching}/>
                         
-                        <BroadTypes types={usages} isFetching={data.isFetching}/>
-                       
-                        <Form.Text className="text-muted mb-2">Choose 1 or more options that best describe the resource</Form.Text>
-                        <div className="row justify-content-center">
-                            <CheckBoxes type="checkbox" name="usageSelect" selectedValues={resourceUsage} setInfo={setResourceUsage} items={secondaryUsages} width="6" controlId="usage" inline={true}/>
-                        </div>
-                    </Form.Group>
-                </Row>  
+                            <Form.Text className="text-muted mb-2">Choose 1 or more options that best describe the resource</Form.Text>
+                            <div className="row justify-content-center">
+                                <CheckBoxes type="checkbox" name="usageSelect" selectedValues={resourceUsage} setInfo={setResourceUsage} items={secondaryUsages} width="6" controlId="usage" inline={true}/>
+                            </div>
+                        </Form.Group>
+                    </Row>  
 
-                <Row className="mt-4">
-                    <Form.Group as={Col} md="8">
-                        <Form.Label>What type of resource is this?</Form.Label> 
-                        <Form.Text className="text-muted mb-3">Choose 1 or more options that apply.</Form.Text>
-                        <CheckBoxes selectedValues={resourceTypes} setInfo={setResourceTypes} name="typeSelect" type="checkbox" items={types} inline={false}/>
-                    </Form.Group>
-                </Row> 
+                    <Row className="mt-4">
+                        <Form.Group as={Col} md="8">
+                            <Form.Label>What type of resource is this?</Form.Label> 
+                            <Form.Text className="text-muted mb-3">Choose 1 or more options that apply.</Form.Text>
+                            <CheckBoxes selectedValues={resourceTypes} setInfo={setResourceTypes} name="typeSelect" type="checkbox" items={types} inline={false}/>
+                        </Form.Group>
+                    </Row> 
 
-                <Row className="mt-4">
-                    <Form.Group as={Col} md="8">
-                        <Form.Label>Which topic does this resource relate to?</Form.Label> 
-                        <Form.Text className="text-muted mb-3">Choose 1 or more options that apply</Form.Text>
-                        <CheckBoxes selectedValues={resourceTopics} name="topicSelect" items={topics} width="6" setInfo={setResourceTopics} controlId="usage" inline={false}/>
-                    </Form.Group>
-                </Row>  
+                    <Row className="mt-4">
+                        <Form.Group as={Col} md="8">
+                            <Form.Label>Which topic does this resource relate to?</Form.Label> 
+                            <Form.Text className="text-muted mb-3">Choose 1 or more options that apply</Form.Text>
+                            <CheckBoxes selectedValues={resourceTopics} name="topicSelect" items={topics} width="6" setInfo={setResourceTopics} controlId="usage" inline={false}/>
+                        </Form.Group>
+                    </Row>  
 
-                <Row className="mt-4">
-                    <Form.Group as={Col} md="8">
-                        <Form.Label>Resource skill level</Form.Label> 
-                        <Form.Text className="text-muted mb-3">Choose 1 or more options that apply</Form.Text>
-                        <FormSelect name="skillLvlSelect" setInfo={setResourceSkillLvl} options={["Beginner", "Intermediate", "Advanced"]} width="6" controlId="usage" required={true}/>
-                    </Form.Group>
-                </Row>  
-                
-                <FormInput label="Tags" size="lg" width="8" subText="Add any additional keywords that describe the resource" value={resourceTags} setInfo={setResourceTags}/>
+                    <Row className="mt-4">
+                        <Form.Group as={Col} md="8">
+                            <Form.Label>Resource skill level</Form.Label> 
+                            <Form.Text className="text-muted mb-3">Choose 1 or more options that apply</Form.Text>
+                            <FormSelect name="skillLvlSelect" setInfo={setResourceSkillLvl} options={["Beginner", "Intermediate", "Advanced"]} width="6" controlId="usage" required={true}/>
+                        </Form.Group>
+                    </Row>  
+                    
+                    <FormInput label="Tags" size="lg" width="8" subText="Add any additional keywords that describe the resource" value={resourceTags} setInfo={setResourceTags}/>
 
-                <FormInput label="Notes" size="lg" width="8" subText="Anything else you would like to add" type="textarea" value={resourceNote} setInfo={setResourceNote}/>
+                    <FormInput label="Notes" size="lg" width="8" subText="Anything else you would like to add" type="textarea" value={resourceNote} setInfo={setResourceNote}/>
 
-                <Row className="mt-4">
-                    <Form.Group as={Col} md="8">
-                        <Button variant="primary" size="lg" type="submit">
-                            Submit
-                        </Button>
-                        <Form.Text className="text-muted mt-3 mb-5">Never submit passwords through this form.</Form.Text>
-                    </Form.Group>
-                </Row>
-            </Form>
+                    <Row className="mt-4">
+                        <Form.Group as={Col} md="8">
+                            <Button variant="primary" size="lg" type="submit">
+                                Submit
+                            </Button>
+                            <Form.Text className="text-muted mt-3 mb-5">Never submit passwords through this form.</Form.Text>
+                        </Form.Group>
+                    </Row>
+                </Form>
+            </Col>
         </Row>
     </Container>
     )
@@ -302,7 +304,7 @@ const AddResourceView = (props) => {
 
 const TopCard = (props) => (
     <Row>
-        <Card style={{ width: '40rem' }}>
+        <Card style={{ width: '40rem', height: '100%' }}>
             <Card.Img variant="top" src="https://dl.airtable.com/.formViewLogoImages/39b804c056f6cfecf49bf69b7ae1d289/3460b650" className="topImage"/>
             <Card.Body>
                 <Card.Title>{props.title}</Card.Title>
