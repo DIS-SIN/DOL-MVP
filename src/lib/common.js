@@ -31,9 +31,10 @@ module.exports.prepData = (data) => {
         let practices = resource.practiced_as.map(practice => practice.name)
         let skills = resource.resource_skill.map(skill => skill.name)
         let tags = resource.tagged.map(tag => tag.name)
-        let types = resource.tagged.map(a_type => a_type.name)
+        let types = resource.type_of.map(a_type => a_type.name)
         let useCases = resource.secondary_used_as.map(sec_usage => sec_usage.name)
         let digitalStandards = resource.resource_dig_standard.map(standard => standard.name)
+        let resourceOrg = resource.resource_org[0] ?  resource.resource_org[0]['name'] : "";
 
         let topic = resource.topic_of.map(t => t.name) ? resource.topic_of.map(t => t.name)[0] : null
         let language = resource.resource_lang.map(l => l.name) ? resource.resource_lang.map(l => l.name)[0] : null  
@@ -45,10 +46,12 @@ module.exports.prepData = (data) => {
             return {name, profilePic}
         })
 
-        let new_resource = {title, url, description, difficulty, cost, dateAdded, uid, image, timeEstimate, creationYear, practices, skills, tags, types, useCases, digitalStandards, topic, language, format, endorsements: {featuredEndorsers, endorsements}}
+        let new_resource = {title, url, description, difficulty, cost, dateAdded, uid, image, timeEstimate, creationYear, practices, skills, tags, types, useCases, digitalStandards, topic, language, format, endorsements: {featuredEndorsers, endorsements}, resourceOrg}
 
         resourceList.push(new_resource)
     })
 
     return resourceList
 }
+
+

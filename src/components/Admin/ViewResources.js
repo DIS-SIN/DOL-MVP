@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { Link } from "react-router-dom";
 import {Table, Container, Row, Col} from 'react-bootstrap';
 import {postData, neoj_URI, prepData} from '../../lib/common.js';
 import './Admin.css';
@@ -11,7 +12,7 @@ const ViewResources = (props) => {
     useEffect(() => {
         
 
-        const resourceQuery = `query{Resource{title,url,image,timeEstimate,comments,creationYear{formatted},dateAdded,endorsed_by{firstName,lastName,profilePic},description,endorsements,secondary_used_as{name},practiced_as{name},primary_used_as{name},topic_of{name},tagged{name},difficulty,uid,resource_org{name},resource_lang{name},resource_skill{name},resource_author{name},resource_dig_standard{name}}}`;
+        const resourceQuery = `query{Resource{title,url,image,timeEstimate,comments,creationYear{formatted},dateAdded,endorsed_by{firstName,lastName,profilePic},description,endorsements,secondary_used_as{name},practiced_as{name},primary_used_as{name},topic_of{name},type_of{name},tagged{name},difficulty,uid,resource_org{name},resource_lang{name},resource_skill{name},resource_author{name},resource_dig_standard{name}}}`;
         
         setData({data: [], isFetching:true});
         
@@ -48,7 +49,7 @@ const BasicTable = (props) => (
         <tbody>
             {props.data.map(resource => (
                 <tr>
-                    <td className="icon text-primary">edit</td>
+                    <td><Link to={`/admin/edit/${resource['uid']}`} className="icon text-primary">edit</Link></td>
                     <td className="icon text-danger">close</td>
                     {props.keys.map(key => <td>{key === 'endorsements' ? resource[key]['endorsements'] : (key === 'image'? <a href={resource[key]}>View Image</a>: (key === 'url'? <a href={resource[key]}>Visit Page</a>: (resource[key] instanceof Array ? <ul> {resource[key].map(item => <li>{item}</li>)} </ul> : resource[key])))}</td>)}
                 </tr>

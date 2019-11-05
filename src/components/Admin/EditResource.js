@@ -1,13 +1,14 @@
 import React, { useState, useEffect } from 'react';
-import { Form, Card, Container, Row, Col, Button, Nav} from 'react-bootstrap';
+import { Form, Card, Container, Row, Col, Button} from 'react-bootstrap';
 import './Admin.css';
-import {postData, neoj_URI} from '../../lib/common.js'
+import {postData, neoj_URI, prepData} from '../../lib/common.js'
 
 const description = ["The Digital Academy is developing an open online learning environment for curation of quality learning resources.", "Know of great tools, templates, courses, events, webinars, articles, etc on digital topics? Add them here.", "Your expertise will contribute to the living repository of content."]
 
-const AddResourceView = (props) => {
+const EditResource = (props) => {
 
     const [data, setData] = useState({data: [], isFetching: false});
+    const [uid, setUid] = useState(props.match.params.uid);
     const [usages, setUsages] = useState([]);
     const [types, setTypes] = useState([]);
     const [secondaryUsages, setSecondaryUsages] = useState([]);
@@ -24,17 +25,15 @@ const AddResourceView = (props) => {
     const [resourceUsage, setResourceUsage] = useState([]);
     const [resourceTypes, setResourceTypes] = useState([]);
     const [resourceTopics, setResourceTopics] = useState([]);
-    const [resourceSkillLvl, setResourceSkillLvl] = useState("Beginner");
+    const [resourceSkillLvl, setResourceSkillLvl] = useState("");
     const [resourceTags, setResourceTags] = useState([]);
     const [resourceNote, setResourceNote] = useState("");
 
     const handleSubmit = (evt) => {
         evt.preventDefault();
-
-        const randUuidQuery = `query{getRandomUid}`;
         
         const mutationQuery = `
-        mutation addResource(
+        mutation updateResource(
             $uid: String!
             $difficulty: Int!, 
             $image: String!,
@@ -48,7 +47,7 @@ const AddResourceView = (props) => {
             $timeEstimate: Int!,
             $dateAdded: String!
         ){
-            CreateResource(
+            UpdateResource(
                 image: $image,
                 difficulty: $difficulty,
                 url: $url,
@@ -82,102 +81,99 @@ const AddResourceView = (props) => {
             title: resourceName,
             timeEstimate: 25200,
             dateAdded: new Date().toDateString(),
-            comments: 2500
+            comments: 2500,
+            uid: uid
         }
 
-        postData(neoj_URI, randUuidQuery, {}).then((ruid_data) => {
-            postData(neoj_URI, mutationQuery, {uid: ruid_data.data.getRandomUid, ...variables}).then((data) => {
-                console.log(ruid_data.data.getRandomUid);
+ 
+        postData(neoj_URI, mutationQuery, {variables}).then((data) => {
 
-                const randomUsers = ["38060f4e-2f32-4650-a09b-6ee09347e335", "f9bf5893-9d3b-4dc0-830f-a9974be240ab", "39e3065f-06c7-42fb-816d-01a44c256a00", "11a07aea-fa15-4b8a-b483-b7e2330f626b", "9c7887d4-3859-4bd3-8e47-3cec03b9d488", "c3308c09-6ef8-4949-bf24-56426cb4c0ed", "31f92cd7-3bae-404f-845f-a386287bb0a6", "99080e25-9fe6-4eee-b994-c6607b514078", "d2eebf71-910e-4b1f-bc66-0c4ccea8326b"]
+            const randomUsers = ["38060f4e-2f32-4650-a09b-6ee09347e335", "f9bf5893-9d3b-4dc0-830f-a9974be240ab", "39e3065f-06c7-42fb-816d-01a44c256a00", "11a07aea-fa15-4b8a-b483-b7e2330f626b", "9c7887d4-3859-4bd3-8e47-3cec03b9d488", "c3308c09-6ef8-4949-bf24-56426cb4c0ed", "31f92cd7-3bae-404f-845f-a386287bb0a6", "99080e25-9fe6-4eee-b994-c6607b514078", "d2eebf71-910e-4b1f-bc66-0c4ccea8326b"]
 
-                resourceTags.map(tag => {
-                    postData(neoj_URI, associationQueryGenerator("AddTagResources", "_ResourceInput", "_TagInput"), {from: {uid: ruid_data.data.getRandomUid}, to: {name:tag}}).then((tag_data) => {
-                        console.log("Tag added to resource")                        
-                    }).catch(err => {
-                        console.log(err)
-                    });
-                });
-
-                resourceTopics.map(topic => {
-                    postData(neoj_URI, associationQueryGenerator("AddTopicResources", "_ResourceInput", "_TopicInput"), {from: {uid: ruid_data.data.getRandomUid}, to: {name:topic}}).then((topic_data) => {
-                        console.log("Topic added to resource")                        
-                    }).catch(err => {
-                        console.log(err)
-                    });
-                }); 
-
-                resourceTypes.map(a_type => {
-                    postData(neoj_URI, associationQueryGenerator("AddResourceType_of", "_ResourceInput", "_ResourceTypeInput"), {from: {uid: ruid_data.data.getRandomUid}, to: {name:a_type}}).then((type_data) => {
-                        console.log("Type added to resource")                        
-                    }).catch(err => {
-                        console.log(err)
-                    });
-                });
-                
-                resourceLang.map(lang => {
-                    postData(neoj_URI, associationQueryGenerator("AddLanguageResources", "_ResourceInput", "_LanguageInput"), {from: {uid: ruid_data.data.getRandomUid}, to: {name:lang.toLowerCase()}}).then((lang_data) => {
-                        console.log("Language added to resource")                        
-                    }).catch(err => {
-                        console.log(err)
-                    });
-                });
-
-                resourceUsage.map(use => {
-                    postData(neoj_URI, associationQueryGenerator("AddSecondaryUsageResources", "_ResourceInput", "_SecondaryUsageInput"), {from: {uid: ruid_data.data.getRandomUid}, to: {name:use}}).then((usage_data) => {
-                        console.log("Secondary usage added to resource")     
-                    }).catch(err => {
-                        console.log(err)
-                    });
-                });
-
-                const readUsagesCount = resourceUsage.filter(val => val.includes("Read")).length;
-                const listenUsagesCount = resourceUsage.filter(val => val.includes("Listen")).length;
-                const watchUsagesCount = resourceUsage.filter(val => val.includes("Watch")).length;
-                const participateUsagesCount = resourceUsage.filter(val => val.includes("Participate")).length;
-                const useCount = resourceUsage.filter(val => val.includes("Use")).length;
-
-                const counts = [
-                    {usage: "Read", count: readUsagesCount},
-                    {usage: "Listen", count: listenUsagesCount},
-                    {usage: "Watch", count: watchUsagesCount},
-                    {usage: "Participate", count: participateUsagesCount},
-                    {usage: "Use", count: useCount}
-                ];
-
-                const use = counts.reduce((prev, current) => (prev.count > current.count) ? prev : current).usage
-                               
-                postData(neoj_URI, associationQueryGenerator("AddPrimaryUsageResources", "_ResourceInput", "_PrimaryUsageInput"), {from: {uid: ruid_data.data.getRandomUid}, to: {name:(use ? use : "All")}}).then((prim_usage_data) => {
-                    console.log("Primary Usage added to resource")     
+            resourceTags.map(tag => {
+                postData(neoj_URI, associationQueryGenerator("AddTagResources", "_ResourceInput", "_TagInput"), {from: {uid: uid}, to: {name:tag}}).then((tag_data) => {
+                    console.log("Tag added to resource")                        
                 }).catch(err => {
                     console.log(err)
                 });
+            });
 
-                for(let i = 0; i < 2; i++){
-                    postData(neoj_URI, associationQueryGenerator("AddResourceEndorsed_by", "_ResourceInput", "_UserInput"), {from: {uid: ruid_data.data.getRandomUid}, to: {uid:randomUsers[Math.floor(Math.random()*randomUsers.length)]}}).then((user_data) => {
-                        console.log("Endorser added to resource")     
-                    }).catch(err => {
-                        console.log(err)
-                    });
-                }
+            resourceTopics.map(topic => {
+                postData(neoj_URI, associationQueryGenerator("AddTopicResources", "_ResourceInput", "_TopicInput"), {from: {uid: uid}, to: {name:topic}}).then((topic_data) => {
+                    console.log("Topic added to resource")                        
+                }).catch(err => {
+                    console.log(err)
+                });
+            }); 
 
-                if(resourceOrgDecision[0] === "Yes/ Oui"){
-                    postData(neoj_URI, createQueryGenerator("CreateOrganization"), {name: resourceOrganization}).then((org_data) => {
-                        console.log("Organization Created");
-                        postData(neoj_URI, associationQueryGenerator("AddOrganizationResources", "_ResourceInput", "_OrganizationInput"), {from: {uid: ruid_data.data.getRandomUid}, to: {name:org_data.data.CreateOrganization.name}}).then((user_data) => {
-                            console.log("Organization added to resource")     
-                        }).catch(err => {
-                            console.log(err)
-                        });    
-                    }).catch(err => {
-                        console.log(err)
-                    });
-                }
+            resourceTypes.map(a_type => {
+                postData(neoj_URI, associationQueryGenerator("AddResourceType_of", "_ResourceInput", "_ResourceTypeInput"), {from: {uid: uid}, to: {name:a_type}}).then((type_data) => {
+                    console.log("Type added to resource")                        
+                }).catch(err => {
+                    console.log(err)
+                });
+            });
+            
+            resourceLang.map(lang => {
+                postData(neoj_URI, associationQueryGenerator("AddLanguageResources", "_ResourceInput", "_LanguageInput"), {from: {uid: uid}, to: {name:lang.toLowerCase()}}).then((lang_data) => {
+                    console.log("Language added to resource")                        
+                }).catch(err => {
+                    console.log(err)
+                });
+            });
 
+            resourceUsage.map(use => {
+                postData(neoj_URI, associationQueryGenerator("AddSecondaryUsageResources", "_ResourceInput", "_SecondaryUsageInput"), {from: {uid: uid}, to: {name:use}}).then((usage_data) => {
+                    console.log("Secondary usage added to resource")     
+                }).catch(err => {
+                    console.log(err)
+                });
+            });
 
+            const readUsagesCount = resourceUsage.filter(val => val.includes("Read")).length;
+            const listenUsagesCount = resourceUsage.filter(val => val.includes("Listen")).length;
+            const watchUsagesCount = resourceUsage.filter(val => val.includes("Watch")).length;
+            const participateUsagesCount = resourceUsage.filter(val => val.includes("Participate")).length;
+            const useCount = resourceUsage.filter(val => val.includes("Use")).length;
+
+            const counts = [
+                {usage: "Read", count: readUsagesCount},
+                {usage: "Listen", count: listenUsagesCount},
+                {usage: "Watch", count: watchUsagesCount},
+                {usage: "Participate", count: participateUsagesCount},
+                {usage: "Use", count: useCount}
+            ];
+
+            const use = counts.reduce((prev, current) => (prev.count > current.count) ? prev : current).usage
+                            
+            postData(neoj_URI, associationQueryGenerator("AddPrimaryUsageResources", "_ResourceInput", "_PrimaryUsageInput"), {from: {uid: uid}, to: {name:(use ? use : "All")}}).then((prim_usage_data) => {
+                console.log("Primary Usage added to resource")     
             }).catch(err => {
                 console.log(err)
             });
+
+            for(let i = 0; i < 2; i++){
+                postData(neoj_URI, associationQueryGenerator("AddResourceEndorsed_by", "_ResourceInput", "_UserInput"), {from: {uid: uid}, to: {uid:randomUsers[Math.floor(Math.random()*randomUsers.length)]}}).then((user_data) => {
+                    console.log("Endorser added to resource")     
+                }).catch(err => {
+                    console.log(err)
+                });
+            }
+
+            if(resourceOrgDecision[0] === "Yes/ Oui"){
+                postData(neoj_URI, createQueryGenerator("CreateOrganization"), {name: resourceOrganization}).then((org_data) => {
+                    console.log("Organization Created");
+                    postData(neoj_URI, associationQueryGenerator("AddOrganizationResources", "_ResourceInput", "_OrganizationInput"), {from: {uid: uid}, to: {name:org_data.data.CreateOrganization.name}}).then((user_data) => {
+                        console.log("Organization added to resource")     
+                    }).catch(err => {
+                        console.log(err)
+                    });    
+                }).catch(err => {
+                    console.log(err)
+                });
+            }
+
+
         }).catch(err => {
             console.log(err)
         });
@@ -187,7 +183,10 @@ const AddResourceView = (props) => {
 
     const createQueryGenerator = (queryName) => `mutation createNode($name: String!){${queryName}(name: $name){name}}`
 
+
     useEffect(() => {
+
+        const resourceQuery = `query getResource($uid: String!){Resource(uid:$uid){title,url,image,timeEstimate,comments,creationYear{formatted},dateAdded,endorsed_by{firstName,lastName,profilePic},description,endorsements,secondary_used_as{name},practiced_as{name},primary_used_as{name},topic_of{name},type_of{name},tagged{name},difficulty,uid,resource_org{name},resource_lang{name},resource_skill{name},resource_author{name},resource_dig_standard{name}}}`;
 
         const query = `{PrimaryUsage{name},SecondaryUsage{name},ResourceType{name},Topic{name},Skill{name}}`
 
@@ -205,7 +204,28 @@ const AddResourceView = (props) => {
             setData({data: [], isFetching: false})
         });
 
-    }, [])
+
+        setData({data: [], isFetching: true})
+
+        postData(neoj_URI, resourceQuery, {uid: uid}).then((resource_data) => {
+            let p_data = prepData(resource_data.data.Resource)
+            setData({data: p_data, isFetching:false});
+            setResourceName(p_data[0]['title'])
+            setResourceDescription(p_data[0]['description'])
+            setResourceLink(p_data[0]['url'])
+            setResourceLang([p_data[0]['language'].replace(p_data[0]['language'][0], p_data[0]['language'][0].toUpperCase())])
+            setResourceOrganization(p_data[0]['resourceOrg'])
+            setResourceOrgDecision(p_data[0]['resourceOrg'] ? new Array("Yes/ Oui") : new Array("No/ Non"))
+            setResourceTypes(p_data[0]['types'])
+            setResourceUsage(p_data[0]['useCases'])
+            setResourceTopics([p_data[0]['topic']])
+            setResourceSkillLvl(p_data[0]['difficulty'] === 1 ? "Beginner" : (p_data[0]['difficulty'] === 2 ? "Intermediate" : "Advanced"))
+        }).catch(err => {
+            console.log(err)
+            setData({data: [], isFetching: false})
+        });
+
+    }, [uid])
     
     return (
         <Container>
@@ -279,7 +299,7 @@ const AddResourceView = (props) => {
                     <Form.Group as={Col} md="8">
                         <Form.Label>Resource skill level</Form.Label> 
                         <Form.Text className="text-muted mb-3">Choose 1 or more options that apply</Form.Text>
-                        <FormSelect name="skillLvlSelect" setInfo={setResourceSkillLvl} options={["Beginner", "Intermediate", "Advanced"]} width="6" controlId="usage" required={true}/>
+                        <FormSelect value={resourceSkillLvl} name="skillLvlSelect" setInfo={setResourceSkillLvl} options={["Beginner", "Intermediate", "Advanced"]} width="6" controlId="usage" required={true}/>
                     </Form.Group>
                 </Row>  
                 
@@ -290,7 +310,7 @@ const AddResourceView = (props) => {
                 <Row className="mt-4">
                     <Form.Group as={Col} md="8">
                         <Button variant="primary" size="lg" type="submit">
-                            Submit
+                            Edit resource
                         </Button>
                         <Form.Text className="text-muted mt-3 mb-5">Never submit passwords through this form.</Form.Text>
                     </Form.Group>
@@ -319,12 +339,12 @@ const TopCard = (props) => (
 const CheckBoxes = (props) => (
     props.items.map(checkBox => (
         // Checks if selected value is already in selectedValues arra, if there removes it, if not adds it
-        <Form.Check value={checkBox} type={props.type} label={checkBox} name={props.name} onChange={e => props.setInfo(props.selectedValues.indexOf(e.target.value) > -1 ? props.selectedValues.filter(value => value !== e.target.value) : [...props.selectedValues, e.target.value])} inline={props.inline} required={props.required && props.type === "radio" ? true : false}/>
-    ))
+        <Form.Check key={checkBox} checked={props.selectedValues.includes(checkBox)} value={checkBox} type={props.type} label={checkBox} name={props.name} onChange={e => props.setInfo(props.selectedValues.indexOf(e.target.value) > -1 ? props.selectedValues.filter(value => value !== e.target.value) : [...props.selectedValues, e.target.value])} inline={props.inline} required={props.required && props.type === "radio" ? true : false}/>
+    ))    
 )
 
 const Paragraphs = (props) => (
-    props.items.map(item => <p>{item}</p>)
+    props.items.map(item => <p key={item}>{item}</p>)
 )
 
 
@@ -352,10 +372,10 @@ const BroadTypes = (props) => (
 )
 
 const FormSelect = (props) => (
-    <Form.Control as="select" name={props.name} onChange={e => props.setInfo(props.selectedValues.indexOf(e.target.value) > -1 ? props.selectedValues.filter(value => value !== e.target.value) : [...props.selectedValues, e.target.value])} required={props.required}>
-        {props.options.map(option => <option>{option}</option>)}
+    <Form.Control as="select" name={props.name} onChange={e => props.setInfo(props.selectedValues.indexOf(e.target.value) > -1 ? props.selectedValues.filter(value => value !== e.target.value) : [...props.selectedValues, e.target.value])} value={props.value} required={props.required}>
+        {props.options.map(option => <option key={option}>{option}</option>)}
     </Form.Control>
 )
 
 
-export default AddResourceView;
+export default EditResource;
