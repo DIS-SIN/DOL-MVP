@@ -87,7 +87,6 @@ const AddResourceView = (props) => {
 
         postData(neoj_URI, randUuidQuery, {}).then((ruid_data) => {
             postData(neoj_URI, mutationQuery, {uid: ruid_data.data.getRandomUid, ...variables}).then((data) => {
-                console.log(ruid_data.data.getRandomUid);
 
                 const randomUsers = ["38060f4e-2f32-4650-a09b-6ee09347e335", "f9bf5893-9d3b-4dc0-830f-a9974be240ab", "39e3065f-06c7-42fb-816d-01a44c256a00", "11a07aea-fa15-4b8a-b483-b7e2330f626b", "9c7887d4-3859-4bd3-8e47-3cec03b9d488", "c3308c09-6ef8-4949-bf24-56426cb4c0ed", "31f92cd7-3bae-404f-845f-a386287bb0a6", "99080e25-9fe6-4eee-b994-c6607b514078", "d2eebf71-910e-4b1f-bc66-0c4ccea8326b"]
 
