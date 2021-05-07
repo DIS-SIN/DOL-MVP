@@ -4090,14 +4090,6 @@ gauge@~2.7.3:
     strip-ansi "^3.0.1"
     wide-align "^1.1.0"
 
-gc-tortilla@^1.0.2:
-  version "1.0.2"
-  resolved "https://registry.yarnpkg.com/gc-tortilla/-/gc-tortilla-1.0.2.tgz#c938491f84f38347e8ba33caa5b6220ad3dbddeb"
-  integrity sha512-c++MSneDeDx3u5lBbYMgZm3+bM0VWi40evWqMeVnKFZlTozL2CL/YjzoU8skZf0ZINA5wdXVvLNx7u+4s1Mnuw==
-  dependencies:
-    prop-types "^15.7.2"
-    react-scrolllock "^4.0.1"
-
 get-caller-file@^1.0.1:
   version "1.0.3"
   resolved "https://registry.yarnpkg.com/get-caller-file/-/get-caller-file-1.0.3.tgz#f978fa4c90d1dfe7ff2d6beda2a515e713bdcf4a"
@@ -8798,6 +8790,11 @@ title@^3.4.1:
     clipboardy "1.2.2"
     titleize "1.0.0"
 
+titlecase-french@^1.0.1:
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/titlecase-french/-/titlecase-french-1.0.1.tgz#c91b7686e28874cdfd73162ff309c8bbbcb9faaa"
+  integrity sha1-yRt2huKIdM39cxYv8wnIu7y5+qo=
+
 titleize@1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/titleize/-/titleize-1.0.0.tgz#7d350722061830ba6617631e0cfd3ea08398d95a"
@@ -8932,9 +8929,9 @@ typedarray@^0.0.6:
   resolved "https://registry.yarnpkg.com/typedarray/-/typedarray-0.0.6.tgz#867ac74e3864187b1d3d47d996a78ec5c8830777"
 
 ua-parser-js@^0.7.18:
-  version "0.7.20"
-  resolved "https://registry.yarnpkg.com/ua-parser-js/-/ua-parser-js-0.7.20.tgz#7527178b82f6a62a0f243d1f94fd30e3e3c21098"
-  integrity sha512-8OaIKfzL5cpx8eCMAhhvTlft8GYF8b2eQr6JkCyVdrgjcytyOmPCXrqXFcUnhonRpLlh5yxEZVohm6mzaowUOw==
+  version "0.7.28"
+  resolved "https://registry.yarnpkg.com/ua-parser-js/-/ua-parser-js-0.7.28.tgz#8ba04e653f35ce210239c64661685bf9121dec31"
+  integrity sha512-6Gurc1n//gjp9eQNXjD9O3M/sMwVtN5S8Lv9bvOYBfKfDNiIIhqiyi01vMBO45u4zkDE420w/e0se7Vs+sIg+g==
 
 uglify-js@3.4.x:
   version "3.4.10"
