@@ -4090,14 +4090,6 @@ gauge@~2.7.3:
     strip-ansi "^3.0.1"
     wide-align "^1.1.0"
 
-gc-tortilla@^1.0.2:
-  version "1.0.2"
-  resolved "https://registry.yarnpkg.com/gc-tortilla/-/gc-tortilla-1.0.2.tgz#c938491f84f38347e8ba33caa5b6220ad3dbddeb"
-  integrity sha512-c++MSneDeDx3u5lBbYMgZm3+bM0VWi40evWqMeVnKFZlTozL2CL/YjzoU8skZf0ZINA5wdXVvLNx7u+4s1Mnuw==
-  dependencies:
-    prop-types "^15.7.2"
-    react-scrolllock "^4.0.1"
-
 get-caller-file@^1.0.1:
   version "1.0.3"
   resolved "https://registry.yarnpkg.com/get-caller-file/-/get-caller-file-1.0.3.tgz#f978fa4c90d1dfe7ff2d6beda2a515e713bdcf4a"
@@ -6554,8 +6546,9 @@ path-key@^2.0.0, path-key@^2.0.1:
   resolved "https://registry.yarnpkg.com/path-key/-/path-key-2.0.1.tgz#411cadb574c5a140d3a4b1910d40d80cc9f40b40"
 
 path-parse@^1.0.6:
-  version "1.0.6"
-  resolved "https://registry.yarnpkg.com/path-parse/-/path-parse-1.0.6.tgz#d62dbb5679405d72c4737ec58600e9ddcf06d24c"
+  version "1.0.7"
+  resolved "https://registry.yarnpkg.com/path-parse/-/path-parse-1.0.7.tgz#fbc114b60ca42b30d9daf5858e4bd68bbedb6735"
+  integrity sha512-LDJzPVEEEPR+y48z93A0Ed0yXb8pAByGWo/k5YYdYgpY2/2EsOsksJrq7lOHxryrVOn1ejG6oAp8ahvOIQD8sw==
 
 path-to-regexp@0.1.7:
   version "0.1.7"
@@ -8797,6 +8790,11 @@ title@^3.4.1:
     chalk "2.3.0"
     clipboardy "1.2.2"
     titleize "1.0.0"
+
+titlecase-french@^1.0.1:
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/titlecase-french/-/titlecase-french-1.0.1.tgz#c91b7686e28874cdfd73162ff309c8bbbcb9faaa"
+  integrity sha1-yRt2huKIdM39cxYv8wnIu7y5+qo=
 
 titleize@1.0.0:
   version "1.0.0"
