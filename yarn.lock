@@ -4090,14 +4090,6 @@ gauge@~2.7.3:
     strip-ansi "^3.0.1"
     wide-align "^1.1.0"
 
-gc-tortilla@^1.0.2:
-  version "1.0.2"
-  resolved "https://registry.yarnpkg.com/gc-tortilla/-/gc-tortilla-1.0.2.tgz#c938491f84f38347e8ba33caa5b6220ad3dbddeb"
-  integrity sha512-c++MSneDeDx3u5lBbYMgZm3+bM0VWi40evWqMeVnKFZlTozL2CL/YjzoU8skZf0ZINA5wdXVvLNx7u+4s1Mnuw==
-  dependencies:
-    prop-types "^15.7.2"
-    react-scrolllock "^4.0.1"
-
 get-caller-file@^1.0.1:
   version "1.0.3"
   resolved "https://registry.yarnpkg.com/get-caller-file/-/get-caller-file-1.0.3.tgz#f978fa4c90d1dfe7ff2d6beda2a515e713bdcf4a"
@@ -8798,6 +8790,11 @@ title@^3.4.1:
     clipboardy "1.2.2"
     titleize "1.0.0"
 
+titlecase-french@^1.0.1:
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/titlecase-french/-/titlecase-french-1.0.1.tgz#c91b7686e28874cdfd73162ff309c8bbbcb9faaa"
+  integrity sha1-yRt2huKIdM39cxYv8wnIu7y5+qo=
+
 titleize@1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/titleize/-/titleize-1.0.0.tgz#7d350722061830ba6617631e0cfd3ea08398d95a"
@@ -8810,8 +8807,9 @@ tmp@^0.0.33:
     os-tmpdir "~1.0.2"
 
 tmpl@1.0.x:
-  version "1.0.4"
-  resolved "https://registry.yarnpkg.com/tmpl/-/tmpl-1.0.4.tgz#23640dd7b42d00433911140820e5cf440e521dd1"
+  version "1.0.5"
+  resolved "https://registry.yarnpkg.com/tmpl/-/tmpl-1.0.5.tgz#8683e0b902bb9c20c4f726e3c0b69f36518c07cc"
+  integrity sha512-3f0uOEAQwIqGuWW2MVzYg8fV/QNnc/IpuJNG837rLuczAaLVHslWHZQj4IGiEl5Hs3kkbhwL9Ab7Hrsmuj+Smw==
 
 to-arraybuffer@^1.0.0:
   version "1.0.1"
