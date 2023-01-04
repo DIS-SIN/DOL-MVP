@@ -4090,14 +4090,6 @@ gauge@~2.7.3:
     strip-ansi "^3.0.1"
     wide-align "^1.1.0"
 
-gc-tortilla@^1.0.2:
-  version "1.0.2"
-  resolved "https://registry.yarnpkg.com/gc-tortilla/-/gc-tortilla-1.0.2.tgz#c938491f84f38347e8ba33caa5b6220ad3dbddeb"
-  integrity sha512-c++MSneDeDx3u5lBbYMgZm3+bM0VWi40evWqMeVnKFZlTozL2CL/YjzoU8skZf0ZINA5wdXVvLNx7u+4s1Mnuw==
-  dependencies:
-    prop-types "^15.7.2"
-    react-scrolllock "^4.0.1"
-
 get-caller-file@^1.0.1:
   version "1.0.3"
   resolved "https://registry.yarnpkg.com/get-caller-file/-/get-caller-file-1.0.3.tgz#f978fa4c90d1dfe7ff2d6beda2a515e713bdcf4a"
@@ -5461,8 +5453,9 @@ json3@^3.3.2:
   resolved "https://registry.yarnpkg.com/json3/-/json3-3.3.2.tgz#3c0434743df93e2f5c42aee7b19bcb483575f4e1"
 
 json5@^1.0.1:
-  version "1.0.1"
-  resolved "https://registry.yarnpkg.com/json5/-/json5-1.0.1.tgz#779fb0018604fa854eacbf6252180d83543e3dbe"
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/json5/-/json5-1.0.2.tgz#63d98d60f21b313b77c4d6da18bfa69d80e1d593"
+  integrity sha512-g1MWMLBiz8FKi1e4w0UyVL3w+iJceWAFBAaBnnGKOpNa5f8TLktkbre1+s6oICydWAm+HRUGTmI+//xv2hvXYA==
   dependencies:
     minimist "^1.2.0"
 
@@ -5906,8 +5899,9 @@ minimist@0.0.8:
   resolved "https://registry.yarnpkg.com/minimist/-/minimist-0.0.8.tgz#857fcabfc3397d2625b8228262e86aa7a011b05d"
 
 minimist@^1.1.1, minimist@^1.2.0:
-  version "1.2.0"
-  resolved "https://registry.yarnpkg.com/minimist/-/minimist-1.2.0.tgz#a35008b20f41383eec1fb914f4cd5df79a264284"
+  version "1.2.7"
+  resolved "https://registry.yarnpkg.com/minimist/-/minimist-1.2.7.tgz#daa1c4d91f507390437c6a8bc01078e7000c4d18"
+  integrity sha512-bzfL1YUZsP41gmu/qjrEk0Q6i2ix/cVeAhbCbqH9u3zYutS1cLg00qhrD0M2MVdCcx4Sc0UpP2eBWo9rotpq6g==
 
 minimist@~0.0.1:
   version "0.0.10"
@@ -8797,6 +8791,11 @@ title@^3.4.1:
     chalk "2.3.0"
     clipboardy "1.2.2"
     titleize "1.0.0"
+
+titlecase-french@^1.0.1:
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/titlecase-french/-/titlecase-french-1.0.1.tgz#c91b7686e28874cdfd73162ff309c8bbbcb9faaa"
+  integrity sha512-wtgBrfPioO1IujwhHcp/7OjyguSqs4P0YEGdm77jgF/+LCEzNVMyZXVgA4sAoekNAVNAxxKrCC5o2U3gxCT7nQ==
 
 titleize@1.0.0:
   version "1.0.0"
